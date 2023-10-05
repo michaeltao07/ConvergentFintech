@@ -1,7 +1,11 @@
 # ConvergentFintech
 
 Tech:
-Jayanth Pandit
+Jayanth Pandit 
+Mahika Dawar 
+Michael Tao
+David Robertson
+Anokhi Shah
 
 Product:
 
