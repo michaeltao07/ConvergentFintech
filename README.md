@@ -1,8 +1,9 @@
 # ConvergentFintech
 
 Tech:
-Jayanth Pandit
-Mahika Dawar
+Jayanth Pandit 
+Mahika Dawar 
+Michael Tao
 
 Product:
 
