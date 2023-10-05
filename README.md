@@ -2,7 +2,6 @@
 
 Tech:
 Jayanth Pandit
-Anokhi Shah
 
 Product:
 
