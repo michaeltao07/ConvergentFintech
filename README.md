@@ -1,6 +1,7 @@
 # ConvergentFintech
 
 Tech:
+Ayan Jannu
 Jayanth Pandit 
 Mahika Dawar 
 Michael Tao
