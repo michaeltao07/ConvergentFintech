@@ -3,10 +3,10 @@
 Tech:
 Ayan Jannu
 Jayanth Pandit 
-Mahika Dawar 
 Michael Tao
 David Robertson
 Anokhi Shah
+Mahika Dawar
 
 Product:
 
