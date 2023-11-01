@@ -6,4 +6,11 @@ class draftList:
     # removes stock from list availableToDraft and adds it to the user's portfolio
     def pick(user, stock):
         return
+    
+    def get_rank(self, stock):
+        r = 0
+        for s in self.availableToDraft:
+            r+=1
+            if (s == stock):
+                return r
         

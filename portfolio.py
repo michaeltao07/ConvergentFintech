@@ -4,6 +4,11 @@ class portfolio:
         self.portOwner = portOwner  # which User owns the portfolio
         self.collection = collection    # list of stocks owned
 
+    # adds stock to list collection
+    def pick(user, stock):
+        return
+
+
     # facilitates trade between two users
     def trade_stocks(user1, stock1, user2, stock2):
         return
