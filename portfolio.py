@@ -1,6 +1,6 @@
 # List of stocks owned by a user, updates with draft and trades
 class portfolio:
-    def init_portfolio(self, portOwner, collection):
+    def __init__(self, portOwner, collection):
         self.portOwner = portOwner  # which User owns the portfolio
         self.collection = collection    # list of stocks owned
 

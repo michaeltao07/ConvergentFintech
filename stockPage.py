@@ -1,5 +1,5 @@
 # List of all stocks (regardless of ownership) and stats
 class stockPage:
-    def init_stockPage(self, stocks):
+    def __init__(self, stocks):
         self.stocks = stocks # list of all stocks with ratings
         
