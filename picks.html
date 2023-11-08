@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Investment Picks</title>
+    <style>
+        body {
+            background-color: #003300; /* Darker green */
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            padding: 20px 0;
+        }
+        .sector-dropdown-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .sector-dropdown {
+            font-size: 18px;
+            padding: 5px;
+        }
+        .stock-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+            grid-gap: 20px;
+            padding: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .stock-card {
+            border: 1px solid white;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .stock-graph {
+            width: 100%;
+            height: 150px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">PICKS</div>
+    <div class="sector-dropdown-container">
+        <label for="sector-dropdown">Select Industry Sector:</label>
+        <select id="sector-dropdown" class="sector-dropdown">
+            <option value="technology">Technology</option>
+            <option value="realestate">Real Estate</option>
+            <option value="crypto">Crypto</option>
+            <!-- Add more sector options as needed -->
+        </select>
+    </div>
+    <div id="stock-grid" class="stock-grid"></div>
+
+    <script>
+        // JavaScript code remains the same
+    </script>
+</body>
+</html>
