@@ -4,60 +4,172 @@
     <meta charset="UTF-8">
     <title>Investment Picks</title>
     <style>
+        /* stockPage */
         body {
-            background-color: #003300; /* Darker green */
-            color: white;
-            font-family: Arial, sans-serif;
+            position: relative;
+            width: 393px;
+            height: 852px;
+            background: #012B15;
+            color: #FFFFFF;
+            font-family: 'Inter', Arial, sans-serif;
         }
         .header {
-            text-align: center;
-            font-size: 36px;
-            font-weight: bold;
-            padding: 20px 0;
+            position: absolute;
+            width: 110px;
+            height: 42px;
+            left: 61px;
+            top: 27px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 42px;
         }
-        .sector-dropdown-container {
-            text-align: center;
-            margin: 20px 0;
+        .stock-heading {
+            position: absolute;
+            width: 75px;
+            height: 24px;
+            left: 17px;
+            top: 155px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
         }
-        .sector-dropdown {
-            font-size: 18px;
-            padding: 5px;
+        .sector-description {
+            position: absolute;
+            width: 308px;
+            height: 12px;
+            left: 17px;
+            top: 179px;
+            font-style: italic;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 12px;
         }
-        .stock-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); /* Two cards per row */
-            grid-gap: 20px;
-            padding: 10px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
+        /* Stock Cards */
         .stock-card {
-            border: 1px solid white;
-            padding: 10px;
-            background-color: rgba(255, 255, 255, 0.1);
+            position: absolute;
+            width: 174px;
+            height: 109px;
+            background: rgba(95, 172, 112, 0.5);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
         }
-        .stock-graph {
-            width: 100%;
-            height: 150px;
-            background-color: black;
+        .stock-card:nth-child(odd) {
+            left: 15px;
+            top: 203px;
+        }
+        .stock-card:nth-child(even) {
+            left: 205px;
+            top: 203px;
+        }
+        /* Sector Buttons */
+        .sector-button {
+            position: absolute;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            cursor: pointer;
+        }
+        .technology-button {
+            width: 90px;
+            height: 18px;
+            left: 25px;
+            top: 101px;
+        }
+        .real-estate-button {
+            width: 81px;
+            height: 18px;
+            left: 156px;
+            top: 101px;
+        }
+        .healthcare-button {
+            width: 79px;
+            height: 18px;
+            left: 284px;
+            top: 100px;
+        }
+        /* Ellipse and Image */
+        .ellipse-2 {
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            left: 15px;
+            top: 30px;
+            background: #71DE9C;
+        }
+        .ellipse-3 {
+            box-sizing: border-box;
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            left: 175px;
+            top: 42px;
+            border: 1px solid #FFFFFF;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+        .question-mark {
+            position: absolute;
+            width: 4px;
+            height: 8px;
+            left: 180px;
+            top: 44px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 8px;
+            line-height: 10px;
+            color: #FFFFFF;
+        }
+        .image-1 {
+            position: absolute;
+            width: 21px;
+            height: 23px;
+            left: 23px;
+            top: 211px;
+            background: url(image.png);
         }
     </style>
 </head>
 <body>
     <div class="header">PICKS</div>
-    <div class="sector-dropdown-container">
-        <label for="sector-dropdown">Select Industry Sector:</label>
-        <select id="sector-dropdown" class="sector-dropdown">
-            <option value="technology">Technology</option>
-            <option value="realestate">Real Estate</option>
-            <option value="crypto">Crypto</option>
-            <!-- Add more sector options as needed -->
-        </select>
+    <div class="stock-heading">Stocks</div>
+    <div class="sector-description">Stock options for the [technology] industry</div>
+
+    <!-- Stock Cards -->
+    <div class="stock-card">
+        <!-- Add content for the first stock card as needed -->
     </div>
-    <div id="stock-grid" class="stock-grid"></div>
+
+    <div class="stock-card">
+        <!-- Add content for the second stock card as needed -->
+    </div>
+
+    <!-- Add more stock cards as needed -->
+
+    <!-- Sector Buttons -->
+    <div class="sector-button technology-button" onclick="showTechnologyStocks()">Technology</div>
+    <div class="sector-button real-estate-button" onclick="showRealEstateStocks()">Real Estate</div>
+    <div class="sector-button healthcare-button" onclick="showHealthcareStocks()">Healthcare</div>
+
+    <!-- Ellipse and Image -->
+    <div class="ellipse-2"></div>
+    <div class="ellipse-3"></div>
+    <div class="question-mark">?</div>
+    <div class="image-1"></div>
 
     <script>
-        // JavaScript code remains the same
+        function showTechnologyStocks() {
+            // Implement logic to show technology-related stocks
+        }
+        
+        function showRealEstateStocks() {
+            // Implement logic to show real estate-related stocks
+        }
+        
+        function showHealthcareStocks() {
+            // Implement logic to show healthcare-related stocks
+        }
     </script>
 </body>
 </html>
