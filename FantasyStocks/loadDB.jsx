@@ -19,7 +19,7 @@ async function addStock(userId, stockTicker) {
     } else {
       throw new Error('User does not exist');
     }
-  }
+}
   
   async function removeStock(userId, stockTicker) {
     const userRef = firebase.firestore().collection('users').doc(userId);
@@ -32,4 +32,11 @@ async function addStock(userId, stockTicker) {
     } else {
       throw new Error('User does not exist');
     }
-  }
+}
+
+async function tradeStocks(user1, user2, user1Gives, user2Gives) {
+    addStock(user1, user2Gives)
+    addStock(user2, user1Gives)
+    removeStock(user1, user1Gives)
+    removeStock(user2, user2Gives)
+}
