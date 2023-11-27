@@ -1,0 +1,135 @@
+.launch-page-child {
+    position: absolute;
+    top: 150px;
+    left: 95px;
+    border-radius: 50%;
+    background-color: #71de9c;
+    width: 201px;
+    height: 201px;
+  }
+  .launch-page-item {
+    position: absolute;
+    top: 218px;
+    left: 233px;
+    background-color: var(--color-gainsboro);
+    width: 13px;
+    height: 25px;
+  }
+  .launch-page-inner,
+  .sign-in {
+    position: absolute;
+    top: 203px;
+    left: 250.5px;
+    width: 13px;
+    height: 40px;
+  }
+  .sign-in {
+    top: 547px;
+    left: 168px;
+    font-weight: 500;
+    display: inline-block;
+    width: 68px;
+    height: 24px;
+  }
+  .rectangle-div {
+    position: absolute;
+    top: 531px;
+    left: 63px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-seagreen);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--color-limegreen);
+    box-sizing: border-box;
+    width: 277px;
+    height: 57px;
+  }
+  .create-account,
+  .forgot-password {
+    position: absolute;
+    top: 626px;
+    left: 131px;
+    font-weight: 500;
+    display: inline-block;
+    width: 165px;
+    height: 24px;
+  }
+  .forgot-password {
+    top: 808px;
+    left: 128px;
+    font-size: 15px;
+    text-decoration: underline;
+    width: 132px;
+  }
+  .launch-page-child1 {
+    position: absolute;
+    top: 609px;
+    left: 63px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-seagreen);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--color-limegreen);
+    box-sizing: border-box;
+    width: 277px;
+    height: 57px;
+  }
+  .fantasy500 {
+    position: absolute;
+    top: 372px;
+    left: 98px;
+    font-size: 35px;
+    display: inline-block;
+    width: 208px;
+  }
+  .ellipse-div {
+    position: absolute;
+    top: 25px;
+    left: 121px;
+    border-radius: 50%;
+    background-color: var(--color-gainsboro);
+    width: 147px;
+    height: 20px;
+  }
+  .b,
+  .f {
+    position: absolute;
+    color: var(--color-black);
+  }
+  .f {
+    top: 145px;
+    left: 121px;
+    font-size: 150px;
+    display: inline-block;
+    width: 59px;
+    height: 98px;
+  }
+  .b {
+    top: 233px;
+    left: 147px;
+    font-size: 60px;
+  }
+  .launch-page-child2,
+  .launch-page-child3 {
+    position: absolute;
+    top: 226px;
+    left: 201px;
+    background-color: var(--color-gainsboro);
+    width: 13px;
+    height: 17px;
+  }
+  .launch-page-child3 {
+    top: 214px;
+    left: 217px;
+    height: 29px;
+  }
+  .launch-page {
+    position: relative;
+    background-color: #012b15;
+    width: 100%;
+    height: 852px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-xl);
+    color: var(--color-white);
+    font-family: var(--font-inter);
+  }
+  

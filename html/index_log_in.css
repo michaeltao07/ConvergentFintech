@@ -1,0 +1,115 @@
+.dont-have-an {
+    position: absolute;
+    top: 623px;
+    left: 123px;
+    font-size: 10px;
+    text-decoration: underline;
+    font-weight: 500;
+    display: inline-block;
+    width: 172px;
+    height: 11px;
+  }
+  .email-address,
+  .sign-in {
+    position: absolute;
+    top: 343px;
+    left: 168px;
+    display: inline-block;
+    width: 68px;
+  }
+  .email-address {
+    top: 432px;
+    left: 145px;
+    font-weight: 500;
+    width: 156px;
+    height: 24px;
+  }
+  .log-in-child,
+  .log-in-item {
+    position: absolute;
+    top: 566.5px;
+    left: 65.5px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-seagreen-100);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--color-seagreen-100);
+    box-sizing: border-box;
+    width: 278px;
+    height: 46px;
+  }
+  .log-in-item {
+    top: 421px;
+    left: 66px;
+    background-color: var(--color-seagreen-200);
+    border: 1px solid var(--color-limegreen);
+    width: 277px;
+    height: 45px;
+  }
+  .password {
+    position: absolute;
+    top: 510px;
+    left: 154px;
+    font-weight: 500;
+    display: inline-block;
+    width: 95px;
+    height: 24px;
+  }
+  .log-in-inner {
+    position: absolute;
+    top: 499px;
+    left: 66px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-seagreen-200);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--color-limegreen);
+    box-sizing: border-box;
+    width: 277px;
+    height: 45px;
+  }
+  .fantasy500,
+  .log-in1 {
+    position: absolute;
+    display: inline-block;
+  }
+  .log-in1 {
+    top: 577px;
+    left: 176px;
+    font-weight: 500;
+    width: 58px;
+    height: 24px;
+  }
+  .fantasy500 {
+    top: 211px;
+    left: 132px;
+    font-size: 35px;
+    width: 209px;
+  }
+  .ellipse-div,
+  .log-in-child1 {
+    position: absolute;
+    top: 197px;
+    left: 52px;
+    border-radius: 50%;
+    background-color: #71de9c;
+    width: 70px;
+    height: 70px;
+  }
+  .log-in-child1 {
+    top: 26px;
+    left: 123px;
+    background-color: #d9d9d9;
+    width: 147px;
+    height: 20px;
+  }
+  .log-in {
+    position: relative;
+    background-color: #012b15;
+    width: 100%;
+    height: 852px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-xl);
+    color: var(--color-white);
+    font-family: var(--font-inter);
+  }
+  

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global_forgot_password.css" />
+    <link rel="stylesheet" href="./index_forgot_password.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="forgot-password">
+      <b class="reset-password">Reset Password</b>
+      <div class="new-password">New Password</div>
+      <div class="forgot-password-child"></div>
+      <div class="forgot-password-item"></div>
+      <div class="confirm-new-password" id="confirmNewPassword">
+        Confirm New Password
+      </div>
+      <div class="forgot-password-inner" data-scroll-to="rectangle"></div>
+      <div class="return-to-login">Return to Login</div>
+      <b class="fantasy500">Fantasy500</b>
+      <div class="ellipse-div"></div>
+      <div class="forgot-password-child1"></div>
+    </div>
+
+    <script>
+      var confirmNewPassword = document.getElementById("confirmNewPassword");
+      if (confirmNewPassword) {
+        confirmNewPassword.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='rectangle']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+      </script>
+  </body>
+</html>
