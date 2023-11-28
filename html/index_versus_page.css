@@ -200,7 +200,7 @@
   }
   .team-opp {
     top: 181px;
-    right: 81px;
+    left: 240px;
     font-size: var(--font-size-mini);
     font-weight: 600;
     width: 74px;
@@ -675,4 +675,36 @@
     color: var(--color-white);
     font-family: var(--font-inter);
   }
+.mdihome-outline-icon1,
+.ggprofile-icon1,
+.vector-icon3,
+.tablervs-icon1,
+.vector-icon2 {
+  position: absolute;
+  top: 803px; /* Adjust based on your layout */
+  width: 30px; /* Set the desired width */
+  height: 30px; /* Set the desired height */
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.mdihome-outline-icon1 {
+  left: 28px; /* Adjust based on your layout */
+}
+
+.ggprofile-icon1 {
+  left: 110px; /* Adjust based on your layout */
+}
+
+.vector-icon3 {
+  left: 182px; /* Adjust based on your layout */
+}
+
+.tablervs-icon1 {
+  left: 254px; /* Adjust based on your layout */
+}
+
+.vector-icon2 {
+  left: 326px; /* Adjust based on your layout */
+}
   
