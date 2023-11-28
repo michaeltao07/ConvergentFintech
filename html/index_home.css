@@ -97,110 +97,7 @@
   width: 393px;
   height: 66px;
 }
-.ggprofile-icon {
-  top: 804px;
-  left: 119px;
-  width: 30px;
-  height: 30px;
-}
-.ggprofile-icon,
-.tablervs-icon,
-.vector-icon {
-  position: absolute;
-  overflow: hidden;
-}
-.vector-icon {
-  height: 3.52%;
-  width: 7.63%;
-  top: 94.37%;
-  right: 45.29%;
-  bottom: 2.11%;
-  left: 47.07%;
-  max-width: 100%;
-  max-height: 100%;
-}
-.tablervs-icon {
-  top: 803px;
-  left: 251px;
-  width: 33px;
-  height: 32px;
-}
-.mdihome-outline-icon,
-.vector-icon1 {
-  position: absolute;
-  top: 801px;
-  left: 48px;
-  width: 37px;
-  height: 36px;
-  overflow: hidden;
-}
-.vector-icon1 {
-  height: 3.05%;
-  width: 6.87%;
-  top: 94.48%;
-  right: 12.21%;
-  bottom: 2.46%;
-  left: 80.92%;
-  max-width: 100%;
-  max-height: 100%;
-}
-.home-child6 {
-  position: absolute;
-  top: 786px;
-  left: 0;
-  background-color: var(--color-seagreen-100);
-  width: 393px;
-  height: 66px;
-  cursor: pointer;
-}
-.ggprofile-icon1,
-.vector-icon2 {
-  position: absolute;
-  top: 804px;
-  left: 119px;
-  width: 30px;
-  height: 30px;
-  overflow: hidden;
-  cursor: pointer;
-}
-.vector-icon2 {
-  height: 3.52%;
-  width: 7.63%;
-  top: 94.37%;
-  right: 45.29%;
-  bottom: 2.11%;
-  left: 47.07%;
-  max-width: 100%;
-  max-height: 100%;
-}
-.mdihome-outline-icon1,
-.tablervs-icon1,
-.vector-icon3 {
-  position: absolute;
-  top: 803px;
-  left: 251px;
-  width: 33px;
-  height: 32px;
-  overflow: hidden;
-  cursor: pointer;
-}
-.mdihome-outline-icon1,
-.vector-icon3 {
-  top: 801px;
-  left: 48px;
-  width: 37px;
-  height: 36px;
-}
-.vector-icon3 {
-  height: 3.05%;
-  width: 6.87%;
-  top: 94.48%;
-  right: 12.21%;
-  bottom: 2.46%;
-  left: 80.92%;
-  max-width: 100%;
-  max-height: 100%;
-}
+
 .home {
   position: relative;
   background-color: #012b15;
@@ -220,3 +117,37 @@
     display: inline-block;
     width: 300px;
 }
+
+.mdihome-outline-icon1,
+.ggprofile-icon1,
+.vector-icon3,
+.tablervs-icon1,
+.vector-icon2 {
+  position: absolute;
+  top: 803px; /* Adjust based on your layout */
+  width: 30px; /* Set the desired width */
+  height: 30px; /* Set the desired height */
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.mdihome-outline-icon1 {
+  left: 28px; /* Adjust based on your layout */
+}
+
+.ggprofile-icon1 {
+  left: 110px; /* Adjust based on your layout */
+}
+
+.vector-icon3 {
+  left: 182px; /* Adjust based on your layout */
+}
+
+.tablervs-icon1 {
+  left: 254px; /* Adjust based on your layout */
+}
+
+.vector-icon2 {
+  left: 326px; /* Adjust based on your layout */
+}
+
