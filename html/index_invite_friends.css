@@ -1,0 +1,282 @@
+.contacts,
+.find-your-friends,
+.https {
+  position: absolute;
+  display: inline-block;
+}
+.contacts {
+  top: 78px;
+  left: 61px;
+  font-size: 35px;
+  width: 239px;
+}
+.find-your-friends,
+.https {
+  top: 129px;
+  left: 20px;
+  font-size: var(--font-size-mini);
+  width: 363px;
+}
+.https {
+  top: 177px;
+  left: 49px;
+  font-weight: 500;
+  width: 58px;
+}
+.invite-friends-child {
+  position: absolute;
+  top: 165px;
+  left: 18px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-seagreen-100);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--color-limegreen);
+  box-sizing: border-box;
+  width: 358px;
+  height: 43px;
+}
+.friends-on-fantasy500 {
+  position: absolute;
+  top: 244px;
+  left: 20px;
+  font-size: var(--font-size-xl);
+  display: inline-block;
+  width: 243px;
+}
+.ellipse-div,
+.invite-friends-child1,
+.invite-friends-child2,
+.invite-friends-child3,
+.invite-friends-inner,
+.invite-friends-item {
+  position: absolute;
+  top: 283px;
+  left: 20px;
+  border-radius: 50%;
+  background-color: var(--color-lightgreen);
+  width: 38px;
+  height: 38px;
+}
+.ellipse-div,
+.invite-friends-child1,
+.invite-friends-child2,
+.invite-friends-child3,
+.invite-friends-inner {
+  top: 330px;
+}
+.ellipse-div,
+.invite-friends-child1,
+.invite-friends-child2,
+.invite-friends-child3 {
+  top: 377px;
+}
+.invite-friends-child1,
+.invite-friends-child2,
+.invite-friends-child3 {
+  top: 424px;
+}
+.invite-friends-child2,
+.invite-friends-child3 {
+  top: 471px;
+}
+.invite-friends-child3 {
+  top: 518px;
+}
+.andrewchoi,
+.anokhishah,
+.ayanjannu,
+.davidrobertson,
+.jacobencarnado,
+.jayanthpandit,
+.mahikadawar {
+  position: absolute;
+  top: 287px;
+  left: 69px;
+  font-weight: 500;
+  display: inline-block;
+  width: 354px;
+  height: 15px;
+}
+.andrewchoi,
+.ayanjannu,
+.davidrobertson,
+.jacobencarnado,
+.jayanthpandit,
+.mahikadawar {
+  top: 334px;
+}
+.andrewchoi,
+.davidrobertson,
+.jacobencarnado,
+.jayanthpandit,
+.mahikadawar {
+  top: 381px;
+}
+.davidrobertson,
+.jacobencarnado,
+.jayanthpandit,
+.mahikadawar {
+  top: 430px;
+}
+.jacobencarnado,
+.jayanthpandit,
+.mahikadawar {
+  top: 477px;
+}
+.jayanthpandit,
+.mahikadawar {
+  top: 526px;
+}
+.mahikadawar {
+  top: 573px;
+}
+.invite-friends-child4,
+.invite-friends-child5 {
+  position: absolute;
+  top: 565px;
+  left: 20px;
+  border-radius: 50%;
+  background-color: var(--color-lightgreen);
+  width: 38px;
+  height: 38px;
+}
+.invite-friends-child5 {
+  top: 615px;
+}
+.nitishapokkula {
+  position: absolute;
+  top: 623px;
+  left: 69px;
+  font-weight: 500;
+  display: inline-block;
+  width: 354px;
+  height: 15px;
+}
+.invite-friends-child14 {
+  position: absolute;
+  top: 26px;
+  left: 123px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  width: 147px;
+  height: 20px;
+}
+.copy-and-share,
+.polygon-icon {
+  position: absolute;
+  top: 88.61px;
+  left: 20px;
+  width: 21.75px;
+  height: 20.78px;
+}
+.copy-and-share {
+  top: 212px;
+  left: 154px;
+  font-size: 10px;
+  text-decoration: underline;
+  font-weight: 500;
+  display: inline-block;
+  width: 95px;
+  height: 11px;
+}
+.invite-friends-child15 {
+  position: absolute;
+  top: 786px;
+  left: 0;
+  background-color: #306c43;
+  width: 393px;
+  height: 66px;
+  mix-blend-mode: normal;
+}
+.ggprofile-icon {
+  top: 804px;
+  left: 119px;
+  width: 30px;
+  height: 30px;
+}
+.ggprofile-icon,
+.tablervs-icon,
+.vector-icon {
+  position: absolute;
+  overflow: hidden;
+}
+.vector-icon {
+  height: 3.52%;
+  width: 7.63%;
+  top: 94.37%;
+  right: 45.29%;
+  bottom: 2.11%;
+  left: 47.07%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.tablervs-icon {
+  top: 803px;
+  left: 251px;
+  width: 33px;
+  height: 32px;
+}
+.mdihome-outline-icon,
+.vector-icon1 {
+  position: absolute;
+  top: 801px;
+  left: 48px;
+  width: 37px;
+  height: 36px;
+  overflow: hidden;
+}
+.vector-icon1 {
+  height: 3.05%;
+  width: 6.87%;
+  top: 94.48%;
+  right: 12.21%;
+  bottom: 2.46%;
+  left: 80.92%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.add-on-fantasy500 {
+  position: absolute;
+  top: 673px;
+  left: 20px;
+  font-size: var(--font-size-xl);
+  display: inline-block;
+  width: 243px;
+}
+.invite-friends-child16,
+.invite-friends-child17 {
+  position: absolute;
+  top: 712px;
+  left: 20px;
+  border-radius: 50%;
+  background-color: var(--color-lightgreen);
+  width: 38px;
+  height: 38px;
+}
+.invite-friends-child17 {
+  top: 759px;
+}
+.anokhishah2,
+.ayanjannu2 {
+  position: absolute;
+  top: 716px;
+  left: 69px;
+  font-weight: 500;
+  display: inline-block;
+  width: 354px;
+  height: 15px;
+}
+.ayanjannu2 {
+  top: 763px;
+}
+.invite-friends {
+  position: relative;
+  background-color: #012b15;
+  width: 100%;
+  height: 852px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}

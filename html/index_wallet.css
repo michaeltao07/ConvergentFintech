@@ -1,0 +1,171 @@
+.wallet1,
+.withdrawable {
+  position: absolute;
+  display: inline-block;
+}
+.wallet1 {
+  top: 80px;
+  left: 73px;
+  font-size: 35px;
+  width: 160px;
+}
+.withdrawable {
+  top: 156px;
+  left: 29px;
+  width: 180px;
+}
+.transactions-usd {
+  top: 267px;
+  left: 29px;
+  width: 197px;
+}
+.b,
+.statements,
+.total,
+.transactions-usd {
+  position: absolute;
+  display: inline-block;
+}
+.b {
+  top: 156px;
+  right: 26px;
+  text-align: right;
+  width: 141px;
+}
+.statements,
+.total {
+  top: 162px;
+  left: 270px;
+  font-size: var(--font-size-smi);
+  font-weight: 500;
+  width: 67px;
+  height: 15px;
+}
+.statements {
+  top: 273px;
+  left: 295px;
+  width: 72px;
+}
+.wallet-child {
+  position: absolute;
+  top: 201px;
+  left: 29px;
+  border-radius: var(--br-5xs);
+  background-color: rgba(55, 123, 87, 0.5);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--color-limegreen);
+  box-sizing: border-box;
+  width: 158px;
+  height: 43px;
+}
+.deposit,
+.withdraw {
+  position: absolute;
+  top: 213px;
+  font-size: var(--font-size-mini);
+  font-weight: 500;
+  display: inline-block;
+}
+.withdraw {
+  left: 72px;
+  width: 71px;
+  height: 9px;
+}
+.deposit {
+  left: 264px;
+  width: 57px;
+}
+.wallet-item {
+  position: absolute;
+  top: 201px;
+  left: 210px;
+  border-radius: var(--br-5xs);
+  background-color: transparent;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--color-limegreen);
+  box-sizing: border-box;
+  width: 158px;
+  height: 43px;
+}
+.wallet-inner {
+  position: absolute;
+  top: 26px;
+  left: 123px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  width: 147px;
+  height: 20px;
+}
+.rectangle-div {
+  position: absolute;
+  top: 786px;
+  left: 0;
+  background-color: #306c43;
+  width: 393px;
+  height: 66px;
+}
+.ggprofile-icon {
+  top: 804px;
+  left: 119px;
+  width: 30px;
+  height: 30px;
+}
+.ggprofile-icon,
+.tablervs-icon,
+.vector-icon {
+  position: absolute;
+  overflow: hidden;
+}
+.vector-icon {
+  height: 3.52%;
+  width: 7.63%;
+  top: 94.37%;
+  right: 45.29%;
+  bottom: 2.11%;
+  left: 47.07%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.tablervs-icon {
+  top: 803px;
+  left: 251px;
+  width: 33px;
+  height: 32px;
+}
+.mdihome-outline-icon,
+.vector-icon1 {
+  position: absolute;
+  top: 801px;
+  left: 48px;
+  width: 37px;
+  height: 36px;
+  overflow: hidden;
+}
+.vector-icon1 {
+  height: 3.05%;
+  width: 6.87%;
+  top: 94.48%;
+  right: 12.21%;
+  bottom: 2.46%;
+  left: 80.92%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.polygon-icon {
+  position: absolute;
+  top: 90.61px;
+  left: 29px;
+  width: 21.75px;
+  height: 20.78px;
+}
+.wallet {
+  position: relative;
+  background-color: #012b15;
+  width: 100%;
+  height: 852px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}

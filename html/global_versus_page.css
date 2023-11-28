@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-inter: Inter;
+  
+    /* font sizes */
+    --font-size-mini: 15px;
+    --font-size-3xs: 10px;
+    --font-size-sm: 14px;
+    --font-size-16xl: 35px;
+  
+    /* Colors */
+    --color-seagreen-100: #306c43;
+    --color-seagreen-200: rgba(55, 123, 87, 0);
+    --color-limegreen: #3aca2d;
+    --color-white: #fff;
+    --color-mediumseagreen: rgba(95, 172, 112, 0.5);
+    --color-salmon: #ff7d7d;
+    --color-lightgreen-100: #71de9c;
+  
+    /* Border radiuses */
+    --br-5xs: 8px;
+  }
+  

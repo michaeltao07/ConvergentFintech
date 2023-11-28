@@ -1,0 +1,320 @@
+.roster-child,
+.roster-item {
+  position: absolute;
+  top: 80px;
+  left: 25px;
+  border-radius: 50%;
+  background-color: #71de9c;
+  width: 36px;
+  height: 36px;
+}
+.roster-item {
+  top: 26px;
+  left: 123px;
+  background-color: #d9d9d9;
+  width: 147px;
+  height: 20px;
+}
+.your-drafts {
+  position: absolute;
+  top: 78px;
+  left: 72px;
+  font-size: 35px;
+  display: inline-block;
+  width: 256px;
+}
+.healthcare,
+.real-estate,
+.technology {
+  position: absolute;
+  top: 160px;
+  left: 25px;
+  font-size: var(--font-size-xl);
+  display: inline-block;
+  width: 243px;
+}
+.healthcare,
+.real-estate {
+  top: 272px;
+  left: 28px;
+}
+.real-estate {
+  top: 381px;
+  left: 26px;
+}
+.roster-inner {
+  position: absolute;
+  top: 192px;
+  left: 25px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-mediumseagreen);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 164px;
+  height: 52px;
+}
+.apple-inc,
+.nasdaq-appl {
+  position: absolute;
+  left: 57px;
+  display: inline-block;
+  height: 9px;
+}
+.apple-inc {
+  top: 200px;
+  font-weight: 600;
+  width: 68px;
+}
+.nasdaq-appl {
+  top: 212px;
+  color: var(--color-limegreen);
+  width: 85px;
+}
+.image-1-icon {
+  position: absolute;
+  top: 200px;
+  left: 33px;
+  width: 19px;
+  height: 23px;
+  object-fit: cover;
+}
+.rectangle-div {
+  position: absolute;
+  top: 192px;
+  left: 203px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-mediumseagreen);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 164px;
+  height: 52px;
+}
+.apple-inc1,
+.nasdaq-appl1 {
+  position: absolute;
+  left: 235px;
+  display: inline-block;
+  height: 9px;
+}
+.apple-inc1 {
+  top: 200px;
+  font-weight: 600;
+  width: 68px;
+}
+.nasdaq-appl1 {
+  top: 212px;
+  color: var(--color-limegreen);
+  width: 85px;
+}
+.image-2-icon {
+  position: absolute;
+  top: 200px;
+  left: 210px;
+  width: 20px;
+  height: 23px;
+  object-fit: cover;
+}
+.roster-child1 {
+  position: absolute;
+  top: 301px;
+  left: 26px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-mediumseagreen);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 164px;
+  height: 52px;
+}
+.apple-inc2,
+.nasdaq-appl2 {
+  position: absolute;
+  left: 58px;
+  display: inline-block;
+  height: 9px;
+}
+.apple-inc2 {
+  top: 309px;
+  font-weight: 600;
+  width: 68px;
+}
+.nasdaq-appl2 {
+  top: 321px;
+  color: var(--color-limegreen);
+  width: 85px;
+}
+.image-3-icon {
+  position: absolute;
+  top: 309px;
+  left: 34px;
+  width: 19px;
+  height: 23px;
+  object-fit: cover;
+}
+.roster-child2 {
+  position: absolute;
+  top: 301px;
+  left: 204px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-mediumseagreen);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 164px;
+  height: 52px;
+}
+.apple-inc3,
+.nasdaq-appl3 {
+  position: absolute;
+  left: 236px;
+  display: inline-block;
+  height: 9px;
+}
+.apple-inc3 {
+  top: 309px;
+  font-weight: 600;
+  width: 68px;
+}
+.nasdaq-appl3 {
+  top: 321px;
+  color: var(--color-limegreen);
+  width: 85px;
+}
+.image-4-icon {
+  position: absolute;
+  top: 309px;
+  left: 211px;
+  width: 20px;
+  height: 23px;
+  object-fit: cover;
+}
+.roster-child3 {
+  position: absolute;
+  top: 410px;
+  left: 26px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-mediumseagreen);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 164px;
+  height: 52px;
+}
+.apple-inc4,
+.nasdaq-appl4 {
+  position: absolute;
+  left: 58px;
+  display: inline-block;
+  height: 9px;
+}
+.apple-inc4 {
+  top: 418px;
+  font-weight: 600;
+  width: 68px;
+}
+.nasdaq-appl4 {
+  top: 430px;
+  color: var(--color-limegreen);
+  width: 85px;
+}
+.image-5-icon {
+  position: absolute;
+  top: 418px;
+  left: 34px;
+  width: 19px;
+  height: 23px;
+  object-fit: cover;
+}
+.roster-child4 {
+  position: absolute;
+  top: 410px;
+  left: 204px;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-mediumseagreen);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 164px;
+  height: 52px;
+}
+.apple-inc5,
+.nasdaq-appl5 {
+  position: absolute;
+  left: 236px;
+  display: inline-block;
+  height: 9px;
+}
+.apple-inc5 {
+  top: 418px;
+  font-weight: 600;
+  width: 68px;
+}
+.nasdaq-appl5 {
+  top: 430px;
+  color: var(--color-limegreen);
+  width: 85px;
+}
+.image-6-icon {
+  position: absolute;
+  top: 418px;
+  left: 211px;
+  width: 20px;
+  height: 23px;
+  object-fit: cover;
+}
+.roster-child5 {
+  position: absolute;
+  top: 786px;
+  left: 0;
+  background-color: #306c43;
+  width: 393px;
+  height: 66px;
+}
+.ggprofile-icon {
+  top: 804px;
+  left: 119px;
+  width: 30px;
+  height: 30px;
+}
+.ggprofile-icon,
+.tablervs-icon,
+.vector-icon {
+  position: absolute;
+  overflow: hidden;
+}
+.vector-icon {
+  height: 3.52%;
+  width: 7.63%;
+  top: 94.37%;
+  right: 45.29%;
+  bottom: 2.11%;
+  left: 47.07%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.tablervs-icon {
+  top: 803px;
+  left: 251px;
+  width: 33px;
+  height: 32px;
+}
+.mdihome-outline-icon,
+.vector-icon1 {
+  position: absolute;
+  top: 801px;
+  left: 48px;
+  width: 37px;
+  height: 36px;
+  overflow: hidden;
+}
+.vector-icon1 {
+  height: 3.05%;
+  width: 6.87%;
+  top: 94.48%;
+  right: 12.21%;
+  bottom: 2.46%;
+  left: 80.92%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.roster {
+  position: relative;
+  background-color: #012b15;
+  width: 100%;
+  height: 852px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-3xs);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}

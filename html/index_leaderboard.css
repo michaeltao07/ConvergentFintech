@@ -1,0 +1,349 @@
+.leaderboard-child {
+    position: absolute;
+    top: 80px;
+    left: 25px;
+    border-radius: 50%;
+    background-color: var(--color-lightgreen);
+    width: 36px;
+    height: 36px;
+  }
+  .leaderboard-item {
+    position: absolute;
+    top: 26px;
+    left: 123px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    width: 147px;
+    height: 20px;
+  }
+  .leaderboard1 {
+    position: absolute;
+    top: 78px;
+    left: 72px;
+    font-size: 35px;
+    display: inline-block;
+    width: 272px;
+  }
+  .leaderboard-inner {
+    position: absolute;
+    top: 786px;
+    left: 0;
+    background-color: #306c43;
+    width: 393px;
+    height: 66px;
+  }
+  .ggprofile-icon {
+    top: 804px;
+    left: 119px;
+    width: 30px;
+    height: 30px;
+  }
+  .ggprofile-icon,
+  .tablervs-icon,
+  .vector-icon {
+    position: absolute;
+    overflow: hidden;
+  }
+  .vector-icon {
+    height: 3.52%;
+    width: 7.63%;
+    top: 94.37%;
+    right: 45.29%;
+    bottom: 2.11%;
+    left: 47.07%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .tablervs-icon {
+    top: 803px;
+    left: 251px;
+    width: 33px;
+    height: 32px;
+  }
+  .mdihome-outline-icon,
+  .vector-icon1 {
+    position: absolute;
+    top: 801px;
+    left: 48px;
+    width: 37px;
+    height: 36px;
+    overflow: hidden;
+  }
+  .vector-icon1 {
+    height: 3.05%;
+    width: 6.87%;
+    top: 94.48%;
+    right: 12.21%;
+    bottom: 2.46%;
+    left: 80.92%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .this-seasons-standings {
+    position: absolute;
+    top: 129px;
+    left: 28px;
+    display: inline-block;
+    width: 243px;
+  }
+  .ellipse-div,
+  .leaderboard-child1,
+  .leaderboard-child2,
+  .leaderboard-child3,
+  .leaderboard-child4,
+  .leaderboard-child5 {
+    position: absolute;
+    top: 186px;
+    left: 82px;
+    border-radius: 50%;
+    background-color: var(--color-lightgreen);
+    width: 38px;
+    height: 38px;
+  }
+  .leaderboard-child1,
+  .leaderboard-child2,
+  .leaderboard-child3,
+  .leaderboard-child4,
+  .leaderboard-child5 {
+    top: 233px;
+  }
+  .leaderboard-child2,
+  .leaderboard-child3,
+  .leaderboard-child4,
+  .leaderboard-child5 {
+    top: 280px;
+  }
+  .leaderboard-child3,
+  .leaderboard-child4,
+  .leaderboard-child5 {
+    top: 327px;
+  }
+  .leaderboard-child4,
+  .leaderboard-child5 {
+    top: 374px;
+  }
+  .leaderboard-child5 {
+    top: 421px;
+  }
+  .anokhishah,
+  .ayanjannu,
+  .jacobencarnado,
+  .jayanthpandit,
+  .mahikadawar,
+  .michaeltao,
+  .nitishapokkula {
+    position: absolute;
+    top: 190px;
+    left: 131px;
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+    display: inline-block;
+    width: 354px;
+    height: 15px;
+  }
+  .anokhishah,
+  .jacobencarnado,
+  .jayanthpandit,
+  .mahikadawar,
+  .michaeltao,
+  .nitishapokkula {
+    top: 237px;
+  }
+  .anokhishah,
+  .jacobencarnado,
+  .jayanthpandit,
+  .mahikadawar,
+  .michaeltao {
+    top: 284px;
+  }
+  .anokhishah,
+  .jacobencarnado,
+  .jayanthpandit,
+  .michaeltao {
+    top: 333px;
+  }
+  .anokhishah,
+  .jacobencarnado,
+  .michaeltao {
+    top: 380px;
+  }
+  .anokhishah,
+  .jacobencarnado {
+    top: 429px;
+  }
+  .jacobencarnado {
+    top: 476px;
+  }
+  .leaderboard-child6,
+  .leaderboard-child7 {
+    position: absolute;
+    top: 468px;
+    left: 82px;
+    border-radius: 50%;
+    background-color: var(--color-lightgreen);
+    width: 38px;
+    height: 38px;
+  }
+  .leaderboard-child7 {
+    top: 518px;
+  }
+  .andrewchoi {
+    position: absolute;
+    top: 526px;
+    left: 131px;
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+    display: inline-block;
+    width: 354px;
+    height: 15px;
+  }
+  .b,
+  .b1,
+  .b2,
+  .b3,
+  .b4,
+  .b5,
+  .b6,
+  .b7 {
+    position: absolute;
+    top: 196px;
+    left: 37px;
+    display: inline-block;
+    width: 14px;
+  }
+  .b1,
+  .b2,
+  .b3,
+  .b4,
+  .b5,
+  .b6,
+  .b7 {
+    top: 287px;
+  }
+  .b2,
+  .b3,
+  .b4,
+  .b5,
+  .b6,
+  .b7 {
+    top: 240px;
+    left: 38px;
+  }
+  .b3,
+  .b4,
+  .b5,
+  .b6,
+  .b7 {
+    top: 336px;
+    left: 37px;
+  }
+  .b4,
+  .b5,
+  .b6,
+  .b7 {
+    top: 383px;
+  }
+  .b5,
+  .b6,
+  .b7 {
+    top: 432px;
+  }
+  .b6,
+  .b7 {
+    top: 476px;
+  }
+  .b7 {
+    top: 525px;
+  }
+  .leaderboard-child16 {
+    position: absolute;
+    top: 615px;
+    left: 82px;
+    border-radius: 50%;
+    background-color: var(--color-lightgreen);
+    width: 38px;
+    height: 38px;
+  }
+  .ellipse-icon,
+  .leaderboard-child17 {
+    position: absolute;
+    top: 664px;
+    left: 82px;
+    width: 38px;
+    height: 38px;
+  }
+  .leaderboard-child17 {
+    top: 713px;
+    border-radius: 50%;
+    background-color: var(--color-lightgreen);
+  }
+  .ayanjannu1,
+  .user10,
+  .user11,
+  .user12 {
+    position: absolute;
+    top: 576px;
+    left: 131px;
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+    display: inline-block;
+    width: 354px;
+    height: 15px;
+  }
+  .user10,
+  .user11,
+  .user12 {
+    top: 623px;
+  }
+  .user11,
+  .user12 {
+    top: 670px;
+  }
+  .user12 {
+    top: 719px;
+  }
+  .leaderboard-child18 {
+    position: absolute;
+    top: 565px;
+    left: 82px;
+    border-radius: 50%;
+    background-color: var(--color-lightgreen);
+    width: 38px;
+    height: 38px;
+  }
+  .b10,
+  .b11,
+  .b8,
+  .b9 {
+    position: absolute;
+    top: 572px;
+    left: 37px;
+    display: inline-block;
+    width: 14px;
+  }
+  .b10,
+  .b11,
+  .b9 {
+    top: 624px;
+    width: 28px;
+  }
+  .b10,
+  .b11 {
+    top: 671px;
+    width: 24px;
+  }
+  .b11 {
+    top: 720px;
+  }
+  .leaderboard {
+    position: relative;
+    background-color: #012b15;
+    width: 100%;
+    height: 852px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-xl);
+    color: var(--color-white);
+    font-family: var(--font-inter);
+  }
+  

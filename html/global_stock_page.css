@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-inter: Inter;
+  
+    /* font sizes */
+    --font-size-3xs: 10px;
+    --font-size-mini: 15px;
+    --font-size-xl: 20px;
+    --font-size-16xl: 35px;
+  
+    /* Colors */
+    --color-seagreen-100: rgba(55, 123, 87, 0);
+    --color-limegreen: #3aca2d;
+    --color-white: #fff;
+    --color-mediumseagreen: rgba(95, 172, 112, 0.5);
+  
+    /* Border radiuses */
+    --br-5xs: 8px;
+  }
+  

@@ -1,0 +1,678 @@
+.versus {
+    position: absolute;
+    top: 69px;
+    left: 79px;
+    font-size: var(--font-size-16xl);
+    display: inline-block;
+    width: 143px;
+  }
+  .versuspage-child {
+    position: absolute;
+    top: 72px;
+    left: 33px;
+    border-radius: 50%;
+    background-color: var(--color-lightgreen-100);
+    width: 36px;
+    height: 36px;
+  }
+  .versuspage-item {
+    position: absolute;
+    top: 84px;
+    left: 231px;
+    border-radius: 50%;
+    background-color: transparent;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--color-white);
+    box-sizing: border-box;
+    width: 14px;
+    height: 14px;
+  }
+  .div {
+    position: absolute;
+    top: 86px;
+    left: 236px;
+    font-size: 8px;
+    font-weight: 600;
+    display: inline-block;
+    width: 4px;
+    height: 8px;
+  }
+  .versuspage-inner {
+    position: absolute;
+    top: 26px;
+    left: 123px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    width: 147px;
+    height: 20px;
+  }
+  .rectangle-div {
+    position: absolute;
+    top: 786px;
+    left: 0;
+    background-color: var(--color-seagreen-100);
+    width: 393px;
+    height: 66px;
+  }
+  .ggprofile-icon {
+    top: 804px;
+    left: 119px;
+    width: 30px;
+    height: 30px;
+  }
+  .ggprofile-icon,
+  .tablervs-icon,
+  .vector-icon {
+    position: absolute;
+    overflow: hidden;
+  }
+  .vector-icon {
+    height: 3.52%;
+    width: 7.63%;
+    top: 94.37%;
+    right: 45.29%;
+    bottom: 2.11%;
+    left: 47.07%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .tablervs-icon {
+    top: 803px;
+    left: 251px;
+    width: 33px;
+    height: 32px;
+  }
+  .mdihome-outline-icon,
+  .vector-icon1 {
+    position: absolute;
+    top: 801px;
+    left: 48px;
+    width: 37px;
+    height: 36px;
+    overflow: hidden;
+  }
+  .vector-icon1 {
+    height: 3.05%;
+    width: 6.87%;
+    top: 94.48%;
+    right: 12.21%;
+    bottom: 2.46%;
+    left: 80.92%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .versuspage-child1 {
+    position: absolute;
+    top: 166px;
+    left: 28px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-seagreen-100);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 337px;
+    height: 145px;
+  }
+  .match {
+    position: absolute;
+    top: 133px;
+    left: 166px;
+    font-size: 20px;
+    display: inline-block;
+    width: 62px;
+  }
+  .ellipse-div,
+  .versuspage-child2 {
+    position: absolute;
+    top: 177px;
+    left: 39px;
+    border-radius: 50%;
+    background-color: var(--color-lightgreen-100);
+    width: 36px;
+    height: 36px;
+  }
+  .versuspage-child2 {
+    left: 319px;
+  }
+  .b {
+    top: 226px;
+    left: 77px;
+    font-size: var(--font-size-16xl);
+    display: inline-block;
+    color: var(--color-limegreen);
+    width: 77px;
+  }
+  .b,
+  .b1,
+  .line-div {
+    position: absolute;
+  }
+  .b1 {
+    top: 226px;
+    left: 245px;
+    font-size: var(--font-size-16xl);
+    display: inline-block;
+    color: var(--color-salmon);
+    width: 77px;
+  }
+  .line-div {
+    top: 177.75px;
+    left: 196.75px;
+    border-right: 0.5px solid #6caf81;
+    box-sizing: border-box;
+    width: 0.5px;
+    height: 121.5px;
+  }
+  .team-sriya,
+  .win,
+  .win1 {
+    position: absolute;
+    top: 182px;
+    left: 80px;
+    font-size: var(--font-size-mini);
+    font-weight: 600;
+    display: inline-block;
+    width: 109px;
+    height: 14px;
+  }
+  .win,
+  .win1 {
+    top: 261px;
+    left: 101px;
+    color: var(--color-limegreen);
+    width: 27px;
+  }
+  .win1 {
+    top: 260px;
+    left: 270px;
+    color: var(--color-salmon);
+  }
+  .sriyachip {
+    top: 199px;
+    left: 81px;
+    font-weight: 500;
+    width: 61px;
+    height: 8px;
+  }
+  .opponent,
+  .sriyachip,
+  .team-opp {
+    position: absolute;
+    display: inline-block;
+  }
+  .team-opp {
+    top: 181px;
+    right: 81px;
+    font-size: var(--font-size-mini);
+    font-weight: 600;
+    width: 74px;
+    height: 14px;
+  }
+  .opponent {
+    top: 199px;
+    left: 255px;
+    font-weight: 500;
+    width: 57px;
+    height: 8px;
+  }
+  .yet-to-play {
+    top: 323px;
+    left: 28px;
+    width: 95px;
+  }
+  .starters,
+  .week-10,
+  .yet-to-play,
+  .yet-to-play1 {
+    position: absolute;
+    font-size: var(--font-size-sm);
+    display: inline-block;
+  }
+  .starters {
+    top: 370px;
+    left: 28px;
+    font-weight: 600;
+    width: 58px;
+  }
+  .week-10,
+  .yet-to-play1 {
+    width: 95px;
+  }
+  .week-10 {
+    top: 370px;
+    left: 273px;
+    font-weight: 600;
+  }
+  .yet-to-play1 {
+    top: 323px;
+    left: 270px;
+  }
+  .versuspage-child3 {
+    position: absolute;
+    top: 395px;
+    left: 28px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-mediumseagreen);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 139px;
+    height: 52px;
+  }
+  .apple-inc,
+  .nasdaq-appl {
+    position: absolute;
+    left: 41px;
+    display: inline-block;
+    height: 9px;
+  }
+  .apple-inc {
+    top: 402px;
+    font-weight: 600;
+    width: 68px;
+  }
+  .nasdaq-appl {
+    top: 416px;
+    color: var(--color-limegreen);
+    width: 85px;
+  }
+  .versuspage-child4 {
+    position: absolute;
+    top: 459px;
+    left: 28px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-mediumseagreen);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 139px;
+    height: 52px;
+  }
+  .apple-inc1,
+  .nasdaq-appl1 {
+    position: absolute;
+    left: 41px;
+    display: inline-block;
+    height: 9px;
+  }
+  .apple-inc1 {
+    top: 466px;
+    font-weight: 600;
+    width: 68px;
+  }
+  .nasdaq-appl1 {
+    top: 480px;
+    color: var(--color-limegreen);
+    width: 85px;
+  }
+  .versuspage-child5 {
+    position: absolute;
+    top: 523px;
+    left: 28px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-mediumseagreen);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 139px;
+    height: 52px;
+  }
+  .apple-inc2,
+  .nasdaq-appl2 {
+    position: absolute;
+    left: 41px;
+    display: inline-block;
+    height: 9px;
+  }
+  .apple-inc2 {
+    top: 530px;
+    font-weight: 600;
+    width: 68px;
+  }
+  .nasdaq-appl2 {
+    top: 544px;
+    color: var(--color-limegreen);
+    width: 85px;
+  }
+  .versuspage-child6 {
+    position: absolute;
+    top: 587px;
+    left: 28px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-mediumseagreen);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 139px;
+    height: 52px;
+  }
+  .apple-inc3,
+  .nasdaq-appl3 {
+    position: absolute;
+    left: 41px;
+    display: inline-block;
+    height: 9px;
+  }
+  .apple-inc3 {
+    top: 594px;
+    font-weight: 600;
+    width: 68px;
+  }
+  .nasdaq-appl3 {
+    top: 608px;
+    color: var(--color-limegreen);
+    width: 85px;
+  }
+  .versuspage-child7 {
+    position: absolute;
+    top: 651px;
+    left: 28px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-mediumseagreen);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 139px;
+    height: 52px;
+  }
+  .apple-inc4,
+  .nasdaq-appl4 {
+    position: absolute;
+    left: 41px;
+    display: inline-block;
+    height: 9px;
+  }
+  .apple-inc4 {
+    top: 658px;
+    font-weight: 600;
+    width: 68px;
+  }
+  .nasdaq-appl4 {
+    top: 672px;
+    color: var(--color-limegreen);
+    width: 85px;
+  }
+  .versuspage-child8 {
+    position: absolute;
+    top: 395px;
+    left: 226px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-mediumseagreen);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 139px;
+    height: 52px;
+  }
+  .apple-inc5,
+  .nasdaq-appl5 {
+    position: absolute;
+    left: 239px;
+    display: inline-block;
+    height: 9px;
+  }
+  .apple-inc5 {
+    top: 402px;
+    font-weight: 600;
+    width: 68px;
+  }
+  .nasdaq-appl5 {
+    top: 416px;
+    color: var(--color-limegreen);
+    width: 85px;
+  }
+  .versuspage-child9 {
+    position: absolute;
+    top: 459px;
+    left: 226px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-mediumseagreen);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 139px;
+    height: 52px;
+  }
+  .apple-inc6,
+  .nasdaq-appl6 {
+    position: absolute;
+    left: 239px;
+    display: inline-block;
+    height: 9px;
+  }
+  .apple-inc6 {
+    top: 466px;
+    font-weight: 600;
+    width: 68px;
+  }
+  .nasdaq-appl6 {
+    top: 480px;
+    color: var(--color-limegreen);
+    width: 85px;
+  }
+  .versuspage-child10 {
+    position: absolute;
+    top: 523px;
+    left: 226px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-mediumseagreen);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 139px;
+    height: 52px;
+  }
+  .apple-inc7,
+  .nasdaq-appl7 {
+    position: absolute;
+    left: 239px;
+    display: inline-block;
+    height: 9px;
+  }
+  .apple-inc7 {
+    top: 530px;
+    font-weight: 600;
+    width: 68px;
+  }
+  .nasdaq-appl7 {
+    top: 544px;
+    color: var(--color-limegreen);
+    width: 85px;
+  }
+  .versuspage-child11 {
+    position: absolute;
+    top: 587px;
+    left: 226px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-mediumseagreen);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 139px;
+    height: 52px;
+  }
+  .apple-inc8,
+  .nasdaq-appl8 {
+    position: absolute;
+    left: 239px;
+    display: inline-block;
+    height: 9px;
+  }
+  .apple-inc8 {
+    top: 594px;
+    font-weight: 600;
+    width: 68px;
+  }
+  .nasdaq-appl8 {
+    top: 608px;
+    color: var(--color-limegreen);
+    width: 85px;
+  }
+  .versuspage-child12 {
+    position: absolute;
+    top: 651px;
+    left: 226px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-mediumseagreen);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 139px;
+    height: 52px;
+  }
+  .apple-inc9,
+  .nasdaq-appl9 {
+    position: absolute;
+    left: 239px;
+    display: inline-block;
+    height: 9px;
+  }
+  .apple-inc9 {
+    top: 658px;
+    font-weight: 600;
+    width: 68px;
+  }
+  .nasdaq-appl9 {
+    top: 672px;
+    color: var(--color-limegreen);
+    width: 85px;
+  }
+  .versuspage-child13 {
+    position: absolute;
+    top: 851px;
+    left: 28px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-mediumseagreen);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 139px;
+    height: 52px;
+  }
+  .apple-inc10 {
+    top: 858px;
+    left: 41px;
+    font-weight: 600;
+    width: 68px;
+    height: 9px;
+  }
+  .apple-inc10,
+  .nasdaq-appl10,
+  .t {
+    position: absolute;
+    display: inline-block;
+  }
+  .nasdaq-appl10 {
+    top: 872px;
+    left: 41px;
+    color: var(--color-limegreen);
+    width: 85px;
+    height: 9px;
+  }
+  .t {
+    top: 413px;
+    left: 192px;
+    font-size: var(--font-size-mini);
+    font-weight: 500;
+    width: 9px;
+    height: 14px;
+  }
+  .versuspage-child14 {
+    position: absolute;
+    top: 405px;
+    left: 181px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-seagreen-200);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--color-limegreen);
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+  }
+  .t1 {
+    position: absolute;
+    top: 541px;
+    left: 192px;
+    font-size: var(--font-size-mini);
+    font-weight: 500;
+    display: inline-block;
+    width: 9px;
+    height: 14px;
+  }
+  .versuspage-child15 {
+    position: absolute;
+    top: 533px;
+    left: 181px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-seagreen-200);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--color-limegreen);
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+  }
+  .h {
+    position: absolute;
+    top: 605px;
+    left: 192px;
+    font-size: var(--font-size-mini);
+    font-weight: 500;
+    display: inline-block;
+    width: 9px;
+    height: 14px;
+  }
+  .versuspage-child16 {
+    position: absolute;
+    top: 597px;
+    left: 181px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-seagreen-200);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--color-limegreen);
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+  }
+  .h1 {
+    position: absolute;
+    top: 669px;
+    left: 192px;
+    font-size: var(--font-size-mini);
+    font-weight: 500;
+    display: inline-block;
+    width: 9px;
+    height: 14px;
+  }
+  .versuspage-child17 {
+    position: absolute;
+    top: 661px;
+    left: 181px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-seagreen-200);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--color-limegreen);
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+  }
+  .h2 {
+    position: absolute;
+    top: 477px;
+    left: 192px;
+    font-size: var(--font-size-mini);
+    font-weight: 500;
+    display: inline-block;
+    width: 9px;
+    height: 14px;
+  }
+  .versuspage-child18 {
+    position: absolute;
+    top: 469px;
+    left: 181px;
+    border-radius: var(--br-5xs);
+    background-color: var(--color-seagreen-200);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--color-limegreen);
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+  }
+  .polygon-icon,
+  .versuspage-child19 {
+    position: absolute;
+    top: 374.67px;
+    left: 271px;
+    width: 10.5px;
+    height: 8.66px;
+  }
+  .versuspage-child19 {
+    left: 354.5px;
+  }
+  .versuspage {
+    position: relative;
+    background-color: #012b15;
+    width: 100%;
+    height: 852px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-3xs);
+    color: var(--color-white);
+    font-family: var(--font-inter);
+  }
+  

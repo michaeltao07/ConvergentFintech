@@ -1,0 +1,143 @@
+.responsibility {
+    position: absolute;
+    top: 81px;
+    left: 71px;
+    font-size: 35px;
+    display: inline-block;
+    width: 300px;
+  }
+  .limits-on-play,
+  .manage-the-amount,
+  .play-with-responsibility {
+    position: absolute;
+    top: 132px;
+    left: 30px;
+    display: inline-block;
+    width: 363px;
+  }
+  .limits-on-play,
+  .manage-the-amount {
+    top: 211px;
+    width: 296px;
+  }
+  .limits-on-play {
+    top: 187px;
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+    width: 354px;
+    height: 15px;
+  }
+  .exclude-yourself-from {
+    top: 291px;
+    width: 310px;
+  }
+  .exclude-yourself-from,
+  .helpful-links-and,
+  .resources,
+  .self-exculsion {
+    position: absolute;
+    left: 30px;
+    display: inline-block;
+  }
+  .self-exculsion {
+    top: 267px;
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+    width: 354px;
+    height: 15px;
+  }
+  .helpful-links-and,
+  .resources {
+    top: 353px;
+    width: 296px;
+  }
+  .resources {
+    top: 329px;
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+    width: 354px;
+    height: 15px;
+  }
+  .responsible-gaming-child {
+    position: absolute;
+    top: 26px;
+    left: 123px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    width: 147px;
+    height: 20px;
+  }
+  .responsible-gaming-item {
+    position: absolute;
+    top: 91.61px;
+    left: 30px;
+    width: 21.75px;
+    height: 20.78px;
+  }
+  .responsible-gaming-inner {
+    position: absolute;
+    top: 786px;
+    left: 0;
+    background-color: #306c43;
+    width: 393px;
+    height: 66px;
+  }
+  .ggprofile-icon {
+    top: 804px;
+    left: 119px;
+    width: 30px;
+    height: 30px;
+  }
+  .ggprofile-icon,
+  .tablervs-icon,
+  .vector-icon {
+    position: absolute;
+    overflow: hidden;
+  }
+  .vector-icon {
+    height: 3.52%;
+    width: 7.63%;
+    top: 94.37%;
+    right: 45.29%;
+    bottom: 2.11%;
+    left: 47.07%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .tablervs-icon {
+    top: 803px;
+    left: 251px;
+    width: 33px;
+    height: 32px;
+  }
+  .mdihome-outline-icon,
+  .vector-icon1 {
+    position: absolute;
+    top: 801px;
+    left: 48px;
+    width: 37px;
+    height: 36px;
+    overflow: hidden;
+  }
+  .vector-icon1 {
+    height: 3.05%;
+    width: 6.87%;
+    top: 94.48%;
+    right: 12.21%;
+    bottom: 2.46%;
+    left: 80.92%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .responsible-gaming {
+    position: relative;
+    background-color: #012b15;
+    width: 100%;
+    height: 852px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-mini);
+    color: var(--color-white);
+    font-family: var(--font-inter);
+  }
+  
