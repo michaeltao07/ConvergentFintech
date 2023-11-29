@@ -1,19 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import {tradeStocks} from 'loadDB'
+import MainContainer from './MainContainer';
 
 export default function App() {
   return (
-    <ScrollView>
-      <Button>Select</Button>
-    </ScrollView>
+    <MainContainer/>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
