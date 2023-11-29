@@ -2,11 +2,13 @@ import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+// import MaskedView from '@react-native-masked-view/masked-view';
+
 
 // Screens
-import HomeScreen from './screens/HomeScreen';
-import DetailsScreen from './screens/DetailsScreen';
-import SettingsScreen from './screens/SettingsScreen';
+import Login from './Login';
+import LaunchPage from './LaunchPage';
+import DraftList from './DraftList';
 
 //Screen names
 const homeName = "Home";
@@ -46,9 +48,9 @@ function MainContainer() {
           style: { padding: 10, height: 70}
         }}>
 
-        <Tab.Screen name={homeName} component={HomeScreen} />
-        <Tab.Screen name={detailsName} component={DetailsScreen} />
-        <Tab.Screen name={settingsName} component={SettingsScreen} />
+        <Tab.Screen name={homeName} component={Login} />
+        <Tab.Screen name={detailsName} component={LaunchPage} />
+        <Tab.Screen name={settingsName} component={DraftList} />
 
       </Tab.Navigator>
     </NavigationContainer>

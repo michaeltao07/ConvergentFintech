@@ -1,0 +1,202 @@
+import React from 'react';
+
+function DraftList() {
+    return (
+        <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global_draft_list.css" />
+    <link rel="stylesheet" href="./index_draft_list.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="draftlist">
+      <b class="draft">DRAFT</b>
+      <div class="draftlist-child"></div>
+      <div class="draftlist-item"></div>
+      <div class="start-draft">Start Draft</div>
+      <div class="player-1">Player 1</div>
+      <div class="player-7">Player 7</div>
+      <div class="draftlist-inner">
+        <div class="players-stocks-wrapper">
+          <div class="players-stocks-wrapper">
+            <div class="players-stocks-child"></div>
+            <div class="players-stocks-item"></div>
+            <div class="players-stocks-inner"></div>
+            <div class="rectangle-div"></div>
+            <div class="players-stocks-child1"></div>
+            <div class="players-stocks-child2"></div>
+            <div class="players-stocks-child3"></div>
+            <div class="players-stocks-child4"></div>
+            <div class="players-stocks-child5"></div>
+            <div class="players-stocks-child6"></div>
+          </div>
+        </div>
+      </div>
+      <div class="player-2">Player 2</div>
+      <div class="frame-div">
+        <div class="players-stocks-wrapper">
+          <div class="players-stocks-wrapper">
+            <div class="players-stocks-child"></div>
+            <div class="players-stocks-item"></div>
+            <div class="players-stocks-inner"></div>
+            <div class="rectangle-div"></div>
+            <div class="players-stocks-child1"></div>
+            <div class="players-stocks-child2"></div>
+            <div class="players-stocks-child3"></div>
+            <div class="players-stocks-child4"></div>
+            <div class="players-stocks-child5"></div>
+            <div class="players-stocks-child6"></div>
+          </div>
+        </div>
+      </div>
+      <div class="player-3">Player 3</div>
+      <div class="draftlist-inner1">
+        <div class="players-stocks-wrapper">
+          <div class="players-stocks-wrapper">
+            <div class="players-stocks-child"></div>
+            <div class="players-stocks-item"></div>
+            <div class="players-stocks-inner"></div>
+            <div class="rectangle-div"></div>
+            <div class="players-stocks-child1"></div>
+            <div class="players-stocks-child2"></div>
+            <div class="players-stocks-child3"></div>
+            <div class="players-stocks-child4"></div>
+            <div class="players-stocks-child5"></div>
+            <div class="players-stocks-child6"></div>
+          </div>
+        </div>
+      </div>
+      <div class="draftlist-inner2">
+        <div class="players-stocks-wrapper">
+          <div class="players-stocks-wrapper">
+            <div class="players-stocks-child"></div>
+            <div class="players-stocks-item"></div>
+            <div class="players-stocks-inner"></div>
+            <div class="rectangle-div"></div>
+            <div class="players-stocks-child1"></div>
+            <div class="players-stocks-child2"></div>
+            <div class="players-stocks-child3"></div>
+            <div class="players-stocks-child4"></div>
+            <div class="players-stocks-child5"></div>
+            <div class="players-stocks-child6"></div>
+          </div>
+        </div>
+      </div>
+      <div class="player-4">Player 4</div>
+      <div class="draftlist-inner3">
+        <div class="players-stocks-wrapper">
+          <div class="players-stocks-wrapper">
+            <div class="players-stocks-child"></div>
+            <div class="players-stocks-item"></div>
+            <div class="players-stocks-inner"></div>
+            <div class="rectangle-div"></div>
+            <div class="players-stocks-child1"></div>
+            <div class="players-stocks-child2"></div>
+            <div class="players-stocks-child3"></div>
+            <div class="players-stocks-child4"></div>
+            <div class="players-stocks-child5"></div>
+            <div class="players-stocks-child6"></div>
+          </div>
+        </div>
+      </div>
+      <div class="player-5">Player 5</div>
+      <div class="player-6">Player 6</div>
+      <div class="draftlist-inner4">
+        <div class="players-stocks-wrapper">
+          <div class="players-stocks-wrapper">
+            <div class="players-stocks-child"></div>
+            <div class="players-stocks-item"></div>
+            <div class="players-stocks-inner"></div>
+            <div class="rectangle-div"></div>
+            <div class="players-stocks-child1"></div>
+            <div class="players-stocks-child2"></div>
+            <div class="players-stocks-child3"></div>
+            <div class="players-stocks-child4"></div>
+            <div class="players-stocks-child5"></div>
+            <div class="players-stocks-child6"></div>
+          </div>
+        </div>
+      </div>
+      <div class="player-71">Player 7</div>
+      <div class="draftlist-inner5">
+        <div class="players-stocks-wrapper">
+          <div class="players-stocks-wrapper">
+            <div class="players-stocks-child"></div>
+            <div class="players-stocks-item"></div>
+            <div class="players-stocks-inner"></div>
+            <div class="rectangle-div"></div>
+            <div class="players-stocks-child1"></div>
+            <div class="players-stocks-child2"></div>
+            <div class="players-stocks-child3"></div>
+            <div class="players-stocks-child4"></div>
+            <div class="players-stocks-child5"></div>
+            <div class="players-stocks-child6"></div>
+          </div>
+        </div>
+      </div>
+      <div class="player-8">Player 8</div>
+      <div class="draftlist-inner6">
+        <div class="players-stocks-wrapper">
+          <div class="players-stocks-wrapper">
+            <div class="players-stocks-child"></div>
+            <div class="players-stocks-item"></div>
+            <div class="players-stocks-inner"></div>
+            <div class="rectangle-div"></div>
+            <div class="players-stocks-child1"></div>
+            <div class="players-stocks-child2"></div>
+            <div class="players-stocks-child3"></div>
+            <div class="players-stocks-child4"></div>
+            <div class="players-stocks-child5"></div>
+            <div class="players-stocks-child6"></div>
+          </div>
+        </div>
+      </div>
+      <div class="ellipse-div"></div>
+      <div class="draftlist-child1"></div>
+      <img
+      class="ggprofile-icon1"
+      alt=""
+      src="person.png"
+      id="ggprofileIcon1"
+    />
+
+    <img
+      class="vector-icon2"
+      alt=""
+      src="bar.png"
+      id="vectorIcon2"
+    />
+
+    <img
+      class="tablervs-icon1"
+      alt=""
+      src="tabler_vs.png"
+      id="tablervsIcon1"
+    />
+
+    <img
+      class="mdihome-outline-icon1"
+      alt=""
+      src="home.png"
+      id="mdihomeOutlineIcon1"
+    />
+
+    <img
+      class="vector-icon3"
+      alt=""
+      src="graph.png"
+      id="vectorIcon3"
+    />
+    </div>
+  </body>
+</html>
+    )
+}
+
+export default DraftList;
