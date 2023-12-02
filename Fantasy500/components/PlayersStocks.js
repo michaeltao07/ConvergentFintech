@@ -25,7 +25,7 @@ const PlayersStocks = ({
   return (
     <View style={[styles.playersStocks, playersStocksStyle]}>
       <View style={[styles.playersStocksChild, styles.playersChildShadowBox1]}>
-        <Text>{stocks[player]}</Text>
+        <Text style={styles.ticker}>{stocks[player]}</Text>
       </View>
       <View style={[styles.playersStocksItem, styles.playersChildShadowBox]} />
       <View style={[styles.playersStocksInner, styles.playersChildShadowBox]} />
@@ -41,6 +41,12 @@ const PlayersStocks = ({
 };
 
 const styles = StyleSheet.create({
+  ticker: {
+    color: "white",
+    left: 5,
+    top: 7,
+    fontSize: 12,
+  },
   playersChildShadowBox1: {
     shadowOpacity: 1,
     elevation: 4,

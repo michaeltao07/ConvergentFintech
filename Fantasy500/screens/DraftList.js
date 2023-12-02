@@ -9,6 +9,7 @@ import Wallet from "./Wallet";
 import Profile from "./Profile";
 import Leaderboard from "./Leaderboard";
 import VersusPage from "./VersusPage";
+import Roster from "./Roster";
 
 const DraftList = ({navigation}) => {
   const handlePress = () => {
@@ -54,7 +55,7 @@ const DraftList = ({navigation}) => {
       </Pressable>
       <Pressable
         style={styles.vectorPosition1}
-        onPress={() => navigation.navigate(Wallet)}
+        onPress={() => navigation.navigate(Roster)}
       >
         <Image
           style={[styles.icon1, styles.iconLayout]}

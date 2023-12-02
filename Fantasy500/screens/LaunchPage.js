@@ -2,8 +2,12 @@ import * as React from "react";
 import { Image } from "expo-image";
 import { StyleSheet, TextInput, Pressable, Text, View } from "react-native";
 import { FontSize, FontFamily, Color, Border } from "../GlobalStyles";
+import Home from "./Home";
 
-const LaunchPage = () => {
+const LaunchPage = ({navigation}) => {
+  const handlePress = () => {
+    navigation.navigate(Home);
+  };
   return (
     <View style={styles.launchPage}>
       <Image
@@ -11,30 +15,20 @@ const LaunchPage = () => {
         contentFit="cover"
         source={require("../assets/ellipse-24.png")}
       />
-      <TextInput
-        style={[styles.signIn, styles.signInTypo]}
-        placeholder="Sign in"
-        placeholderTextColor="#fff"
-      />
-      <TextInput style={[styles.launchPageItem, styles.launchShadowBox]} />
-      <TextInput
-        style={[styles.createAccount, styles.signInTypo]}
-        placeholder="Create account"
-        autoCapitalize="none"
-        placeholderTextColor="#fff"
-      />
+      <Pressable style={styles.signInTypo} onPress={handlePress} zIndex={1}>
+      <Text style={[styles.signIn, styles.signInTypo]}>
+        Sign in
+        </Text>
+      </Pressable>
+      <Text style={[styles.launchPageItem, styles.launchShadowBox]} />
+      <Text style={[styles.createAccount, styles.signInTypo]}>Create Account</Text>
       <Text style={[styles.forgotPassword, styles.fantasy500FlexBox]}>
         Forgot password?
       </Text>
-      <TextInput style={[styles.launchPageInner, styles.launchShadowBox]} />
+      <Text style={[styles.launchPageInner, styles.launchShadowBox]} />
       <Text style={[styles.fantasy500, styles.fantasy500FlexBox]}>
         Fantasy500
       </Text>
-      <Image
-        style={styles.ellipseIcon}
-        contentFit="cover"
-        source={require("../assets/ellipse-21.png")}
-      />
     </View>
   );
 };
@@ -80,6 +74,7 @@ const styles = StyleSheet.create({
   signIn: {
     top: 547,
     left: 168,
+    color: "white",
   },
   launchPageItem: {
     top: 531,
@@ -87,9 +82,10 @@ const styles = StyleSheet.create({
   createAccount: {
     top: 626,
     left: 131,
+    color: "white",
   },
   forgotPassword: {
-    top: 808,
+    top: 758,
     left: 128,
     fontSize: FontSize.size_mini,
     textDecoration: "underline",
@@ -123,6 +119,7 @@ const styles = StyleSheet.create({
     width: "100%",
     height: 852,
     overflow: "hidden",
+    // bottom:20,
   },
 });
 

@@ -1,13 +1,19 @@
 import * as React from "react";
-import { Text, StyleSheet, View, Pressable, TouchableOpacity } from "react-native";
+import { Text, StyleSheet, View, ScrollView, Pressable, TouchableOpacity } from "react-native";
 import { Image } from "expo-image";
 import PlayersStocks from "../components/PlayersStocks";
 import { FontSize, FontFamily, Color, Border } from "../GlobalStyles";
-import Home from './Home'
+import StockPage from './StockPage';
+import Home from './Home';
+import Wallet from "./Wallet";
+import Profile from "./Profile";
+import Leaderboard from "./Leaderboard";
+import VersusPage from "./VersusPage";
+import Roster from "./Roster";
 
 const DraftFilled = ({navigation}) => {
   const handlePress = () => {
-    navigation.navigate(Home);
+    navigation.navigate(StockPage);
   };
   
   return (
@@ -18,26 +24,77 @@ const DraftFilled = ({navigation}) => {
         contentFit="cover"
         source={require("../assets/ellipse-22.png")}
       />
-      <View style={styles.draftlistItem} />
-      <TouchableOpacity onPress={handlePress}>
-      <Text style={styles.startDraft}>Start Draft</Text>
-      </TouchableOpacity>
+      <View style={position="fixed"}>
+      <View
+        style={styles.rectanglePressable}
+      />
+
+     <Pressable
+        style={styles.mdihomePosition}
+        onPress={() => navigation.navigate(Home)}
+      >
+        <Image
+          style={styles.iconLayout}
+          contentFit="cover"
+          source={require("../assets/mdihomeoutline.png")}
+        />
+      </Pressable> 
+      <Pressable
+        style={styles.ggprofilePosition}
+        onPress={() => navigation.navigate(Profile)}
+      >
+        <Image
+          style={styles.iconLayout}
+          contentFit="cover"
+          source={require("../assets/ggprofile.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={styles.vectorPosition1}
+        onPress={() => navigation.navigate(Roster)}
+      >
+        <Image
+          style={[styles.icon1, styles.iconLayout]}
+          contentFit="cover"
+          source={require("../assets/vector.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={styles.tablervsPosition}
+        onPress={() => navigation.navigate(VersusPage)}
+      >
+        <Image
+          style={styles.iconLayout}
+          contentFit="cover"
+          source={require("../assets/tablervs.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={styles.vectorPosition}
+        onPress={() => navigation.navigate(Leaderboard)}
+      >
+        <Image
+          style={[styles.icon1, styles.iconLayout]}
+          contentFit="cover"
+          source={require("../assets/vector1.png")}
+        />
+      </Pressable>
+
+      </View>
+      <ScrollView top={-35} horizontal vertical showsVerticalScrollIndicator="false" showsHorizontalScrollIndicator="false" style={styles.daScroll}>
       <Text style={[styles.player1, styles.playerTypo2]}>Player 1</Text>
       <Text style={[styles.player7, styles.playerTypo3]}>Player 7</Text>
       <View style={[styles.draftlistInner, styles.draftlistInnerLayout]}>
-      <Pressable onPress={handlePress}>
         <View
           style={[styles.playersStocksWrapper, styles.rectangleViewPosition]}
         >
           <PlayersStocks
-            player = {0}
-            stockNum = {0}
+            player={0}
             playersStocksPosition="absolute"
             playersStocksTop={0}
             playersStocksLeft={0}
           />
         </View>
-        </Pressable>
       </View>
       <Text style={[styles.player2, styles.playerTypo2]}>Player 2</Text>
       <View style={[styles.frameView, styles.draftlistInnerLayout]}>
@@ -45,8 +102,7 @@ const DraftFilled = ({navigation}) => {
           style={[styles.playersStocksWrapper, styles.rectangleViewPosition]}
         >
           <PlayersStocks
-            player = {1}
-            stockNum = {1}
+            player={1}
             playersStocksPosition="absolute"
             playersStocksTop={0}
             playersStocksLeft={0}
@@ -59,8 +115,7 @@ const DraftFilled = ({navigation}) => {
           style={[styles.playersStocksWrapper, styles.rectangleViewPosition]}
         >
           <PlayersStocks
-            player = {2}
-            stockNum = {2}
+            player={2}
             playersStocksPosition="absolute"
             playersStocksTop={0}
             playersStocksLeft={0}
@@ -72,8 +127,7 @@ const DraftFilled = ({navigation}) => {
           style={[styles.playersStocksWrapper, styles.rectangleViewPosition]}
         >
           <PlayersStocks
-            player = {3}
-            stockNum = {0}
+            player={3}
             playersStocksPosition="absolute"
             playersStocksTop={0}
             playersStocksLeft={0}
@@ -86,8 +140,7 @@ const DraftFilled = ({navigation}) => {
           style={[styles.playersStocksWrapper, styles.rectangleViewPosition]}
         >
           <PlayersStocks
-            player = {4}
-            stockNum = {2}
+            player={4}
             playersStocksPosition="absolute"
             playersStocksTop={0}
             playersStocksLeft={0}
@@ -101,8 +154,7 @@ const DraftFilled = ({navigation}) => {
           style={[styles.playersStocksWrapper, styles.rectangleViewPosition]}
         >
           <PlayersStocks
-            player = {5}
-            stockNum = {2}
+            player={5}
             playersStocksPosition="absolute"
             playersStocksTop={0}
             playersStocksLeft={0}
@@ -115,8 +167,7 @@ const DraftFilled = ({navigation}) => {
           style={[styles.playersStocksWrapper, styles.rectangleViewPosition]}
         >
           <PlayersStocks
-            player = {6}
-            stockNum = {2}
+            player={6}
             playersStocksPosition="absolute"
             playersStocksTop={0}
             playersStocksLeft={0}
@@ -129,50 +180,105 @@ const DraftFilled = ({navigation}) => {
           style={[styles.playersStocksWrapper, styles.rectangleViewPosition]}
         >
           <PlayersStocks
-            player = {7}
-            stockNum = {2}
+            player={7}
             playersStocksPosition="absolute"
             playersStocksTop={0}
             playersStocksLeft={0}
           />
         </View>
       </View>
-      <Image
-        style={styles.ellipseIcon}
-        contentFit="cover"
-        source={require("../assets/ellipse-21.png")}
-      />
-      <View style={[styles.rectangleView, styles.rectangleViewPosition]} />
-      <Image
-        style={styles.ggprofileIcon}
-        contentFit="cover"
-        source={require("../assets/ggprofile.png")}
-      />
-      <Image
-        style={[styles.vectorIcon, styles.vectorIconLayout]}
-        contentFit="cover"
-        source={require("../assets/vector.png")}
-      />
-      <Image
-        style={styles.tablervsIcon}
-        contentFit="cover"
-        source={require("../assets/tablervs.png")}
-      />
-      <Image
-        style={styles.mdihomeOutlineIcon}
-        contentFit="cover"
-        source={require("../assets/mdihomeoutline.png")}
-      />
-      <Image
-        style={[styles.vectorIcon1, styles.vectorIconLayout]}
-        contentFit="cover"
-        source={require("../assets/vector1.png")}
-      />
-    </View>
+      </ScrollView>
+      </View>
   );
 };
 
 const styles = StyleSheet.create({
+  daScroll: {
+    // bounce:"false",
+    zIndex: -1,
+    bottom: 10,
+  },
+  ggprofilePosition: {
+    height: 30,
+    width: 30,
+    left: 104,
+    top: 758,
+    position: "absolute",
+  },
+  iconLayout1: {
+    maxHeight: "100%",
+    maxWidth: "100%",
+  },
+  tablervsPosition: {
+    height: 32,
+    width: 33,
+    left: 245,
+    top: 758,
+    position: "absolute",
+  },
+  mdihomePosition: {
+    width: 37,
+    left: 27,
+    top: 755,
+    height: 36,
+    position: "absolute",
+  },
+  vectorPosition: {
+    width: 30,
+    left: 317,
+    top: 760,
+    height: 27,
+    position: "absolute",
+  },
+  iconLayout: {
+    height: "100%",
+    overflow: "hidden",
+    width: "100%",
+  },
+ggprofileIcon: {
+    overflow: "hidden",
+  },
+  vectorIcon: {
+    left: "47.07%",
+    bottom: "2.11%",
+    right: "45.29%",
+    top: "4.37%",
+    width: "7.63%",
+    height: "3.52%",
+    position: "absolute",
+    overflow: "hidden",
+  },
+  tablervsIcon: {
+    overflow: "hidden",
+  },
+  mdihomeOutlineIcon: {
+    overflow: "hidden",
+  },
+  vectorIcon1: {
+    maxHeight: "100%",
+    maxWidth: "100%",
+    overflow: "hidden",
+  },
+  rectanglePressable: {
+    top: 746,
+    left: 0,
+    backgroundColor: Color.colorSeagreen_100,
+    background: "solid",
+    width: 393,
+    height: 66,
+    position: "absolute",
+  },
+  icon1: {
+    maxHeight: "100%",
+    maxWidth: "100%",
+  },
+  vectorPosition1: {
+    width: 30,
+    left: "47%",
+    top: 760,
+    height: 27,
+    position: "absolute",
+  },
   playerTypo2: {
     height: 16,
     fontSize: FontSize.size_mini,
@@ -194,8 +300,9 @@ const styles = StyleSheet.create({
   },
   draftlistInnerLayout: {
     width: 294,
-    left: 26,
+    left: 10,
     height: 36,
+    zIndex: 0,
     position: "absolute",
   },
   rectangleViewPosition: {
@@ -273,7 +380,7 @@ const styles = StyleSheet.create({
     left: 152,
     fontSize: 17,
     width: 90,
-    height: 9,
+    height: 20,
     fontFamily: FontFamily.interMedium,
     fontWeight: "500",
     textAlign: "left",
@@ -348,58 +455,13 @@ const styles = StyleSheet.create({
     height: 20,
     position: "absolute",
   },
-  rectangleView: {
-    top: 786,
-    backgroundColor: Color.colorSeagreen_100,
-    width: 393,
-    height: 66,
-  },
-  ggprofileIcon: {
-    top: 804,
-    left: 119,
-    width: 30,
-    height: 30,
-    position: "absolute",
-    overflow: "hidden",
-  },
-  vectorIcon: {
-    height: "3.52%",
-    width: "7.63%",
-    top: "94.37%",
-    right: "45.29%",
-    bottom: "2.11%",
-    left: "47.07%",
-  },
-  tablervsIcon: {
-    top: 803,
-    left: 251,
-    width: 33,
-    height: 32,
-    position: "absolute",
-    overflow: "hidden",
-  },
-  mdihomeOutlineIcon: {
-    top: 801,
-    left: 48,
-    width: 37,
-    height: 36,
-    position: "absolute",
-    overflow: "hidden",
-  },
-  vectorIcon1: {
-    height: "3.05%",
-    width: "6.87%",
-    top: "94.48%",
-    right: "12.21%",
-    bottom: "2.46%",
-    left: "80.92%",
-  },
   draftlist: {
     backgroundColor: Color.colorDarkslategray,
     flex: 1,
     width: "100%",
     height: 852,
-    overflow: "hidden",
+    // overflow: "hidden",
+    // bounce: "false",
   },
 });
 

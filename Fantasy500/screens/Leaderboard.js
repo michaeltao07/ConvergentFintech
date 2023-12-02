@@ -5,7 +5,8 @@ import { FontSize, Color, FontFamily } from "../GlobalStyles";
 import Profile from "./Profile";
 import VersusPage from "./VersusPage";
 import Home from "./Home";
-import Wallet from "./Wallet"
+import Wallet from "./Wallet";
+import Roster from "./Roster";
 
 const Leaderboard = ({navigation}) => {
   return (
@@ -48,7 +49,7 @@ const Leaderboard = ({navigation}) => {
       </Pressable>
       <Pressable
         style={styles.vectorPosition1}
-        onPress={() => navigation.navigate(Wallet)}
+        onPress={() => navigation.navigate(Roster)}
       >
         <Image
           style={[styles.icon1, styles.iconLayout]}

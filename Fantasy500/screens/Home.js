@@ -8,6 +8,7 @@ import Profile from "./Profile";
 import VersusPage from "./VersusPage";
 import Leaderboard from "./Leaderboard";
 import Wallet from "./Wallet"
+import Roster from "./Roster";
 
 const Home = ({navigation}) => {
   const handlePress = () => {
@@ -22,10 +23,24 @@ const Home = ({navigation}) => {
         source={require("../assets/ellipse-22.png")}
       />
       <Text style={styles.home1}>HOME</Text>
-      <View style={[styles.homeInner, styles.homeChildShadowBox1]} />
-      <View style={styles.rectangleView} />
-      <View style={[styles.homeChild1, styles.homeChildShadowBox1]} />
+      <TouchableOpacity onPress={()=>{handlePress()}}>
+      <View style={[styles.homeInner, styles.homeChildShadowBox1]}>
+        <Text style={styles.leagueNames}>Sriya's League</Text>
+      </View>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={()=>{handlePress()}}>
+      <View style={styles.rectangleView}>
+      <Text style={styles.leagueNames}>Office League</Text>
+      </View>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={()=>{handlePress()}}>
+      <View style={[styles.homeChild1, styles.homeChildShadowBox1]}>
+      <Text style={styles.leagueNames}>LeagueOfLosers</Text>
+      </View>
+      </TouchableOpacity>
+      <TouchableOpacity> 
       <View style={[styles.homeChild2, styles.homeChildShadowBox1]} />
+      </TouchableOpacity>
       <View style={[styles.homeChild3, styles.homeChildShadowBox]} />
       <TouchableOpacity onPress={handlePress}>
         <View>
@@ -64,7 +79,7 @@ const Home = ({navigation}) => {
       </Pressable>
       <Pressable
         style={styles.vectorPosition1}
-        onPress={() => navigation.navigate(Wallet)}
+        // onPress={() => navigation.navigate(Roster)}
       >
         <Image
           style={[styles.icon1, styles.iconLayout]}
@@ -97,6 +112,16 @@ const Home = ({navigation}) => {
 };
 
 const styles = StyleSheet.create({
+  leagueNames: {
+    color: "white",
+    top: 35,
+    left: 40,
+    width: 337,
+    fontSize: FontSize.size_16xl,
+    color: Color.colorWhite,
+    fontFamily: FontFamily.interBold,
+    fontWeight: "700",
+  },
   homeChildShadowBox1: {
     height: 113,
     width: 337,

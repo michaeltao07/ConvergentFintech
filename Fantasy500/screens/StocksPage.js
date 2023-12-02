@@ -3,10 +3,16 @@ import { Image } from "expo-image";
 import { StyleSheet, Text, View, Pressable, TouchableOpacity } from "react-native";
 import { Color, FontFamily, Border, FontSize } from "../GlobalStyles";
 import DraftFilled from './DraftFilled';
+import StockPage from "./StockPage";
+import Home from './Home';
+import Wallet from "./Wallet";
+import Profile from "./Profile";
+import Leaderboard from "./Leaderboard";
+import VersusPage from "./VersusPage";
 
 const StocksPage = ({navigation}) => {
   const handlePress = () => {
-    navigation.navigate(DraftFilled);
+    navigation.navigate(DraftFilled)
   };
   return (
     <View style={styles.stocksPage}>
@@ -28,43 +34,67 @@ const StocksPage = ({navigation}) => {
       <Text style={[styles.featured, styles.usdFlexBox]}>Featured</Text>
       <Text style={[styles.usd, styles.usdFlexBox]}>USD</Text>
       <View style={[styles.stocksPageChild, styles.stocksShadowBox]} />
-      <Image
-        style={styles.stocksPageItem}
-        contentFit="cover"
-        source={require("../assets/ellipse-21.png")}
-      />
       <TouchableOpacity onPress={handlePress}>
       <Pressable style={[styles.stocksPageInner, styles.stocksShadowBox]} />
       <Text style={[styles.addToRoster, styles.nasdaqApplTypo]}>
         Add to Roster
       </Text>
       </TouchableOpacity>
-      <View style={styles.rectangleView} />
-      <Image
-        style={styles.ggprofileIcon}
-        contentFit="cover"
-        source={require("../assets/ggprofile.png")}
+      <View
+        style={styles.rectanglePressable}
       />
-      <Image
-        style={[styles.vectorIcon, styles.vectorIconLayout]}
-        contentFit="cover"
-        source={require("../assets/vector.png")}
-      />
-      <Image
-        style={styles.tablervsIcon}
-        contentFit="cover"
-        source={require("../assets/tablervs.png")}
-      />
-      <Image
-        style={styles.mdihomeOutlineIcon}
-        contentFit="cover"
-        source={require("../assets/mdihomeoutline.png")}
-      />
-      <Image
-        style={[styles.vectorIcon1, styles.vectorIconLayout]}
-        contentFit="cover"
-        source={require("../assets/vector1.png")}
-      />
+
+     <Pressable
+        style={styles.mdihomePosition}
+        onPress={() => navigation.navigate(Home)}
+      >
+        <Image
+          style={styles.iconLayout}
+          contentFit="cover"
+          source={require("../assets/mdihomeoutline.png")}
+        />
+      </Pressable> 
+      <Pressable
+        style={styles.ggprofilePosition}
+        onPress={() => navigation.navigate(Profile)}
+      >
+        <Image
+          style={styles.iconLayout}
+          contentFit="cover"
+          source={require("../assets/ggprofile.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={styles.vectorPosition1}
+        onPress={() => navigation.navigate(Wallet)}
+      >
+        <Image
+          style={[styles.icon1, styles.iconLayout]}
+          contentFit="cover"
+          source={require("../assets/vector.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={styles.tablervsPosition}
+        onPress={() => navigation.navigate(VersusPage)}
+      >
+        <Image
+          style={styles.iconLayout}
+          contentFit="cover"
+          source={require("../assets/tablervs.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={styles.vectorPosition}
+        onPress={() => navigation.navigate(Leaderboard)}
+      >
+        <Image
+          style={[styles.icon1, styles.iconLayout]}
+          contentFit="cover"
+          source={require("../assets/vector1.png")}
+        />
+      </Pressable>
+
       <View style={[styles.stocksPageChild1, styles.stocksChildLayout]} />
       <Text style={[styles.newsArticle1, styles.newsTypo]}>news article 1</Text>
       <View style={[styles.stocksPageChild2, styles.stocksChildLayout]} />
@@ -72,11 +102,13 @@ const StocksPage = ({navigation}) => {
       <Text style={[styles.graphOfStock, styles.newsTypo]}>
         graph of stock value
       </Text>
+      <Pressable onPress={()=>navigation.navigate(StockPage)}>
       <Image
         style={styles.polygonIcon}
         contentFit="cover"
-        // source={require("../assets/polygon-11.png")}
+        source={require("../assets/polygon-11.png")}
       />
+      </Pressable>
       <Text style={[styles.showMoreOn, styles.nasdaqApplTypo]}>
         show more on web
       </Text>
@@ -235,59 +267,91 @@ const styles = StyleSheet.create({
     top: 507,
     left: 128,
     width: 134,
-    height: 9,
+    height: 25,
     fontSize: FontSize.size_xl,
     textAlign: "left",
     color: Color.colorWhite,
     position: "absolute",
   },
-  rectangleView: {
-    top: 786,
+  ggprofilePosition: {
+    height: 30,
+    width: 30,
+    left: 104,
+    top: 758,
+    position: "absolute",
+  },
+  iconLayout1: {
+    maxHeight: "100%",
+    maxWidth: "100%",
+  },
+  tablervsPosition: {
+    height: 32,
+    width: 33,
+    left: 245,
+    top: 758,
+    position: "absolute",
+  },
+  mdihomePosition: {
+    width: 37,
+    left: 27,
+    top: 755,
+    height: 36,
+    position: "absolute",
+  },
+  vectorPosition: {
+    width: 30,
+    left: 317,
+    top: 760,
+    height: 27,
+    position: "absolute",
+  },
+  iconLayout: {
+    height: "100%",
+    overflow: "hidden",
+    width: "100%",
+  },
+ggprofileIcon: {
+    overflow: "hidden",
+  },
+  vectorIcon: {
+    left: "47.07%",
+    bottom: "2.11%",
+    right: "45.29%",
+    top: "4.37%",
+    width: "7.63%",
+    height: "3.52%",
+    position: "absolute",
+    overflow: "hidden",
+  },
+  tablervsIcon: {
+    overflow: "hidden",
+  },
+  mdihomeOutlineIcon: {
+    overflow: "hidden",
+  },
+  vectorIcon1: {
+    maxHeight: "100%",
+    maxWidth: "100%",
+    overflow: "hidden",
+  },
+  rectanglePressable: {
+    top: 746,
     left: 0,
     backgroundColor: Color.colorSeagreen_100,
     width: 393,
     height: 66,
     position: "absolute",
   },
-  ggprofileIcon: {
-    top: 804,
-    left: 119,
+  icon1: {
+    maxHeight: "100%",
+    maxWidth: "100%",
+  },
+  vectorPosition1: {
     width: 30,
-    height: 30,
+    left: "47%",
+    top: 760,
+    height: 27,
     position: "absolute",
-    overflow: "hidden",
-  },
-  vectorIcon: {
-    height: "3.52%",
-    width: "7.63%",
-    top: "94.37%",
-    right: "45.29%",
-    bottom: "2.11%",
-    left: "47.07%",
-  },
-  tablervsIcon: {
-    top: 803,
-    left: 251,
-    width: 33,
-    height: 32,
-    position: "absolute",
-    overflow: "hidden",
-  },
-  mdihomeOutlineIcon: {
-    top: 801,
-    left: 48,
-    width: 37,
-    height: 36,
-    position: "absolute",
-    overflow: "hidden",
-  },
-  vectorIcon1: {
-    height: "3.05%",
-    width: "6.87%",
-    top: "94.48%",
-    right: "12.21%",
-    bottom: "2.46%",
-    left: "80.92%",
   },
   stocksPageChild1: {
     top: 619,

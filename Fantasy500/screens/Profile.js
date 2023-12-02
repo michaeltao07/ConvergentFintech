@@ -6,6 +6,10 @@ import Home from "./Home";
 import VersusPage from "./VersusPage";
 import Leaderboard from "./Leaderboard";
 import Wallet from "./Wallet"
+import LaunchPage from "./LaunchPage";
+import InviteFriends from "./InviteFriends";
+import ResponsibleGaming from "./ResponsibleGaming";
+import Roster from "./Roster";
 
 const Profile = ({navigation}) => {
 
@@ -23,15 +27,25 @@ const Profile = ({navigation}) => {
         contentFit="cover"
         source={require("../assets/line-2.png")}
       />
+      <Pressable onPress={() => navigation.navigate(Wallet)}>
       <Text style={[styles.wallet, styles.walletTypo]}>Wallet</Text>
+      </Pressable>
+      <Pressable onPress={() => navigation.navigate(Home)}>
       <Text style={[styles.accountAndSettings, styles.walletTypo]}>
         Account and Settings
       </Text>
+      </Pressable>
+      <Pressable onPress={() => navigation.navigate(InviteFriends)}>
       <Text style={[styles.friends, styles.walletTypo]}>Friends</Text>
+      </Pressable>
+      <Pressable onPress={() => navigation.navigate(ResponsibleGaming)}>
       <Text style={[styles.responsibleGaming, styles.walletTypo]}>
         Responsible Gaming
       </Text>
+      </Pressable>
+      <Pressable onPress={() => navigation.navigate(LaunchPage)}>
       <Text style={[styles.logOut, styles.walletTypo]}>Log out</Text>
+      </Pressable>
       <View style={styles.materialSymbolsleaderboardO} />
       <View
         style={styles.rectanglePressable}
@@ -58,7 +72,7 @@ const Profile = ({navigation}) => {
       </Pressable>
       <Pressable
         style={styles.vectorPosition1}
-        onPress={() => navigation.navigate(Wallet)}
+        onPress={() => navigation.navigate(Roster)}
       >
         <Image
           style={[styles.icon1, styles.iconLayout]}
@@ -176,7 +190,7 @@ ggprofileIcon: {
     width: 354,
     fontSize: FontSize.size_lg,
     left: 23,
-    height: 15,
+    height: 25,
     fontFamily: FontFamily.interMedium,
     fontWeight: "500",
     textAlign: "left",

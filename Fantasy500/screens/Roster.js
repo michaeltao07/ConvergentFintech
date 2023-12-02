@@ -1,27 +1,25 @@
 import * as React from "react";
 import { Image } from "expo-image";
-import { StyleSheet, Text, Pressable, View } from "react-native";
+import { StyleSheet, Text, Pressable, View, ScrollView } from "react-native";
 import { FontSize, Color, FontFamily, Border } from "../GlobalStyles";
+import Home from './Home';
+import Wallet from "./Wallet";
+import Profile from "./Profile";
+import Leaderboard from "./Leaderboard";
+import VersusPage from "./VersusPage";
+import StockPage from "./StockPage";
 
-const Wallet1 = () => {
+const Roster = ({navigation}) => {
   return (
-    <View style={styles.roster}>
+    <ScrollView style={styles.roster}>
       <Image
         style={[styles.rosterChild, styles.rosterChildLayout]}
         contentFit="cover"
         source={require("../assets/ellipse-22.png")}
       />
-      <Image
-        style={styles.rosterItem}
-        contentFit="cover"
-        source={require("../assets/ellipse-21.png")}
-      />
       <Text style={styles.yourDrafts}>YOUR DRAFTS</Text>
+      <View style={styles.techie}>
       <Text style={[styles.technology, styles.technologyTypo]}>Technology</Text>
-      <Text style={[styles.healthcare, styles.technologyTypo]}>Healthcare</Text>
-      <Text style={[styles.realEstate, styles.technologyTypo]}>
-        Real Estate
-      </Text>
       <Pressable style={[styles.rosterInner, styles.rosterInnerShadowBox]} />
       <Text style={[styles.appleInc, styles.appleTypo]}>Apple Inc</Text>
       <Text style={[styles.nasdaqAppl, styles.nasdaqLayout]}>NASDAQ: APPL</Text>
@@ -44,7 +42,35 @@ const Wallet1 = () => {
         contentFit="cover"
         source={require("../assets/image-21.png")}
       />
-      <Pressable style={[styles.rosterChild1, styles.rosterChild1ShadowBox]} />
+      <View style={styles.techie2}>
+      <Pressable style={[styles.rosterInner, styles.rosterInnerShadowBox]} />
+      <Text style={[styles.appleInc, styles.appleTypo]}>Apple Inc</Text>
+      <Text style={[styles.nasdaqAppl, styles.nasdaqLayout]}>NASDAQ: APPL</Text>
+      <Image
+        style={styles.image1Icon}
+        contentFit="cover"
+        source={require("../assets/image-11.png")}
+      />
+      <Pressable
+        style={[styles.rectanglePressable, styles.rosterInnerShadowBox]}
+      />
+      <Text style={[styles.appleInc1, styles.appleInc1Position]}>
+        Apple Inc
+      </Text>
+      <Text style={[styles.nasdaqAppl1, styles.appleInc1Position]}>
+        NASDAQ: APPL
+      </Text>
+      <Image
+        style={styles.image2Icon}
+        contentFit="cover"
+        source={require("../assets/image-21.png")}
+      />
+      </View>
+        </View>
+        <View style={styles.healthb}>
+      <Text style={[styles.healthcare, styles.technologyTypo]}>Healthcare</Text>
+        <View>
+        <Pressable style={[styles.rosterChild1, styles.rosterChild1ShadowBox]} />
       <Text style={[styles.appleInc2, styles.appleIconPosition1]}>
         Apple Inc
       </Text>
@@ -64,6 +90,10 @@ const Wallet1 = () => {
         contentFit="cover"
         source={require("../assets/image-21.png")}
       />
+        </View>
+        </View>
+      <View style={styles.realEst}>
+      <Text style={[styles.realEstate, styles.technologyTypo]}>Real Estate</Text>
       <View style={[styles.rosterChild2, styles.rosterChildShadowBox]} />
       <Text style={[styles.appleInc4, styles.appleIconPosition]}>
         Apple Inc
@@ -85,41 +115,193 @@ const Wallet1 = () => {
         source={require("../assets/image-21.png")}
       />
       <View style={styles.rosterChild4} />
+      </View>
+      <View style={styles.finance}>
+      <Text style={[styles.realEstate, styles.technologyTypo]}>Finance</Text>
+      <View style={[styles.rosterChild2, styles.rosterChildShadowBox]} />
+      <Text style={[styles.appleInc4, styles.appleIconPosition]}>
+        Apple Inc
+      </Text>
+      <Text style={[styles.nasdaqAppl4, styles.nasdaqTypo]}>NASDAQ: APPL</Text>
       <Image
-        style={styles.ggprofileIcon}
+        style={[styles.image5Icon, styles.appleIconPosition]}
         contentFit="cover"
-        source={require("../assets/ggprofile.png")}
+        source={require("../assets/image-11.png")}
       />
+      <Pressable style={[styles.rosterChild3, styles.rosterChildShadowBox]} />
+      <Text style={[styles.appleInc5, styles.appleIconPosition]}>
+        Apple Inc
+      </Text>
+      <Text style={[styles.nasdaqAppl5, styles.nasdaqTypo]}>NASDAQ: APPL</Text>
       <Image
-        style={[styles.vectorIcon, styles.vectorIconLayout]}
+        style={[styles.image6Icon, styles.appleIconPosition]}
         contentFit="cover"
-        source={require("../assets/vector.png")}
+        source={require("../assets/image-21.png")}
       />
-      <Image
-        style={styles.tablervsIcon}
-        contentFit="cover"
-        source={require("../assets/tablervs.png")}
-      />
-      <Image
-        style={[styles.mdihomeOutlineIcon, styles.rosterChildLayout]}
-        contentFit="cover"
-        source={require("../assets/mdihomeoutline.png")}
-      />
-      <Image
-        style={[styles.vectorIcon1, styles.vectorIconLayout]}
-        contentFit="cover"
-        source={require("../assets/vector1.png")}
-      />
-    </View>
+      </View>
+      <View style={styles.rectanglePressable1}/>
+
+     <Pressable
+        style={styles.mdihomePosition}
+        onPress={() => navigation.navigate(Home)}
+      >
+        <Image
+          style={styles.iconLayouts}
+          contentFit="cover"
+          source={require("../assets/mdihomeoutline.png")}
+        />
+      </Pressable> 
+      <Pressable
+        style={styles.ggprofilePosition}
+        onPress={() => navigation.navigate(Profile)}
+      >
+        <Image
+          style={styles.iconLayouts}
+          contentFit="cover"
+          source={require("../assets/ggprofile.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={styles.vectorPosition1}
+        onPress={() => navigation.navigate(Roster)}
+      >
+        <Image
+          style={[styles.icon1, styles.iconLayouts]}
+          contentFit="cover"
+          source={require("../assets/vector.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={styles.tablervsPosition}
+        onPress={() => navigation.navigate(VersusPage)}
+      >
+        <Image
+          style={styles.iconLayouts}
+          contentFit="cover"
+          source={require("../assets/tablervs.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={styles.vectorPosition}
+        onPress={() => navigation.navigate(Leaderboard)}
+      >
+        <Image
+          style={[styles.icon1, styles.iconLayouts]}
+          contentFit="cover"
+          source={require("../assets/vector1.png")}
+        />
+      </Pressable>
+
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
+  ggprofilePosition: {
+    height: 30,
+    width: 30,
+    left: 104,
+    top: 758,
+    position: "absolute",
+  },
+  iconLayout1: {
+    maxHeight: "100%",
+    maxWidth: "100%",
+  },
+  tablervsPosition: {
+    height: 32,
+    width: 33,
+    left: 245,
+    top: 758,
+    position: "absolute",
+  },
+  mdihomePosition: {
+    width: 37,
+    left: 27,
+    top: 755,
+    height: 36,
+    position: "absolute",
+  },
+  vectorPosition: {
+    width: 30,
+    left: 317,
+    top: 760,
+    height: 27,
+    position: "absolute",
+  },
+  iconLayouts: {
+    height: "100%",
+    overflow: "hidden",
+    width: "100%",
+  },
+ggprofileIcon: {
+    overflow: "hidden",
+  },
+  vectorIcon: {
+    left: "47.07%",
+    bottom: "2.11%",
+    right: "45.29%",
+    top: "4.37%",
+    width: "7.63%",
+    height: "3.52%",
+    position: "absolute",
+    overflow: "hidden",
+  },
+  tablervsIcon: {
+    overflow: "hidden",
+  },
+  mdihomeOutlineIcon: {
+    overflow: "hidden",
+  },
+  vectorIcon1: {
+    maxHeight: "100%",
+    maxWidth: "100%",
+    overflow: "hidden",
+  },
+  rectanglePressable1: {
+    top: 746,
+    left: 0,
+    backgroundColor: Color.colorSeagreen_100,
+    width: 393,
+    height: 66,
+    position: "fixed",
+  },
+  icon1: {
+    maxHeight: "100%",
+    maxWidth: "100%",
+  },
+  vectorPosition1: {
+    width: 30,
+    left: "47%",
+    top: 760,
+    height: 27,
+    position: "absolute",
+  },
+  techie: {
+    right: 10,
+    top: -10,
+  },
+  techie2: {
+    top: 60,
+  },
+  healthb: {
+    right: 10,
+    bottom: -160,
+  },
+  realEst: {
+    right: 10,
+    bottom: 60,
+  },
+  finance: {
+    right: 10,
+    bottom: -160,
+  },
   rosterChildLayout: {
     height: 36,
     position: "absolute",
   },
   technologyTypo: {
+    left: 30,
     width: 243,
     fontSize: FontSize.size_xl,
     textAlign: "left",
@@ -145,7 +327,7 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   appleTypo: {
-    height: 9,
+    height: 25,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
   },
@@ -157,7 +339,7 @@ const styles = StyleSheet.create({
   },
   appleInc1Position: {
     left: 235,
-    height: 9,
+    height: 25,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
     position: "absolute",
@@ -187,7 +369,7 @@ const styles = StyleSheet.create({
     width: 85,
     color: Color.colorLimegreen,
     fontFamily: FontFamily.interRegular,
-    height: 9,
+    height: 25,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
     position: "absolute",
@@ -227,16 +409,10 @@ const styles = StyleSheet.create({
     width: 85,
     color: Color.colorLimegreen,
     fontFamily: FontFamily.interRegular,
-    height: 9,
+    height: 25,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
     position: "absolute",
-  },
-  vectorIconLayout: {
-    maxHeight: "100%",
-    maxWidth: "100%",
-    position: "absolute",
-    overflow: "hidden",
   },
   rosterChild: {
     top: 80,
@@ -287,7 +463,7 @@ const styles = StyleSheet.create({
     top: 200,
   },
   nasdaqAppl: {
-    height: 9,
+    height: 25,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
     left: 57,
@@ -328,7 +504,7 @@ const styles = StyleSheet.create({
   },
   appleInc2: {
     left: 58,
-    height: 9,
+    height: 25,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
     width: 68,
@@ -348,7 +524,7 @@ const styles = StyleSheet.create({
   },
   appleInc3: {
     left: 236,
-    height: 9,
+    height: 25,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
     width: 68,
@@ -368,7 +544,7 @@ const styles = StyleSheet.create({
   },
   appleInc4: {
     left: 58,
-    height: 9,
+    height: 25,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
     width: 68,
@@ -389,7 +565,7 @@ const styles = StyleSheet.create({
   },
   appleInc5: {
     left: 236,
-    height: 9,
+    height: 25,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
     width: 68,
@@ -405,52 +581,6 @@ const styles = StyleSheet.create({
     width: 20,
     height: 23,
   },
-  rosterChild4: {
-    top: 786,
-    left: 0,
-    backgroundColor: Color.colorSeagreen_100,
-    width: 393,
-    height: 66,
-    position: "absolute",
-  },
-  ggprofileIcon: {
-    top: 804,
-    left: 119,
-    width: 30,
-    height: 30,
-    position: "absolute",
-    overflow: "hidden",
-  },
-  vectorIcon: {
-    height: "3.52%",
-    width: "7.63%",
-    top: "94.37%",
-    right: "45.29%",
-    bottom: "2.11%",
-    left: "47.07%",
-  },
-  tablervsIcon: {
-    top: 803,
-    left: 251,
-    width: 33,
-    height: 32,
-    position: "absolute",
-    overflow: "hidden",
-  },
-  mdihomeOutlineIcon: {
-    top: 801,
-    left: 48,
-    width: 37,
-    overflow: "hidden",
-  },
-  vectorIcon1: {
-    height: "3.05%",
-    width: "6.87%",
-    top: "94.48%",
-    right: "12.21%",
-    bottom: "2.46%",
-    left: "80.92%",
-  },
   roster: {
     backgroundColor: Color.colorDarkslategray,
     flex: 1,
@@ -460,4 +590,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Wallet1;
+export default Roster;

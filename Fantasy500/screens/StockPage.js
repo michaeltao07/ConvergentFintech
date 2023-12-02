@@ -3,6 +3,12 @@ import { Text, StyleSheet, Pressable, View, TouchableOpacity } from "react-nativ
 import { Image } from "expo-image";
 import { FontFamily, Color, Border, FontSize } from "../GlobalStyles";
 import StocksPage from "./StocksPage";
+import Home from './Home';
+import Wallet from "./Wallet";
+import Profile from "./Profile";
+import Leaderboard from "./Leaderboard";
+import VersusPage from "./VersusPage";
+import Roster from "./Roster";
 
 const StockPage = ({navigation}) => {
   const handlePress = () => {
@@ -27,7 +33,7 @@ const StockPage = ({navigation}) => {
       <Text style={[styles.nasdaqAppl, styles.nasdaqTypo3]}>NASDAQ: APPL</Text>
       <View style={[styles.rectangleView, styles.rectangleShadowBox]} />
       <Pressable
-        style={[styles.rectanglePressable, styles.rectangleShadowBox]}
+        style={[styles.rectangleShadowBox, styles.ooba]}
       />
       <Pressable
         style={[styles.stockpageChild1, styles.stockpageChildShadowBox4]}
@@ -176,42 +182,148 @@ const StockPage = ({navigation}) => {
         contentFit="cover"
         source={require("../assets/image-1.png")}
       />
-      <Image
-        style={styles.stockpageChild22}
-        contentFit="cover"
-        source={require("../assets/ellipse-21.png")}
+      <View
+        style={styles.rectanglePressable}
       />
-      <View style={styles.stockpageChild23} />
-      <Image
-        style={styles.ggprofileIcon}
-        contentFit="cover"
-        source={require("../assets/ggprofile.png")}
-      />
-      <Image
-        style={[styles.vectorIcon, styles.vectorIconLayout]}
-        contentFit="cover"
-        source={require("../assets/vector.png")}
-      />
-      <Image
-        style={styles.tablervsIcon}
-        contentFit="cover"
-        source={require("../assets/tablervs.png")}
-      />
-      <Image
-        style={[styles.mdihomeOutlineIcon, styles.iconLayout5]}
-        contentFit="cover"
-        source={require("../assets/mdihomeoutline.png")}
-      />
-      <Image
-        style={[styles.vectorIcon1, styles.vectorIconLayout]}
-        contentFit="cover"
-        source={require("../assets/vector1.png")}
-      />
+
+     <Pressable
+        style={styles.mdihomePosition}
+        onPress={() => navigation.navigate(Home)}
+      >
+        <Image
+          style={styles.iconLayouts}
+          contentFit="cover"
+          source={require("../assets/mdihomeoutline.png")}
+        />
+      </Pressable> 
+      <Pressable
+        style={styles.ggprofilePosition}
+        onPress={() => navigation.navigate(Profile)}
+      >
+        <Image
+          style={styles.iconLayouts}
+          contentFit="cover"
+          source={require("../assets/ggprofile.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={styles.vectorPosition1}
+        onPress={() => navigation.navigate(Roster)}
+      >
+        <Image
+          style={[styles.icon1, styles.iconLayouts]}
+          contentFit="cover"
+          source={require("../assets/vector.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={styles.tablervsPosition}
+        onPress={() => navigation.navigate(VersusPage)}
+      >
+        <Image
+          style={styles.iconLayouts}
+          contentFit="cover"
+          source={require("../assets/tablervs.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={styles.vectorPosition}
+        onPress={() => navigation.navigate(Leaderboard)}
+      >
+        <Image
+          style={[styles.icon1, styles.iconLayouts]}
+          contentFit="cover"
+          source={require("../assets/vector1.png")}
+        />
+      </Pressable>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
+  ooba: {
+    left: 270,
+  },
+  ggprofilePosition: {
+    height: 30,
+    width: 30,
+    left: 104,
+    top: 758,
+    position: "absolute",
+  },
+  iconLayout1: {
+    maxHeight: "100%",
+    maxWidth: "100%",
+  },
+  tablervsPosition: {
+    height: 32,
+    width: 33,
+    left: 245,
+    top: 758,
+    position: "absolute",
+  },
+  mdihomePosition: {
+    width: 37,
+    left: 27,
+    top: 755,
+    height: 36,
+    position: "absolute",
+  },
+  vectorPosition: {
+    width: 30,
+    left: 317,
+    top: 760,
+    height: 27,
+    position: "absolute",
+  },
+  iconLayouts: {
+    height: "100%",
+    overflow: "hidden",
+    width: "100%",
+  },
+ggprofileIcon: {
+    overflow: "hidden",
+  },
+  vectorIcon: {
+    left: "47.07%",
+    bottom: "2.11%",
+    right: "45.29%",
+    top: "4.37%",
+    width: "7.63%",
+    height: "3.52%",
+    position: "absolute",
+    overflow: "hidden",
+  },
+  tablervsIcon: {
+    overflow: "hidden",
+  },
+  mdihomeOutlineIcon: {
+    overflow: "hidden",
+  },
+  vectorIcon1: {
+    maxHeight: "100%",
+    maxWidth: "100%",
+    overflow: "hidden",
+  },
+  rectanglePressable: {
+    top: 746,
+    left: 0,
+    backgroundColor: Color.colorSeagreen_100,
+    width: 393,
+    height: 66,
+    position: "absolute",
+  },
+  icon1: {
+    maxHeight: "100%",
+    maxWidth: "100%",
+  },
+  vectorPosition1: {
+    width: 30,
+    left: "47%",
+    top: 760,
+    height: 27,
+    position: "absolute",
+  },
   textTypo: {
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
@@ -242,7 +354,7 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   appleTypo: {
-    height: 9,
+    height: 25,
     width: 72,
     fontSize: FontSize.size_3xs,
     fontFamily: FontFamily.interSemiBold,
@@ -251,7 +363,7 @@ const styles = StyleSheet.create({
     color: Color.colorWhite,
   },
   realEstateTypo: {
-    height: 14,
+    height: 25,
     fontFamily: FontFamily.interMedium,
     fontWeight: "500",
     fontSize: FontSize.size_mini,
@@ -265,7 +377,7 @@ const styles = StyleSheet.create({
     fontFamily: FontFamily.interRegular,
     top: 281,
     width: 90,
-    height: 9,
+    height: 25,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
     position: "absolute",
@@ -311,7 +423,7 @@ const styles = StyleSheet.create({
   industryTypo: {
     width: 73,
     top: 174,
-    height: 14,
+    height: 25,
     fontFamily: FontFamily.interMedium,
     fontWeight: "500",
     fontSize: FontSize.size_mini,
@@ -357,7 +469,7 @@ const styles = StyleSheet.create({
   },
   appleInc2Position: {
     left: 49,
-    height: 9,
+    height: 25,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
     position: "absolute",
@@ -370,7 +482,7 @@ const styles = StyleSheet.create({
   },
   appleInc3Position: {
     left: 237,
-    height: 9,
+    height: 25,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
     position: "absolute",
@@ -400,7 +512,7 @@ const styles = StyleSheet.create({
     color: Color.colorLimegreen,
     fontFamily: FontFamily.interRegular,
     width: 90,
-    height: 9,
+    height: 25,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
     position: "absolute",
@@ -447,7 +559,7 @@ const styles = StyleSheet.create({
     color: Color.colorLimegreen,
     fontFamily: FontFamily.interRegular,
     width: 90,
-    height: 9,
+    height: 25,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
     position: "absolute",
@@ -477,7 +589,7 @@ const styles = StyleSheet.create({
     color: Color.colorLimegreen,
     fontFamily: FontFamily.interRegular,
     width: 90,
-    height: 9,
+    height: 25,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
     position: "absolute",
@@ -552,7 +664,7 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   technology: {
-    height: 7,
+    height: 25,
     width: 90,
     fontFamily: FontFamily.interMedium,
     fontWeight: "500",
@@ -577,15 +689,12 @@ const styles = StyleSheet.create({
   rectangleView: {
     left: 144,
   },
-  rectanglePressable: {
-    left: 271,
-  },
   stockpageChild1: {
     left: 16,
   },
   industry4: {
     top: 174,
-    height: 7,
+    height: 24,
     width: 90,
     fontFamily: FontFamily.interMedium,
     fontWeight: "500",
@@ -667,7 +776,7 @@ const styles = StyleSheet.create({
   },
   nasdaqAppl2: {
     left: 49,
-    height: 9,
+    height: 25,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
     position: "absolute",
@@ -713,7 +822,7 @@ const styles = StyleSheet.create({
   },
   appleInc4: {
     left: 51,
-    height: 9,
+    height: 24,
     width: 72,
     fontSize: FontSize.size_3xs,
     fontFamily: FontFamily.interSemiBold,
@@ -736,7 +845,7 @@ const styles = StyleSheet.create({
   },
   appleInc5: {
     left: 239,
-    height: 9,
+    height: 25,
     width: 72,
     fontSize: FontSize.size_3xs,
     fontFamily: FontFamily.interSemiBold,
@@ -761,7 +870,7 @@ const styles = StyleSheet.create({
     left: 16,
   },
   appleInc6: {
-    height: 9,
+    height: 25,
     width: 72,
     fontSize: FontSize.size_3xs,
     fontFamily: FontFamily.interSemiBold,
@@ -786,7 +895,7 @@ const styles = StyleSheet.create({
   },
   appleInc7: {
     left: 238,
-    height: 9,
+    height: 25,
     width: 72,
     fontSize: FontSize.size_3xs,
     fontFamily: FontFamily.interSemiBold,
@@ -813,7 +922,7 @@ const styles = StyleSheet.create({
   },
   appleInc8: {
     left: 51,
-    height: 9,
+    height: 25,
     width: 72,
     fontSize: FontSize.size_3xs,
     fontFamily: FontFamily.interSemiBold,
@@ -837,7 +946,7 @@ const styles = StyleSheet.create({
   },
   appleInc9: {
     left: 239,
-    height: 9,
+    height: 25,
     width: 72,
     fontSize: FontSize.size_3xs,
     fontFamily: FontFamily.interSemiBold,
@@ -867,44 +976,6 @@ const styles = StyleSheet.create({
     width: 393,
     height: 66,
     position: "absolute",
-  },
-  ggprofileIcon: {
-    top: 804,
-    left: 119,
-    width: 30,
-    height: 30,
-    position: "absolute",
-    overflow: "hidden",
-  },
-  vectorIcon: {
-    height: "3.52%",
-    width: "7.63%",
-    top: "94.37%",
-    right: "45.29%",
-    bottom: "2.11%",
-    left: "47.07%",
-  },
-  tablervsIcon: {
-    top: 803,
-    left: 251,
-    width: 33,
-    height: 32,
-    position: "absolute",
-    overflow: "hidden",
-  },
-  mdihomeOutlineIcon: {
-    top: 801,
-    left: 48,
-    width: 37,
-    overflow: "hidden",
-  },
-  vectorIcon1: {
-    height: "3.05%",
-    width: "6.87%",
-    top: "94.48%",
-    right: "12.21%",
-    bottom: "2.46%",
-    left: "80.92%",
   },
   stockpage: {
     backgroundColor: Color.colorDarkslategray,

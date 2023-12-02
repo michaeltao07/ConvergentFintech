@@ -2,8 +2,14 @@ import * as React from "react";
 import { Text, StyleSheet, View, TextInput, Pressable } from "react-native";
 import { Image } from "expo-image";
 import { Color, FontFamily, FontSize, Border } from "../GlobalStyles";
+import Home from "./Home";
+import VersusPage from "./VersusPage";
+import Leaderboard from "./Leaderboard";
+import Wallet from "./Wallet"
+import Profile from "./Profile";
+import Roster from "./Roster";
 
-const InviteFriends = () => {
+const InviteFriends = ({navigation}) => {
   return (
     <View style={styles.inviteFriends}>
       <Text style={[styles.contacts, styles.httpsFlexBox]}>CONTACTS</Text>
@@ -122,44 +128,67 @@ const InviteFriends = () => {
         source={require("../assets/ellipse-3.png")}
       />
       <Image
-        style={styles.inviteFriendsChild14}
-        contentFit="cover"
-        source={require("../assets/ellipse-21.png")}
-      />
-      <Image
         style={styles.polygonIcon}
         contentFit="cover"
-        source={require("../assets/polygon-11.png")}
+        // source={require("../assets/polygon-11.png")}
       />
       <Text style={[styles.copyAndShare, styles.httpsTypo]}>
         copy and share link
       </Text>
-      <View style={styles.inviteFriendsChild15} />
-      <Image
-        style={styles.ggprofileIcon}
-        contentFit="cover"
-        source={require("../assets/ggprofile.png")}
+      <View
+        style={styles.rectanglePressable}
       />
-      <Image
-        style={[styles.vectorIcon, styles.vectorIconLayout]}
-        contentFit="cover"
-        source={require("../assets/vector.png")}
-      />
-      <Image
-        style={styles.tablervsIcon}
-        contentFit="cover"
-        source={require("../assets/tablervs.png")}
-      />
-      <Image
-        style={styles.mdihomeOutlineIcon}
-        contentFit="cover"
-        source={require("../assets/mdihomeoutline.png")}
-      />
-      <Image
-        style={[styles.vectorIcon1, styles.vectorIconLayout]}
-        contentFit="cover"
-        source={require("../assets/vector1.png")}
-      />
+
+     <Pressable
+        style={styles.mdihomePosition}
+        onPress={() => navigation.navigate(Home)}
+      >
+        <Image
+          style={styles.iconLayout}
+          contentFit="cover"
+          source={require("../assets/mdihomeoutline.png")}
+        />
+      </Pressable> 
+      <Pressable
+        style={styles.ggprofilePosition}
+        onPress={() => navigation.navigate(Profile)}
+      >
+        <Image
+          style={styles.iconLayout}
+          contentFit="cover"
+          source={require("../assets/ggprofile.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={styles.vectorPosition1}
+        onPress={() => navigation.navigate(Roster)}
+      >
+        <Image
+          style={[styles.icon1, styles.iconLayout]}
+          contentFit="cover"
+          source={require("../assets/vector.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={styles.tablervsPosition}
+        onPress={() => navigation.navigate(VersusPage)}
+      >
+        <Image
+          style={styles.iconLayout}
+          contentFit="cover"
+          source={require("../assets/tablervs.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={styles.vectorPosition}
+        onPress={() => navigation.navigate(Leaderboard)}
+      >
+        <Image
+          style={[styles.icon1, styles.iconLayout]}
+          contentFit="cover"
+          source={require("../assets/vector1.png")}
+        />
+      </Pressable>
       <Text style={[styles.addOnFantasy500, styles.fantasyTypo]}>
         Add on Fantasy500
       </Text>
@@ -192,6 +221,92 @@ const InviteFriends = () => {
 };
 
 const styles = StyleSheet.create({
+  ggprofilePosition: {
+    height: 30,
+    width: 30,
+    left: 104,
+    top: 758,
+    zIndex: 1,
+    position: "absolute",
+  },
+  iconLayout1: {
+    maxHeight: "100%",
+    maxWidth: "100%",
+  },
+  tablervsPosition: {
+    height: 32,
+    width: 33,
+    left: 245,
+    top: 758,
+    zIndex: 1,
+    position: "absolute",
+  },
+  mdihomePosition: {
+    width: 37,
+    left: 27,
+    top: 755,
+    height: 36,
+    zIndex: 1,
+    position: "absolute",
+  },
+  vectorPosition: {
+    width: 30,
+    left: 317,
+    top: 760,
+    height: 27,
+    zIndex: 1,
+    position: "absolute",
+  },
+  iconLayout: {
+    height: "100%",
+    overflow: "hidden",
+    width: "100%",
+  },
+ggprofileIcon: {
+    overflow: "hidden",
+  },
+  vectorIcon: {
+    left: "47.07%",
+    bottom: "2.11%",
+    right: "45.29%",
+    top: "4.37%",
+    width: "7.63%",
+    height: "3.52%",
+    position: "absolute",
+    overflow: "hidden",
+  },
+  tablervsIcon: {
+    overflow: "hidden",
+  },
+  mdihomeOutlineIcon: {
+    overflow: "hidden",
+  },
+  vectorIcon1: {
+    maxHeight: "100%",
+    maxWidth: "100%",
+    overflow: "hidden",
+  },
+  rectanglePressable: {
+    top: 746,
+    left: 0,
+    backgroundColor: Color.colorSeagreen_100,
+    width: 393,
+    height: 66,
+    zIndex: 1,
+    position: "absolute",
+  },
+  icon1: {
+    maxHeight: "100%",
+    maxWidth: "100%",
+  },
+  vectorPosition1: {
+    width: 30,
+    left: "47%",
+    top: 760,
+    height: 27,
+    zIndex: 1,
+    position: "absolute",
+  },
   httpsFlexBox: {
     textAlign: "left",
     color: Color.colorWhite,
@@ -218,7 +333,7 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   ayanjannuTypo: {
-    height: 15,
+    height: 25,
     width: 354,
     fontSize: FontSize.size_lg,
     left: 69,
@@ -435,6 +550,7 @@ const styles = StyleSheet.create({
     width: "100%",
     height: 852,
     overflow: "hidden",
+    zIndex: -1,
   },
 });
 

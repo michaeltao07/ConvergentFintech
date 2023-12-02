@@ -12,6 +12,10 @@ import Profile from "./screens/Profile"
 import VersusPage from "./screens/VersusPage";
 import Leaderboard from "./screens/Leaderboard";
 import Wallet from "./screens/Wallet";
+import LaunchPage from "./screens/LaunchPage";
+import ResponsibleGaming from "./screens/ResponsibleGaming";
+import InviteFriends from "./screens/InviteFriends";
+import Roster from "./screens/Roster";
 
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { View, Text, Pressable, TouchableOpacity } from "react-native";
@@ -36,6 +40,11 @@ const App = () => {
       <NavigationContainer>
         {hideSplashScreen ? (
           <Stack.Navigator screenOptions={{ headerShown: false }}>
+            <Stack.Screen
+             name="LaunchPage"
+             component={LaunchPage}
+             options={{ headerShown: false }}
+           />
             <Stack.Screen
               name="Home"
               component={Home}
@@ -76,13 +85,26 @@ const App = () => {
              component={VersusPage}
              options={{ headerShown: false }}
            />
-
            <Stack.Screen
              name="Leaderboard"
              component={Leaderboard}
              options={{ headerShown: false }}
            />
-
+           <Stack.Screen
+             name="ResponsibleGaming"
+             component={ResponsibleGaming}
+             options={{ headerShown: false }}
+           />
+           <Stack.Screen
+             name="InviteFriends"
+             component={InviteFriends}
+             options={{ headerShown: false }}
+           />
+           <Stack.Screen
+            name="Roster"
+            component={Roster}
+            options={{headerShown: false}}
+           />
           </Stack.Navigator>
         ) : null}
       </NavigationContainer>

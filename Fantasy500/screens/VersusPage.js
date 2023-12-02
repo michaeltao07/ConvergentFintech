@@ -6,10 +6,11 @@ import Profile from "./Profile";
 import Home from "./Home";
 import Leaderboard from "./Leaderboard";
 import Wallet from "./Wallet"
+import Roster from "./Roster";
 
 const VersusPage = ({navigation}) => {
   return (
-    <ScrollView style={styles.versuspage}>
+    <View style={styles.versuspage}>
       <Text style={[styles.versus, styles.matchTypo]}>VERSUS</Text>
       <Text style={[styles.versus, styles.matchTypo]}>VERSUS</Text>
       <Image
@@ -23,13 +24,8 @@ const VersusPage = ({navigation}) => {
         source={require("../assets/ellipse-5.png")}
       />
       <Text style={styles.text}>?</Text>
-      <Image
-        style={styles.versuspageInner}
-        contentFit="cover"
-        source={require("../assets/ellipse-21.png")}
-      />
       <View
-        style={styles.rectanglePressable}
+        style={styles.rectanglePressable1}
       />
 
      <Pressable
@@ -54,7 +50,7 @@ const VersusPage = ({navigation}) => {
       </Pressable>
       <Pressable
         style={styles.vectorPosition1}
-        onPress={() => navigation.navigate(Wallet)}
+        onPress={() => navigation.navigate(Roster)}
       >
         <Image
           style={[styles.icon1, styles.iconLayout]}
@@ -82,7 +78,7 @@ const VersusPage = ({navigation}) => {
           source={require("../assets/vector1.png")}
         />
       </Pressable>
-
+      <View right={10}>
       <View style={styles.versuspageChild1} />
       <Text style={[styles.match, styles.matchTypo]}>Match</Text>
       <Image
@@ -191,7 +187,7 @@ const VersusPage = ({navigation}) => {
       <View
         style={[styles.versuspageChild14, styles.versuspageChildShadowBox]}
       />
-      <Text style={[styles.h, styles.tTypo]}>H</Text>
+      <Text style={[styles.h, styles.tTypo]}>F</Text>
       <View
         style={[styles.versuspageChild15, styles.versuspageChildShadowBox]}
       />
@@ -199,7 +195,7 @@ const VersusPage = ({navigation}) => {
       <View
         style={[styles.versuspageChild16, styles.versuspageChildShadowBox]}
       />
-      <Text style={[styles.h2, styles.tTypo]}>H</Text>
+      <Text style={[styles.h2, styles.tTypo]}>F</Text>
       <View
         style={[styles.versuspageChild17, styles.versuspageChildShadowBox]}
       />
@@ -213,7 +209,8 @@ const VersusPage = ({navigation}) => {
         contentFit="cover"
         source={require("../assets/polygon-2.png")}
       />
-    </ScrollView>
+      </View>
+    </View>
   );
 };
 
@@ -279,7 +276,7 @@ ggprofileIcon: {
     maxWidth: "100%",
     overflow: "hidden",
   },
-  rectanglePressable: {
+  rectanglePressable1: {
     top: 746,
     left: 0,
     backgroundColor: Color.colorSeagreen_100,
@@ -341,7 +338,7 @@ ggprofileIcon: {
   },
   winTypo: {
     width: 27,
-    height: 14,
+    height: 25,
     fontSize: FontSize.size_mini,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
@@ -353,7 +350,7 @@ ggprofileIcon: {
     fontWeight: "500",
     fontSize: FontSize.size_3xs,
     top: 199,
-    height: 20,
+    height: 25,
     textAlign: "left",
     color: Color.colorWhite,
     position: "absolute",
@@ -394,7 +391,7 @@ ggprofileIcon: {
     position: "absolute",
   },
   applePosition1: {
-    height: 9,
+    height: 25,
     left: 41,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
@@ -475,7 +472,7 @@ ggprofileIcon: {
   },
   applePosition: {
     left: 239,
-    height: 9,
+    height: 25,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
     position: "absolute",
@@ -485,7 +482,7 @@ ggprofileIcon: {
     left: 192,
     fontFamily: FontFamily.interMedium,
     fontWeight: "500",
-    height: 14,
+    height: 25,
     fontSize: FontSize.size_mini,
     textAlign: "left",
     color: Color.colorWhite,
@@ -543,7 +540,7 @@ ggprofileIcon: {
     left: 236,
     fontSize: FontSize.size_5xs,
     width: 4,
-    height: 8,
+    height: 25,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
     textAlign: "left",
@@ -708,7 +705,7 @@ ggprofileIcon: {
     top: 416,
     width: 85,
     fontFamily: FontFamily.interRegular,
-    height: 9,
+    height: 25,
     left: 41,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
@@ -718,14 +715,14 @@ ggprofileIcon: {
     top: 459,
   },
   appleInc1: {
-    height: 9,
+    height: 25,
     left: 41,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
     position: "absolute",
   },
   nasdaqAppl1: {
-    height: 9,
+    height: 25,
     left: 41,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
@@ -735,14 +732,14 @@ ggprofileIcon: {
     top: 523,
   },
   appleInc2: {
-    height: 9,
+    height: 25,
     left: 41,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
     position: "absolute",
   },
   nasdaqAppl2: {
-    height: 9,
+    height: 25,
     left: 41,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
@@ -752,14 +749,14 @@ ggprofileIcon: {
     top: 587,
   },
   appleInc3: {
-    height: 9,
+    height: 25,
     left: 41,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
     position: "absolute",
   },
   nasdaqAppl3: {
-    height: 9,
+    height: 25,
     left: 41,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
@@ -769,14 +766,14 @@ ggprofileIcon: {
     top: 651,
   },
   appleInc4: {
-    height: 9,
+    height: 25,
     left: 41,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
     position: "absolute",
   },
   nasdaqAppl4: {
-    height: 9,
+    height: 25,
     left: 41,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
@@ -874,7 +871,7 @@ ggprofileIcon: {
   },
   nasdaqAppl10: {
     top: 872,
-    height: 9,
+    height: 25,
     left: 41,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
