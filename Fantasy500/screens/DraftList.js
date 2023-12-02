@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, {useState} from "react";
 import { Text, StyleSheet, View, ScrollView, Pressable, TouchableOpacity } from "react-native";
 import { Image } from "expo-image";
 import PlayersStocks from "../components/PlayersStocks";
@@ -87,7 +87,6 @@ const DraftList = ({navigation}) => {
       </View>
       <ScrollView horizontal vertical showsVerticalScrollIndicator="false" showsHorizontalScrollIndicator="false" style={styles.daScroll}>
       <Text style={[styles.player1, styles.playerTypo2]}>Player 1</Text>
-      <Text style={[styles.player7, styles.playerTypo3]}>Player 7</Text>
       <View style={[styles.draftlistInner, styles.draftlistInnerLayout]}>
         <View
           style={[styles.playersStocksWrapper, styles.rectangleViewPosition]}

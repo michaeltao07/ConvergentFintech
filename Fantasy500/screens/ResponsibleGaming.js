@@ -32,15 +32,14 @@ const ResponsibleGaming = ({navigation}) => {
         Helpful links and Fantasy500’s policy on responsible play
       </Text>
       <Text style={[styles.resources, styles.resourcesTypo]}>Resources</Text>
+      <Pressable onPress={()=>navigation.navigate(Profile)}>
       <Image
-        style={styles.responsibleGamingItem}
+        style={styles.polygonIcon}
         contentFit="cover"
-        // source={require("../assets/polygon-11.png")}
+        source={require("../assets/polygon-11.png")}
       />
-      <View
-        style={styles.rectanglePressable}
-      />
-
+      </Pressable>
+      <View style={styles.rectanglePressable}></View>
      <Pressable
         style={styles.mdihomePosition}
         onPress={() => navigation.navigate(Home)}
@@ -97,6 +96,13 @@ const ResponsibleGaming = ({navigation}) => {
 };
 
 const styles = StyleSheet.create({
+  polygonIcon: {
+    top: 89,
+    width: 22,
+    height: 21,
+    left: 20,
+    position: "absolute",
+  },
   ggprofilePosition: {
     height: 30,
     width: 30,

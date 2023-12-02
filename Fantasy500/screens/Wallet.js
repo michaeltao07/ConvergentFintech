@@ -78,11 +78,13 @@ const Wallet = ({navigation}) => {
         />
       </Pressable>
  
+      <Pressable onPress={()=>navigation.navigate(Profile)}>
       <Image
         style={styles.polygonIcon}
         contentFit="cover"
-        // source={require("../assets/polygon-11.png")}
+        source={require("../assets/polygon-11.png")}
       />
+      </Pressable>
     </View>
   );
 };

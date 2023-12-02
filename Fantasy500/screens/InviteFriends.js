@@ -5,7 +5,6 @@ import { Color, FontFamily, FontSize, Border } from "../GlobalStyles";
 import Home from "./Home";
 import VersusPage from "./VersusPage";
 import Leaderboard from "./Leaderboard";
-import Wallet from "./Wallet"
 import Profile from "./Profile";
 import Roster from "./Roster";
 
@@ -127,11 +126,13 @@ const InviteFriends = ({navigation}) => {
         contentFit="cover"
         source={require("../assets/ellipse-3.png")}
       />
+      <Pressable onPress={()=>navigation.navigate(Profile)}>
       <Image
         style={styles.polygonIcon}
         contentFit="cover"
-        // source={require("../assets/polygon-11.png")}
+        source={require("../assets/polygon-11.png")}
       />
+      </Pressable>
       <Text style={[styles.copyAndShare, styles.httpsTypo]}>
         copy and share link
       </Text>

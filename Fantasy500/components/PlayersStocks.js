@@ -9,7 +9,6 @@ const getStyleValue = (key, value) => {
 const stocks = ['AAPL', 'MSFT', 'GOOG', 'TSLA', 'NVDA', 'INTC', 'FB', 'AMD', 'NFLX'];
 const PlayersStocks = ({
   player,
-  stockNum,
   playersStocksPosition,
   playersStocksTop,
   playersStocksLeft,

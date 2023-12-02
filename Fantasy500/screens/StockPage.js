@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, {useState} from "react";
 import { Text, StyleSheet, Pressable, View, TouchableOpacity } from "react-native";
 import { Image } from "expo-image";
 import { FontFamily, Color, Border, FontSize } from "../GlobalStyles";
@@ -14,12 +14,18 @@ const StockPage = ({navigation}) => {
   const handlePress = () => {
     navigation.navigate(StocksPage);
   };
+  const [boxStyle, setBoxStyle] = useState(styles.technology);
+  const print = "technology";
+  const changeVar = () => {
+    if (boxStyle === styles.technology) print = "technology";
+    if (boxStyle === styles.healthcare) print = "healthcare";
+  };
   return (
     <View style={styles.stockpage}>
       <Text style={styles.picks}>PICKS</Text>
       <Text style={[styles.stocks, styles.textTypo]}>Stocks</Text>
       <Text style={styles.stockOptionsFor}>
-        Stock options for the [technology] industry
+        Stock options for the {print} industry
       </Text>
       <Pressable style={styles.stockpageChild} />
       <View style={[styles.stockpageItem, styles.stockpageChildLayout]} />
