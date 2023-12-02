@@ -89,8 +89,8 @@ const styles = StyleSheet.create({
     left: 131,
   },
   forgotPassword: {
-    top: 804,
-    left: 136,
+    top: 808,
+    left: 128,
     fontSize: FontSize.size_mini,
     textDecoration: "underline",
     width: 132,

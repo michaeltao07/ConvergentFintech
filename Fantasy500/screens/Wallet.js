@@ -1,12 +1,12 @@
 import * as React from "react";
 import { Text, StyleSheet, View, Pressable } from "react-native";
 import { Image } from "expo-image";
-import { Color, FontSize, FontFamily, Border } from "../GlobalStyles";
+import { FontSize, Color, FontFamily, Border } from "../GlobalStyles";
 
 const Wallet = () => {
   return (
     <View style={styles.wallet}>
-      <Text style={[styles.wallet1, styles.text1Clr]}>WALLET</Text>
+      <Text style={styles.wallet1}>WALLET</Text>
       <Text style={[styles.withdrawable, styles.textTypo]}>Withdrawable</Text>
       <Text style={[styles.transactionsUsd, styles.textTypo]}>
         Transactions (USD)
@@ -23,10 +23,9 @@ const Wallet = () => {
         contentFit="cover"
         source={require("../assets/ellipse-21.png")}
       />
-      <Text style={[styles.text1, styles.text1Layout]}>{`<`}</Text>
       <View style={styles.rectangleView} />
       <Image
-        style={[styles.ggprofileIcon, styles.text1Layout]}
+        style={styles.ggprofileIcon}
         contentFit="cover"
         source={require("../assets/ggprofile.png")}
       />
@@ -50,15 +49,16 @@ const Wallet = () => {
         contentFit="cover"
         source={require("../assets/vector1.png")}
       />
+      <Image
+        style={styles.polygonIcon}
+        contentFit="cover"
+        source={require("../assets/polygon-11.png")}
+      />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  text1Clr: {
-    color: Color.colorWhite,
-    textAlign: "left",
-  },
   textTypo: {
     fontSize: FontSize.size_xl,
     color: Color.colorWhite,
@@ -102,10 +102,6 @@ const styles = StyleSheet.create({
     color: Color.colorWhite,
     position: "absolute",
   },
-  text1Layout: {
-    height: 30,
-    position: "absolute",
-  },
   vectorIconLayout: {
     maxHeight: "100%",
     maxWidth: "100%",
@@ -118,9 +114,9 @@ const styles = StyleSheet.create({
     fontSize: FontSize.size_16xl,
     width: 160,
     textAlign: "left",
+    color: Color.colorWhite,
     fontFamily: FontFamily.interBold,
     fontWeight: "700",
-    color: Color.colorWhite,
     position: "absolute",
   },
   withdrawable: {
@@ -177,15 +173,6 @@ const styles = StyleSheet.create({
     height: 20,
     position: "absolute",
   },
-  text1: {
-    top: 84,
-    left: 25,
-    fontSize: FontSize.size_11xl,
-    fontFamily: FontFamily.interRegular,
-    width: 32,
-    textAlign: "left",
-    color: Color.colorWhite,
-  },
   rectangleView: {
     top: 786,
     left: 0,
@@ -198,6 +185,8 @@ const styles = StyleSheet.create({
     top: 804,
     left: 119,
     width: 30,
+    height: 30,
+    position: "absolute",
     overflow: "hidden",
   },
   vectorIcon: {
@@ -231,6 +220,13 @@ const styles = StyleSheet.create({
     right: "12.21%",
     bottom: "2.46%",
     left: "80.92%",
+  },
+  polygonIcon: {
+    top: 91,
+    width: 22,
+    height: 21,
+    left: 29,
+    position: "absolute",
   },
   wallet: {
     backgroundColor: Color.colorDarkslategray,

@@ -34,6 +34,7 @@ const LogIn = () => {
         contentFit="cover"
         source={require("../assets/ellipse-21.png")}
       />
+      <View style={styles.frameView} />
     </View>
   );
 };
@@ -98,8 +99,8 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   signIn: {
-    top: 332,
-    left: 163,
+    top: 343,
+    left: 168,
     width: 68,
     fontSize: FontSize.size_xl,
   },
@@ -169,6 +170,14 @@ const styles = StyleSheet.create({
     height: 20,
     left: 123,
     position: "absolute",
+  },
+  frameView: {
+    top: 250,
+    left: 185,
+    width: 100,
+    height: 100,
+    position: "absolute",
+    overflow: "hidden",
   },
   logIn: {
     backgroundColor: Color.colorDarkslategray,

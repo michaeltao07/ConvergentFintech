@@ -1,13 +1,13 @@
 import * as React from "react";
 import { Text, StyleSheet, View, TextInput, Pressable } from "react-native";
 import { Image } from "expo-image";
-import { Color, FontSize, FontFamily, Border } from "../GlobalStyles";
+import { Color, FontFamily, FontSize, Border } from "../GlobalStyles";
 
 const InviteFriends = () => {
   return (
     <View style={styles.inviteFriends}>
       <Text style={[styles.contacts, styles.httpsFlexBox]}>CONTACTS</Text>
-      <Text style={[styles.findYourFriends, styles.findPosition]}>
+      <Text style={styles.findYourFriends}>
         Find your friends or invite your friend.
       </Text>
       <Text style={[styles.https, styles.httpsTypo]}>https:</Text>
@@ -73,9 +73,6 @@ const InviteFriends = () => {
       <Text style={[styles.nitishapokkula, styles.ayanjannuTypo]}>
         nitishapokkula
       </Text>
-      <Text style={[styles.findYourFriends1, styles.findPosition]}>
-        Find your friends or invite your friend.
-      </Text>
       <TextInput
         style={[styles.https1, styles.httpsTypo]}
         placeholder="https:"
@@ -132,7 +129,7 @@ const InviteFriends = () => {
       <Image
         style={styles.polygonIcon}
         contentFit="cover"
-        source={require("../assets/polygon-1.png")}
+        source={require("../assets/polygon-11.png")}
       />
       <Text style={[styles.copyAndShare, styles.httpsTypo]}>
         copy and share link
@@ -176,10 +173,8 @@ const InviteFriends = () => {
         contentFit="cover"
         source={require("../assets/ellipse-3.png")}
       />
-      <Text style={[styles.anokhishah2, styles.ayanjannu2Typo]}>
-        anokhishah
-      </Text>
-      <Text style={[styles.ayanjannu2, styles.ayanjannu2Typo]}>ayanjannu</Text>
+      <Text style={[styles.anokhishah2, styles.ayanjannuTypo]}>anokhishah</Text>
+      <Text style={[styles.ayanjannu2, styles.ayanjannuTypo]}>ayanjannu</Text>
       <Image
         style={[styles.inviteFriendsChild16, styles.inviteChildLayout]}
         contentFit="cover"
@@ -190,10 +185,8 @@ const InviteFriends = () => {
         contentFit="cover"
         source={require("../assets/ellipse-3.png")}
       />
-      <Text style={[styles.anokhishah2, styles.ayanjannu2Typo]}>
-        anokhishah
-      </Text>
-      <Text style={[styles.ayanjannu2, styles.ayanjannu2Typo]}>ayanjannu</Text>
+      <Text style={[styles.anokhishah2, styles.ayanjannuTypo]}>anokhishah</Text>
+      <Text style={[styles.ayanjannu2, styles.ayanjannuTypo]}>ayanjannu</Text>
     </View>
   );
 };
@@ -203,15 +196,6 @@ const styles = StyleSheet.create({
     textAlign: "left",
     color: Color.colorWhite,
   },
-  findPosition: {
-    width: 363,
-    fontSize: FontSize.size_mini,
-    top: 129,
-    left: 20,
-    textAlign: "left",
-    color: Color.colorWhite,
-    position: "absolute",
-  },
   httpsTypo: {
     fontFamily: FontFamily.interMedium,
     fontWeight: "500",
@@ -220,6 +204,7 @@ const styles = StyleSheet.create({
   fantasyTypo: {
     width: 243,
     fontSize: FontSize.size_xl,
+    left: 20,
     textAlign: "left",
     color: Color.colorWhite,
     fontFamily: FontFamily.interBold,
@@ -229,6 +214,7 @@ const styles = StyleSheet.create({
   inviteChildLayout: {
     height: 38,
     width: 38,
+    left: 20,
     position: "absolute",
   },
   ayanjannuTypo: {
@@ -248,17 +234,6 @@ const styles = StyleSheet.create({
     position: "absolute",
     overflow: "hidden",
   },
-  ayanjannu2Typo: {
-    left: 67,
-    height: 15,
-    width: 354,
-    fontSize: FontSize.size_lg,
-    fontFamily: FontFamily.interMedium,
-    fontWeight: "500",
-    textAlign: "left",
-    color: Color.colorWhite,
-    position: "absolute",
-  },
   contacts: {
     top: 78,
     left: 61,
@@ -270,7 +245,14 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   findYourFriends: {
+    top: 129,
     fontFamily: FontFamily.interRegular,
+    width: 363,
+    fontSize: FontSize.size_mini,
+    left: 20,
+    textAlign: "left",
+    color: Color.colorWhite,
+    position: "absolute",
   },
   https: {
     width: 58,
@@ -298,37 +280,30 @@ const styles = StyleSheet.create({
     shadowColor: "rgba(0, 0, 0, 0.25)",
     backgroundColor: Color.colorSeagreen_400,
     borderRadius: Border.br_5xs,
-    top: 165,
     left: 18,
+    top: 165,
     position: "absolute",
   },
   friendsOnFantasy500: {
     top: 244,
-    left: 20,
   },
   inviteFriendsItem: {
     top: 283,
-    left: 20,
   },
   inviteFriendsInner: {
     top: 330,
-    left: 20,
   },
   ellipseIcon: {
     top: 377,
-    left: 20,
   },
   inviteFriendsChild1: {
     top: 424,
-    left: 20,
   },
   inviteFriendsChild2: {
     top: 471,
-    left: 20,
   },
   inviteFriendsChild3: {
     top: 518,
-    left: 20,
   },
   anokhishah: {
     top: 287,
@@ -353,18 +328,12 @@ const styles = StyleSheet.create({
   },
   inviteFriendsChild4: {
     top: 565,
-    left: 20,
   },
   inviteFriendsChild5: {
     top: 615,
-    left: 20,
   },
   nitishapokkula: {
     top: 623,
-  },
-  findYourFriends1: {
-    fontStyle: "italic",
-    fontFamily: FontFamily.interLight,
   },
   https1: {
     left: 49,
@@ -446,22 +415,19 @@ const styles = StyleSheet.create({
     left: "80.92%",
   },
   addOnFantasy500: {
-    top: 674,
-    left: 18,
+    top: 673,
   },
   inviteFriendsChild16: {
-    top: 713,
-    left: 18,
+    top: 712,
   },
   inviteFriendsChild17: {
-    top: 760,
-    left: 18,
+    top: 759,
   },
   anokhishah2: {
-    top: 717,
+    top: 716,
   },
   ayanjannu2: {
-    top: 764,
+    top: 763,
   },
   inviteFriends: {
     backgroundColor: Color.colorDarkslategray,

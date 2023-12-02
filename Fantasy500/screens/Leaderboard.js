@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Image } from "expo-image";
 import { StyleSheet, Text, View } from "react-native";
-import { FontFamily, FontSize, Color } from "../GlobalStyles";
+import { FontSize, Color, FontFamily } from "../GlobalStyles";
 
 const Leaderboard = () => {
   return (
@@ -43,7 +43,9 @@ const Leaderboard = () => {
         contentFit="cover"
         source={require("../assets/vector1.png")}
       />
-      <Text style={styles.thisSeasonsStandings}>This season’s standings.</Text>
+      <Text style={[styles.thisSeasonsStandings, styles.text9Typo]}>
+        This season’s standings.
+      </Text>
       <Image
         style={[styles.ellipseIcon, styles.leaderboardChildLayout]}
         contentFit="cover"
@@ -152,15 +154,10 @@ const Leaderboard = () => {
       <Image
         style={[styles.leaderboardChild17, styles.leaderboardChildLayout]}
         contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
+        source={require("../assets/ellipse-40.png")}
       />
       <Image
         style={[styles.leaderboardChild18, styles.leaderboardChildLayout]}
-        contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
-      />
-      <Image
-        style={[styles.leaderboardChild19, styles.leaderboardChildLayout]}
         contentFit="cover"
         source={require("../assets/ellipse-3.png")}
       />
@@ -169,27 +166,12 @@ const Leaderboard = () => {
       <Text style={[styles.user11, styles.userTypo]}>user11</Text>
       <Text style={[styles.user12, styles.userTypo]}>user12</Text>
       <Image
-        style={[styles.leaderboardChild16, styles.leaderboardChildLayout]}
-        contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
-      />
-      <Image
-        style={[styles.leaderboardChild17, styles.leaderboardChildLayout]}
-        contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
-      />
-      <Image
-        style={[styles.leaderboardChild18, styles.leaderboardChildLayout]}
-        contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
-      />
-      <Image
         style={[styles.leaderboardChild19, styles.leaderboardChildLayout]}
         contentFit="cover"
         source={require("../assets/ellipse-3.png")}
       />
       <Text style={[styles.text8, styles.textTypo1]}>9</Text>
-      <Text style={styles.text9}>10</Text>
+      <Text style={[styles.text9, styles.text9Typo]}>10</Text>
       <Text style={[styles.text10, styles.textTypo]}>11</Text>
       <Text style={[styles.text11, styles.textTypo]}>12</Text>
     </View>
@@ -207,10 +189,18 @@ const styles = StyleSheet.create({
     position: "absolute",
     overflow: "hidden",
   },
+  text9Typo: {
+    fontSize: FontSize.size_xl,
+    textAlign: "left",
+    color: Color.colorWhite,
+    fontFamily: FontFamily.interBold,
+    fontWeight: "700",
+    position: "absolute",
+  },
   leaderboardChildLayout: {
     height: 38,
     width: 38,
-    left: 86,
+    left: 82,
     position: "absolute",
   },
   userTypo: {
@@ -219,14 +209,13 @@ const styles = StyleSheet.create({
     fontFamily: FontFamily.interMedium,
     fontWeight: "500",
     fontSize: FontSize.size_lg,
-    left: 135,
+    left: 131,
     textAlign: "left",
     color: Color.colorWhite,
     position: "absolute",
   },
   textTypo1: {
     width: 14,
-    left: 41,
     fontSize: FontSize.size_xl,
     textAlign: "left",
     color: Color.colorWhite,
@@ -236,7 +225,7 @@ const styles = StyleSheet.create({
   },
   textTypo: {
     width: 24,
-    left: 41,
+    left: 37,
     fontSize: FontSize.size_xl,
     textAlign: "left",
     color: Color.colorWhite,
@@ -314,131 +303,128 @@ const styles = StyleSheet.create({
     left: "80.92%",
   },
   thisSeasonsStandings: {
-    top: 159,
-    left: 29,
+    top: 129,
+    left: 28,
     width: 243,
-    fontSize: FontSize.size_xl,
-    textAlign: "left",
-    color: Color.colorWhite,
-    fontFamily: FontFamily.interBold,
-    fontWeight: "700",
-    position: "absolute",
   },
   ellipseIcon: {
-    top: 209,
+    top: 186,
   },
   leaderboardChild1: {
-    top: 256,
+    top: 233,
   },
   leaderboardChild2: {
-    top: 303,
+    top: 280,
   },
   leaderboardChild3: {
-    top: 350,
+    top: 327,
   },
   leaderboardChild4: {
-    top: 397,
+    top: 374,
   },
   leaderboardChild5: {
-    top: 444,
+    top: 421,
   },
   ayanjannu: {
-    top: 213,
+    top: 190,
   },
   nitishapokkula: {
-    top: 260,
+    top: 237,
   },
   mahikadawar: {
-    top: 307,
+    top: 284,
   },
   jayanthpandit: {
-    top: 356,
+    top: 333,
   },
   michaeltao: {
-    top: 403,
+    top: 380,
   },
   anokhishah: {
-    top: 452,
+    top: 429,
   },
   jacobencarnado: {
-    top: 499,
+    top: 476,
   },
   leaderboardChild6: {
-    top: 491,
+    top: 468,
   },
   leaderboardChild7: {
-    top: 541,
+    top: 518,
   },
   andrewchoi: {
-    top: 549,
+    top: 526,
   },
   text: {
-    top: 216,
+    top: 196,
+    left: 37,
   },
   text1: {
-    top: 313,
+    top: 287,
+    left: 37,
   },
   text2: {
-    top: 266,
+    top: 240,
+    left: 38,
   },
   text3: {
-    top: 357,
+    top: 336,
+    left: 37,
   },
   text4: {
-    top: 404,
+    top: 383,
+    left: 37,
   },
   text5: {
-    top: 451,
+    top: 432,
+    left: 37,
   },
   text6: {
-    top: 498,
+    left: 37,
+    top: 476,
   },
   text7: {
-    top: 545,
+    top: 525,
+    left: 37,
   },
   leaderboardChild16: {
-    top: 595,
+    top: 615,
   },
   leaderboardChild17: {
-    top: 642,
+    top: 664,
   },
   leaderboardChild18: {
-    top: 689,
-  },
-  leaderboardChild19: {
-    top: 736,
+    top: 713,
   },
   ayanjannu1: {
-    top: 599,
+    top: 576,
   },
   user10: {
-    top: 646,
+    top: 623,
   },
   user11: {
-    top: 693,
+    top: 670,
   },
   user12: {
-    top: 742,
+    top: 719,
+  },
+  leaderboardChild19: {
+    top: 565,
   },
   text8: {
-    top: 602,
+    top: 572,
+    left: 37,
   },
   text9: {
-    top: 652,
+    top: 624,
     width: 28,
-    left: 41,
-    fontSize: FontSize.size_xl,
-    textAlign: "left",
-    color: Color.colorWhite,
-    fontFamily: FontFamily.interBold,
-    fontWeight: "700",
-    position: "absolute",
+    left: 37,
   },
   text10: {
-    top: 699,
+    top: 671,
   },
   text11: {
-    top: 773,
+    top: 720,
   },
   leaderboard: {
     backgroundColor: Color.colorDarkslategray,

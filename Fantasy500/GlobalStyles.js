@@ -13,14 +13,13 @@ export const FontSize = {
   size_16xl: 35,
   size_lg: 18,
   size_mini: 15,
+  size_sm: 14,
   size_5xs: 8,
   size_11xl: 30,
   size_smi: 13,
-  size_sm: 14,
 };
 /* Colors */
 export const Color = {
-  colorMediumseagreen: "rgba(95, 172, 112, 0.5)",
   colorDarkslategray: "#012b15",
   colorSeagreen_100: "#306c43",
   colorSeagreen_200: "#306b42",
@@ -28,6 +27,9 @@ export const Color = {
   colorSeagreen_400: "rgba(55, 123, 87, 0)",
   colorLimegreen: "#3aca2d",
   colorWhite: "#fff",
+  colorMediumseagreen: "rgba(95, 172, 112, 0.5)",
+  colorSalmon: "#ff7d7d",
+  colorDarkseagreen: "#6caf81",
   colorBlack: "#000",
   colorGainsboro: "#d9d9d9",
 };

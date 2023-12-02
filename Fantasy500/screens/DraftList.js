@@ -1,15 +1,10 @@
 import * as React from "react";
-import { Text, StyleSheet, View, Pressable, TouchableOpacity} from "react-native";
+import { Text, StyleSheet, View, Pressable } from "react-native";
 import { Image } from "expo-image";
 import PlayersStocks from "../components/PlayersStocks";
 import { FontSize, FontFamily, Color, Border } from "../GlobalStyles";
-import StockPage from './StockPage';
 
-const DraftList = ({navigation}) => {
-  const handleDraftListPress = () => {
-    // Navigate to DraftList page
-    navigation.navigate(StockPage);
-  };
+const DraftList = () => {
   return (
     <View style={styles.draftlist}>
       <Text style={styles.draft}>DRAFT</Text>
@@ -19,34 +14,97 @@ const DraftList = ({navigation}) => {
         source={require("../assets/ellipse-22.png")}
       />
       <View style={styles.draftlistItem} />
-      <TouchableOpacity onPress={handleDraftListPress}>
-        <View>
-          <Text style={styles.startDraft}>Start Draft</Text>
-        </View>
-      </TouchableOpacity>
+      <Text style={styles.startDraft}>Start Draft</Text>
       <Text style={[styles.player1, styles.playerTypo2]}>Player 1</Text>
-      <Text style={[styles.player2, styles.playerTypo]}>Player 2</Text>
+      <Text style={[styles.player7, styles.playerTypo3]}>Player 7</Text>
+      <View style={[styles.draftlistInner, styles.draftlistInnerLayout]}>
+        <View
+          style={[styles.playersStocksWrapper, styles.rectangleViewPosition]}
+        >
+          <PlayersStocks
+            playersStocksPosition="absolute"
+            playersStocksTop={0}
+            playersStocksLeft={0}
+          />
+        </View>
+      </View>
+      <Text style={[styles.player2, styles.playerTypo2]}>Player 2</Text>
+      <View style={[styles.frameView, styles.draftlistInnerLayout]}>
+        <View
+          style={[styles.playersStocksWrapper, styles.rectangleViewPosition]}
+        >
+          <PlayersStocks
+            playersStocksPosition="absolute"
+            playersStocksTop={0}
+            playersStocksLeft={0}
+          />
+        </View>
+      </View>
       <Text style={[styles.player3, styles.playerTypo1]}>Player 3</Text>
-      <Text style={[styles.player4, styles.playerTypo2]}>Player 4</Text>
-      <Text style={[styles.player5, styles.playerTypo]}>Player 5</Text>
-      <Text style={[styles.player6, styles.playerTypo]}>Player 6</Text>
-      <Text style={[styles.player7, styles.playerTypo1]}>Player 7</Text>
-      <View style={[styles.playersStocksWrapper, styles.playersLayout]}>
-        <PlayersStocks
-          playersStocksPosition="absolute"
-          playersStocksTop={0}
-          playersStocksLeft={0}
-        />
+      <View style={[styles.draftlistInner1, styles.draftlistInnerLayout]}>
+        <View
+          style={[styles.playersStocksWrapper, styles.rectangleViewPosition]}
+        >
+          <PlayersStocks
+            playersStocksPosition="absolute"
+            playersStocksTop={0}
+            playersStocksLeft={0}
+          />
+        </View>
       </View>
-      <View style={[styles.playersStocksContainer, styles.playersLayout]}>
-        <PlayersStocks
-          playersStocksPosition="absolute"
-          playersStocksTop={0}
-          playersStocksLeft={0}
-        />
+      <View style={[styles.draftlistInner2, styles.draftlistInnerLayout]}>
+        <View
+          style={[styles.playersStocksWrapper, styles.rectangleViewPosition]}
+        >
+          <PlayersStocks
+            playersStocksPosition="absolute"
+            playersStocksTop={0}
+            playersStocksLeft={0}
+          />
+        </View>
       </View>
-      <View style={[styles.draftlistInner, styles.playersLayout]}>
-        <View style={[styles.playersStocksFrame, styles.rectangleViewPosition]}>
+      <Text style={[styles.player4, styles.playerTypo1]}>Player 4</Text>
+      <View style={[styles.draftlistInner3, styles.draftlistInnerLayout]}>
+        <View
+          style={[styles.playersStocksWrapper, styles.rectangleViewPosition]}
+        >
+          <PlayersStocks
+            playersStocksPosition="absolute"
+            playersStocksTop={0}
+            playersStocksLeft={0}
+          />
+        </View>
+      </View>
+      <Text style={[styles.player5, styles.playerTypo3]}>{`Player 5 `}</Text>
+      <Text style={[styles.player6, styles.playerTypo2]}>Player 6</Text>
+      <View style={[styles.draftlistInner4, styles.draftlistInnerLayout]}>
+        <View
+          style={[styles.playersStocksWrapper, styles.rectangleViewPosition]}
+        >
+          <PlayersStocks
+            playersStocksPosition="absolute"
+            playersStocksTop={0}
+            playersStocksLeft={0}
+          />
+        </View>
+      </View>
+      <Text style={[styles.player71, styles.playerTypo]}>Player 7</Text>
+      <View style={[styles.draftlistInner5, styles.draftlistInnerLayout]}>
+        <View
+          style={[styles.playersStocksWrapper, styles.rectangleViewPosition]}
+        >
+          <PlayersStocks
+            playersStocksPosition="absolute"
+            playersStocksTop={0}
+            playersStocksLeft={0}
+          />
+        </View>
+      </View>
+      <Text style={[styles.player8, styles.playerTypo]}>Player 8</Text>
+      <View style={[styles.draftlistInner6, styles.draftlistInnerLayout]}>
+        <View
+          style={[styles.playersStocksWrapper, styles.rectangleViewPosition]}
+        >
           <PlayersStocks
             playersStocksPosition="absolute"
             playersStocksTop={0}
@@ -91,8 +149,39 @@ const DraftList = ({navigation}) => {
 
 const styles = StyleSheet.create({
   playerTypo2: {
-    fontSize: FontSize.size_mini,
     height: 16,
+    fontSize: FontSize.size_mini,
+    left: 28,
+    fontFamily: FontFamily.interMedium,
+    fontWeight: "500",
+    textAlign: "left",
+    color: Color.colorWhite,
+    position: "absolute",
+  },
+  playerTypo3: {
+    fontSize: FontSize.size_mini,
+    left: 28,
+    fontFamily: FontFamily.interMedium,
+    fontWeight: "500",
+    textAlign: "left",
+    color: Color.colorWhite,
+    position: "absolute",
+  },
+  draftlistInnerLayout: {
+    width: 294,
+    left: 26,
+    height: 36,
+    position: "absolute",
+  },
+  rectangleViewPosition: {
+    left: 0,
+    position: "absolute",
+  },
+  playerTypo1: {
+    width: 65,
+    height: 16,
+    fontSize: FontSize.size_mini,
+    left: 28,
     fontFamily: FontFamily.interMedium,
     fontWeight: "500",
     textAlign: "left",
@@ -100,31 +189,14 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   playerTypo: {
-    height: 15,
-    width: 58,
+    width: 64,
+    height: 16,
     fontSize: FontSize.size_mini,
+    left: 28,
     fontFamily: FontFamily.interMedium,
     fontWeight: "500",
     textAlign: "left",
     color: Color.colorWhite,
-    position: "absolute",
-  },
-  playerTypo1: {
-    width: 58,
-    fontSize: FontSize.size_mini,
-    fontFamily: FontFamily.interMedium,
-    fontWeight: "500",
-    textAlign: "left",
-    color: Color.colorWhite,
-    position: "absolute",
-  },
-  playersLayout: {
-    width: 294,
-    height: 36,
-    position: "absolute",
-  },
-  rectangleViewPosition: {
-    left: 0,
     position: "absolute",
   },
   vectorIconLayout: {
@@ -184,57 +256,65 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   player1: {
-    top: 197,
+    top: 178,
     width: 56,
-    height: 16,
-    left: 28,
-  },
-  player2: {
-    top: 338,
-    left: 27,
-  },
-  player3: {
-    top: 422,
-    left: 26,
-    height: 16,
-  },
-  player4: {
-    top: 492,
-    left: 29,
-    width: 59,
-    height: 16,
-  },
-  player5: {
-    top: 594,
-    left: 28,
-  },
-  player6: {
-    top: 703,
-    left: 28,
   },
   player7: {
     top: 812,
+    width: 58,
     height: 18,
-    left: 28,
   },
   playersStocksWrapper: {
-    top: 328,
-    left: 99,
-    width: 294,
-  },
-  playersStocksContainer: {
-    top: 413,
-    left: 99,
-    width: 294,
-  },
-  playersStocksFrame: {
     top: 0,
     width: 542,
     height: 36,
   },
   draftlistInner: {
-    top: 223,
-    left: 26,
+    top: 204,
+  },
+  player2: {
+    top: 259,
+    width: 69,
+  },
+  frameView: {
+    top: 285,
+  },
+  player3: {
+    top: 338,
+  },
+  draftlistInner1: {
+    top: 364,
+  },
+  draftlistInner2: {
+    top: 443,
+  },
+  player4: {
+    top: 417,
+  },
+  draftlistInner3: {
+    top: 515,
+  },
+  player5: {
+    top: 489,
+  },
+  player6: {
+    top: 561,
+    width: 62,
+  },
+  draftlistInner4: {
+    top: 587,
+  },
+  player71: {
+    top: 633,
+  },
+  draftlistInner5: {
+    top: 659,
+  },
+  player8: {
+    top: 705,
+  },
+  draftlistInner6: {
+    top: 731,
   },
   ellipseIcon: {
     top: 26,

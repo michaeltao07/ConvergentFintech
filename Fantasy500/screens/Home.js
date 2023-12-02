@@ -1,18 +1,16 @@
 import * as React from "react";
 import { Image } from "expo-image";
-import { StyleSheet, Text, View, Pressable, Button, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, View, Pressable } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 import { Color, Border, FontFamily, FontSize } from "../GlobalStyles";
-import DraftList from "./DraftList";
 
-const Home = ({navigation}) => {
-    const handleDraftListPress = () => {
-      // Navigate to DraftList page
-      navigation.navigate(DraftList);
-    };
+const Home = () => {
+  const navigation = useNavigation();
+
   return (
     <View style={styles.home}>
       <Image
-        style={[styles.homeChild, styles.homeChildLayout]}
+        style={styles.homeChild}
         contentFit="cover"
         source={require("../assets/ellipse-22.png")}
       />
@@ -27,52 +25,97 @@ const Home = ({navigation}) => {
       <View style={[styles.homeChild1, styles.homeChildShadowBox1]} />
       <View style={[styles.homeChild2, styles.homeChildShadowBox1]} />
       <View style={[styles.homeChild3, styles.homeChildShadowBox]} />
-      <TouchableOpacity onPress={handleDraftListPress}>
-        <View>
-          <Text style={[styles.joinPublicLeague, styles.leagueTypo]}>Join Public League</Text>
-        </View>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={handleDraftListPress}> 
-        <View>
-          <Text style={[styles.createNewLeague, styles.leagueTypo]}>Create New League</Text>
-        </View>
-      </TouchableOpacity>
+      <Text style={[styles.joinPublicLeague, styles.leagueTypo]}>
+        Join Public League
+      </Text>
+      <Text style={[styles.createNewLeague, styles.leagueTypo]}>
+        Create New League
+      </Text>
       <View style={[styles.homeChild4, styles.homeChildShadowBox]} />
-      <View style={styles.homeChild5} />
       <Image
-        style={styles.ggprofileIcon}
+        style={[styles.ggprofileIcon, styles.ggprofilePosition]}
         contentFit="cover"
         source={require("../assets/ggprofile.png")}
       />
       <Image
-        style={[styles.vectorIcon, styles.vectorIconLayout]}
+        style={[styles.vectorIcon, styles.iconLayout1]}
         contentFit="cover"
         source={require("../assets/vector.png")}
       />
       <Image
-        style={styles.tablervsIcon}
+        style={[styles.tablervsIcon, styles.tablervsPosition]}
         contentFit="cover"
         source={require("../assets/tablervs.png")}
       />
       <Image
-        style={[styles.mdihomeOutlineIcon, styles.homeChildLayout]}
+        style={[styles.mdihomeOutlineIcon, styles.mdihomePosition]}
         contentFit="cover"
         source={require("../assets/mdihomeoutline.png")}
       />
       <Image
-        style={[styles.vectorIcon1, styles.vectorIconLayout]}
+        style={[styles.vectorIcon1, styles.vectorPosition]}
         contentFit="cover"
         source={require("../assets/vector1.png")}
       />
+      <Pressable
+        style={styles.rectanglePressable}
+        onPress={() => navigation.navigate("Profile")}
+      />
+      <Pressable
+        style={styles.ggprofilePosition}
+        onPress={() => navigation.navigate("Profile")}
+      >
+        <Image
+          style={styles.iconLayout}
+          contentFit="cover"
+          source={require("../assets/ggprofile1.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={styles.vectorPosition1}
+        onPress={() => navigation.navigate("Profile")}
+      >
+        <Image
+          style={[styles.icon1, styles.iconLayout]}
+          contentFit="cover"
+          source={require("../assets/vector.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={styles.tablervsPosition}
+        onPress={() => navigation.navigate("Profile")}
+      >
+        <Image
+          style={styles.iconLayout}
+          contentFit="cover"
+          source={require("../assets/tablervs.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={styles.mdihomePosition}
+        onPress={() => navigation.navigate("Profile")}
+      >
+        <Image
+          style={styles.iconLayout}
+          contentFit="cover"
+          source={require("../assets/mdihomeoutline.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={styles.vectorPosition}
+        onPress={() => navigation.navigate("Profile")}
+      >
+        <Image
+          style={[styles.icon1, styles.iconLayout]}
+          contentFit="cover"
+          source={require("../assets/vector1.png")}
+        />
+      </Pressable>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  homeChildLayout: {
-    height: 36,
-    position: "absolute",
-  },
   homeChildShadowBox1: {
     height: 113,
     width: 337,
@@ -84,7 +127,7 @@ const styles = StyleSheet.create({
       height: 4,
     },
     shadowColor: "rgba(0, 0, 0, 0.25)",
-    backgroundColor: Color.colorGainsboro,
+    backgroundColor: Color.colorDarkseagreen,
     borderRadius: Border.br_5xs,
     left: 28,
     position: "absolute",
@@ -96,7 +139,7 @@ const styles = StyleSheet.create({
     borderColor: Color.colorLimegreen,
     borderStyle: "solid",
     backgroundColor: Color.colorSeagreen_400,
-    top: 669,
+    top: 704,
     shadowOpacity: 1,
     elevation: 4,
     shadowRadius: 4,
@@ -112,21 +155,56 @@ const styles = StyleSheet.create({
     fontFamily: FontFamily.interMedium,
     fontWeight: "500",
     fontSize: FontSize.size_sm,
-    top: 684,
+    top: 719,
     textAlign: "left",
     color: Color.colorWhite,
     position: "absolute",
   },
-  vectorIconLayout: {
+  ggprofilePosition: {
+    height: 30,
+    width: 30,
+    left: 119,
+    top: 804,
+    position: "absolute",
+  },
+  iconLayout1: {
     maxHeight: "100%",
     maxWidth: "100%",
+  },
+  tablervsPosition: {
+    height: 32,
+    width: 33,
+    left: 251,
+    top: 803,
     position: "absolute",
+  },
+  mdihomePosition: {
+    width: 37,
+    left: 48,
+    top: 801,
+    height: 36,
+    position: "absolute",
+  },
+  vectorPosition: {
+    left: "80.92%",
+    bottom: "2.46%",
+    right: "12.21%",
+    top: "94.48%",
+    width: "6.87%",
+    height: "3.05%",
+    position: "absolute",
+  },
+  iconLayout: {
+    height: "100%",
     overflow: "hidden",
+    width: "100%",
   },
   homeChild: {
     top: 80,
     left: 25,
     width: 36,
+    height: 36,
+    position: "absolute",
   },
   homeItem: {
     top: 26,
@@ -147,10 +225,10 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   homeInner: {
-    top: 155,
+    top: 190,
   },
   rectangleView: {
-    top: 279,
+    top: 314,
     height: 114,
     width: 337,
     shadowOpacity: 1,
@@ -161,16 +239,16 @@ const styles = StyleSheet.create({
       height: 4,
     },
     shadowColor: "rgba(0, 0, 0, 0.25)",
-    backgroundColor: Color.colorGainsboro,
+    backgroundColor: Color.colorDarkseagreen,
     borderRadius: Border.br_5xs,
     left: 28,
     position: "absolute",
   },
   homeChild1: {
-    top: 404,
+    top: 439,
   },
   homeChild2: {
-    top: 528,
+    top: 563,
   },
   homeChild3: {
     left: 28,
@@ -180,7 +258,7 @@ const styles = StyleSheet.create({
     borderColor: Color.colorLimegreen,
     borderStyle: "solid",
     backgroundColor: Color.colorSeagreen_400,
-    top: 669,
+    top: 704,
   },
   joinPublicLeague: {
     left: 44,
@@ -195,7 +273,31 @@ const styles = StyleSheet.create({
   homeChild4: {
     left: 207,
   },
-  homeChild5: {
+  ggprofileIcon: {
+    overflow: "hidden",
+  },
+  vectorIcon: {
+    left: "47.07%",
+    bottom: "2.11%",
+    right: "45.29%",
+    top: "94.37%",
+    width: "7.63%",
+    height: "3.52%",
+    position: "absolute",
+    overflow: "hidden",
+  },
+  tablervsIcon: {
+    overflow: "hidden",
+  },
+  mdihomeOutlineIcon: {
+    overflow: "hidden",
+  },
+  vectorIcon1: {
+    maxHeight: "100%",
+    maxWidth: "100%",
+    overflow: "hidden",
+  },
+  rectanglePressable: {
     top: 786,
     left: 0,
     backgroundColor: Color.colorSeagreen_100,
@@ -203,50 +305,25 @@ const styles = StyleSheet.create({
     height: 66,
     position: "absolute",
   },
-  ggprofileIcon: {
-    top: 804,
-    left: 119,
-    width: 30,
-    height: 30,
-    position: "absolute",
-    overflow: "hidden",
+  icon1: {
+    maxHeight: "100%",
+    maxWidth: "100%",
   },
-  vectorIcon: {
-    height: "3.52%",
-    width: "7.63%",
-    top: "94.37%",
-    right: "45.29%",
-    bottom: "2.11%",
+  vectorPosition1: {
     left: "47.07%",
-  },
-  tablervsIcon: {
-    top: 803,
-    left: 251,
-    width: 33,
-    height: 32,
+    bottom: "2.11%",
+    right: "45.29%",
+    top: "94.37%",
+    width: "7.63%",
+    height: "3.52%",
     position: "absolute",
-    overflow: "hidden",
-  },
-  mdihomeOutlineIcon: {
-    top: 801,
-    left: 48,
-    width: 37,
-    overflow: "hidden",
-  },
-  vectorIcon1: {
-    height: "3.05%",
-    width: "6.87%",
-    top: "94.48%",
-    right: "12.21%",
-    bottom: "2.46%",
-    left: "80.92%",
   },
   home: {
     backgroundColor: Color.colorDarkslategray,
     flex: 1,
-    width: "100%",
     height: 852,
     overflow: "hidden",
+    width: "100%",
   },
 });
 

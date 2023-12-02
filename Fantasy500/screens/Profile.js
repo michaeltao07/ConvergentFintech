@@ -1,9 +1,12 @@
 import * as React from "react";
 import { Image } from "expo-image";
 import { StyleSheet, Text, Pressable, View } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 import { FontSize, FontFamily, Color } from "../GlobalStyles";
 
 const Profile = () => {
+  const navigation = useNavigation();
+
   return (
     <View style={styles.profile}>
       <Image
@@ -33,6 +36,86 @@ const Profile = () => {
         source={require("../assets/ellipse-21.png")}
       />
       <View style={styles.materialSymbolsleaderboardO} />
+      <View style={styles.rectangleView} />
+      <Image
+        style={[styles.ggprofileIcon, styles.ggprofilePosition]}
+        contentFit="cover"
+        source={require("../assets/ggprofile.png")}
+      />
+      <Image
+        style={[styles.vectorIcon, styles.iconLayout1]}
+        contentFit="cover"
+        source={require("../assets/vector.png")}
+      />
+      <Image
+        style={[styles.tablervsIcon, styles.tablervsPosition]}
+        contentFit="cover"
+        source={require("../assets/tablervs.png")}
+      />
+      <Image
+        style={[styles.mdihomeOutlineIcon, styles.mdihomePosition]}
+        contentFit="cover"
+        source={require("../assets/mdihomeoutline.png")}
+      />
+      <Image
+        style={[styles.vectorIcon1, styles.vectorPosition]}
+        contentFit="cover"
+        source={require("../assets/vector1.png")}
+      />
+      <Pressable
+        style={styles.rectangleView}
+        onPress={() => navigation.navigate("Profile")}
+      />
+      <Pressable
+        style={styles.ggprofilePosition}
+        onPress={() => navigation.navigate("Profile")}
+      >
+        <Image
+          style={styles.iconLayout}
+          contentFit="cover"
+          source={require("../assets/ggprofile.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={styles.vectorPosition1}
+        onPress={() => navigation.navigate("Profile")}
+      >
+        <Image
+          style={[styles.icon1, styles.iconLayout]}
+          contentFit="cover"
+          source={require("../assets/vector.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={styles.tablervsPosition}
+        onPress={() => navigation.navigate("Profile")}
+      >
+        <Image
+          style={styles.iconLayout}
+          contentFit="cover"
+          source={require("../assets/tablervs.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={styles.mdihomePosition}
+        onPress={() => navigation.navigate("Profile")}
+      >
+        <Image
+          style={styles.iconLayout}
+          contentFit="cover"
+          source={require("../assets/mdihomeoutline.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={styles.vectorPosition}
+        onPress={() => navigation.navigate("Profile")}
+      >
+        <Image
+          style={[styles.icon1, styles.iconLayout]}
+          contentFit="cover"
+          source={require("../assets/vector1.png")}
+        />
+      </Pressable>
     </View>
   );
 };
@@ -48,6 +131,45 @@ const styles = StyleSheet.create({
     textAlign: "left",
     color: Color.colorWhite,
     position: "absolute",
+  },
+  ggprofilePosition: {
+    height: 30,
+    width: 30,
+    left: 120,
+    top: 804,
+    position: "absolute",
+  },
+  iconLayout1: {
+    maxHeight: "100%",
+    maxWidth: "100%",
+  },
+  tablervsPosition: {
+    height: 32,
+    width: 33,
+    left: 252,
+    top: 803,
+    position: "absolute",
+  },
+  mdihomePosition: {
+    height: 36,
+    width: 37,
+    left: 49,
+    top: 801,
+    position: "absolute",
+  },
+  vectorPosition: {
+    left: "81.17%",
+    bottom: "2.46%",
+    right: "11.96%",
+    top: "94.48%",
+    width: "6.87%",
+    height: "3.05%",
+    position: "absolute",
+  },
+  iconLayout: {
+    height: "100%",
+    overflow: "hidden",
+    width: "100%",
   },
   profileChild: {
     top: 101,
@@ -116,12 +238,57 @@ const styles = StyleSheet.create({
     position: "absolute",
     overflow: "hidden",
   },
+  rectangleView: {
+    top: 786,
+    left: 1,
+    backgroundColor: Color.colorSeagreen_100,
+    width: 393,
+    height: 66,
+    position: "absolute",
+  },
+  ggprofileIcon: {
+    overflow: "hidden",
+  },
+  vectorIcon: {
+    left: "47.33%",
+    bottom: "2.11%",
+    right: "45.04%",
+    top: "94.37%",
+    width: "7.63%",
+    height: "3.52%",
+    position: "absolute",
+    overflow: "hidden",
+  },
+  tablervsIcon: {
+    overflow: "hidden",
+  },
+  mdihomeOutlineIcon: {
+    overflow: "hidden",
+  },
+  vectorIcon1: {
+    maxHeight: "100%",
+    maxWidth: "100%",
+    overflow: "hidden",
+  },
+  icon1: {
+    maxHeight: "100%",
+    maxWidth: "100%",
+  },
+  vectorPosition1: {
+    left: "47.33%",
+    bottom: "2.11%",
+    right: "45.04%",
+    top: "94.37%",
+    width: "7.63%",
+    height: "3.52%",
+    position: "absolute",
+  },
   profile: {
     backgroundColor: Color.colorDarkslategray,
     flex: 1,
-    width: "100%",
     height: 852,
     overflow: "hidden",
+    width: "100%",
   },
 });
 

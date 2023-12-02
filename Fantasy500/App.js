@@ -17,6 +17,10 @@ import Home from "./screens/Home";
 import Wallet1 from "./screens/Wallet1";
 import LogIn from "./screens/LogIn";
 import LaunchPage from "./screens/LaunchPage";
+import SelectTheLeague from "./components/SelectTheLeague";
+import ResponsibleGaming1 from "./screens/ResponsibleGaming1";
+import InviteFriends1 from "./screens/InviteFriends1";
+import ForgotPassword from "./screens/ForgotPassword";
 
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { View, Text, Pressable, TouchableOpacity } from "react-native";
@@ -42,8 +46,13 @@ const App = () => {
         {hideSplashScreen ? (
           <Stack.Navigator screenOptions={{ headerShown: false }}>
             <Stack.Screen
-              name="Home"
-              component={Home}
+              name="CreateAccount"
+              component={CreateAccount}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="Leaderboard"
+              component={Leaderboard}
               options={{ headerShown: false }}
             />
             <Stack.Screen
@@ -86,7 +95,11 @@ const App = () => {
               component={Wallet}
               options={{ headerShown: false }}
             />
-            
+            <Stack.Screen
+              name="Home"
+              component={Home}
+              options={{ headerShown: false }}
+            />
             <Stack.Screen
               name="Wallet1"
               component={Wallet1}
@@ -100,6 +113,21 @@ const App = () => {
             <Stack.Screen
               name="LaunchPage"
               component={LaunchPage}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="ResponsibleGaming1"
+              component={ResponsibleGaming1}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="InviteFriends1"
+              component={InviteFriends1}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="ForgotPassword"
+              component={ForgotPassword}
               options={{ headerShown: false }}
             />
           </Stack.Navigator>

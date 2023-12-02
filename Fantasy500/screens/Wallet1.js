@@ -5,63 +5,66 @@ import { FontSize, Color, FontFamily, Border } from "../GlobalStyles";
 
 const Wallet1 = () => {
   return (
-    <View style={styles.wallet}>
+    <View style={styles.roster}>
       <Image
-        style={[styles.walletChild, styles.walletChildLayout]}
+        style={[styles.rosterChild, styles.rosterChildLayout]}
         contentFit="cover"
         source={require("../assets/ellipse-22.png")}
       />
       <Image
-        style={styles.walletItem}
+        style={styles.rosterItem}
         contentFit="cover"
         source={require("../assets/ellipse-21.png")}
       />
       <Text style={styles.yourDrafts}>YOUR DRAFTS</Text>
       <Text style={[styles.technology, styles.technologyTypo]}>Technology</Text>
-      <Text style={[styles.technology, styles.technologyTypo]}>Technology</Text>
       <Text style={[styles.healthcare, styles.technologyTypo]}>Healthcare</Text>
-      <Text style={[styles.addOnFantasy500, styles.technologyTypo]}>
-        Add on Fantasy500
+      <Text style={[styles.realEstate, styles.technologyTypo]}>
+        Real Estate
       </Text>
-      <Pressable style={[styles.walletInner, styles.walletInnerShadowBox]} />
+      <Pressable style={[styles.rosterInner, styles.rosterInnerShadowBox]} />
       <Text style={[styles.appleInc, styles.appleTypo]}>Apple Inc</Text>
-      <Text style={[styles.nasdaqAppl, styles.nasdaqTypo2]}>NASDAQ: APPL</Text>
+      <Text style={[styles.nasdaqAppl, styles.nasdaqLayout]}>NASDAQ: APPL</Text>
       <Image
-        style={[styles.image1Icon, styles.iconLayout1]}
+        style={styles.image1Icon}
         contentFit="cover"
         source={require("../assets/image-11.png")}
       />
       <Pressable
-        style={[styles.rectanglePressable, styles.walletInnerShadowBox]}
+        style={[styles.rectanglePressable, styles.rosterInnerShadowBox]}
       />
-      <Text style={[styles.appleInc1, styles.appleTypo]}>Apple Inc</Text>
-      <Text style={[styles.nasdaqAppl1, styles.nasdaqTypo2]}>NASDAQ: APPL</Text>
+      <Text style={[styles.appleInc1, styles.appleInc1Position]}>
+        Apple Inc
+      </Text>
+      <Text style={[styles.nasdaqAppl1, styles.appleInc1Position]}>
+        NASDAQ: APPL
+      </Text>
       <Image
-        style={[styles.image2Icon, styles.iconLayout]}
+        style={styles.image2Icon}
         contentFit="cover"
         source={require("../assets/image-21.png")}
       />
-      <Pressable style={[styles.walletChild1, styles.walletChild1ShadowBox]} />
+      <Pressable style={[styles.rosterChild1, styles.rosterChild1ShadowBox]} />
       <Text style={[styles.appleInc2, styles.appleIconPosition1]}>
         Apple Inc
       </Text>
       <Text style={[styles.nasdaqAppl2, styles.nasdaqTypo1]}>NASDAQ: APPL</Text>
       <Image
-        style={[styles.image3Icon, styles.appleIconPosition1]}
+        style={[styles.image3Icon, styles.iconLayout1]}
         contentFit="cover"
         source={require("../assets/image-11.png")}
       />
-      <View style={[styles.rectangleView, styles.walletChild1ShadowBox]} />
+      <View style={[styles.rectangleView, styles.rosterChild1ShadowBox]} />
       <Text style={[styles.appleInc3, styles.appleIconPosition1]}>
         Apple Inc
       </Text>
       <Text style={[styles.nasdaqAppl3, styles.nasdaqTypo1]}>NASDAQ: APPL</Text>
       <Image
-        style={[styles.image4Icon, styles.appleIconPosition1]}
+        style={[styles.image4Icon, styles.iconLayout]}
         contentFit="cover"
         source={require("../assets/image-21.png")}
       />
-      <View style={[styles.walletChild2, styles.walletChildShadowBox]} />
+      <View style={[styles.rosterChild2, styles.rosterChildShadowBox]} />
       <Text style={[styles.appleInc4, styles.appleIconPosition]}>
         Apple Inc
       </Text>
@@ -71,7 +74,7 @@ const Wallet1 = () => {
         contentFit="cover"
         source={require("../assets/image-11.png")}
       />
-      <Pressable style={[styles.walletChild3, styles.walletChildShadowBox]} />
+      <Pressable style={[styles.rosterChild3, styles.rosterChildShadowBox]} />
       <Text style={[styles.appleInc5, styles.appleIconPosition]}>
         Apple Inc
       </Text>
@@ -81,7 +84,7 @@ const Wallet1 = () => {
         contentFit="cover"
         source={require("../assets/image-21.png")}
       />
-      <View style={styles.walletChild4} />
+      <View style={styles.rosterChild4} />
       <Image
         style={styles.ggprofileIcon}
         contentFit="cover"
@@ -98,7 +101,7 @@ const Wallet1 = () => {
         source={require("../assets/tablervs.png")}
       />
       <Image
-        style={[styles.mdihomeOutlineIcon, styles.walletChildLayout]}
+        style={[styles.mdihomeOutlineIcon, styles.rosterChildLayout]}
         contentFit="cover"
         source={require("../assets/mdihomeoutline.png")}
       />
@@ -112,7 +115,7 @@ const Wallet1 = () => {
 };
 
 const styles = StyleSheet.create({
-  walletChildLayout: {
+  rosterChildLayout: {
     height: 36,
     position: "absolute",
   },
@@ -125,7 +128,7 @@ const styles = StyleSheet.create({
     fontWeight: "700",
     position: "absolute",
   },
-  walletInnerShadowBox: {
+  rosterInnerShadowBox: {
     height: 52,
     width: 164,
     shadowOpacity: 1,
@@ -143,35 +146,24 @@ const styles = StyleSheet.create({
   },
   appleTypo: {
     height: 9,
-    width: 68,
-    fontFamily: FontFamily.interSemiBold,
-    fontWeight: "600",
     fontSize: FontSize.size_3xs,
     textAlign: "left",
-    color: Color.colorWhite,
   },
-  nasdaqTypo2: {
+  nasdaqLayout: {
     width: 85,
     color: Color.colorLimegreen,
     fontFamily: FontFamily.interRegular,
     top: 212,
+  },
+  appleInc1Position: {
+    left: 235,
     height: 9,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
     position: "absolute",
   },
-  iconLayout1: {
-    height: 23,
-    width: 19,
-    left: 33,
-  },
-  iconLayout: {
-    width: 20,
-    left: 210,
-    height: 23,
-  },
-  walletChild1ShadowBox: {
-    top: 314,
+  rosterChild1ShadowBox: {
+    top: 301,
     height: 52,
     width: 164,
     shadowOpacity: 1,
@@ -187,11 +179,11 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   appleIconPosition1: {
-    top: 322,
+    top: 309,
     position: "absolute",
   },
   nasdaqTypo1: {
-    top: 334,
+    top: 321,
     width: 85,
     color: Color.colorLimegreen,
     fontFamily: FontFamily.interRegular,
@@ -200,8 +192,18 @@ const styles = StyleSheet.create({
     textAlign: "left",
     position: "absolute",
   },
-  walletChildShadowBox: {
-    top: 436,
+  iconLayout1: {
+    left: 34,
+    height: 23,
+    width: 19,
+  },
+  iconLayout: {
+    left: 211,
+    width: 20,
+    height: 23,
+  },
+  rosterChildShadowBox: {
+    top: 410,
     height: 52,
     width: 164,
     shadowOpacity: 1,
@@ -217,11 +219,11 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   appleIconPosition: {
-    top: 444,
+    top: 418,
     position: "absolute",
   },
   nasdaqTypo: {
-    top: 456,
+    top: 430,
     width: 85,
     color: Color.colorLimegreen,
     fontFamily: FontFamily.interRegular,
@@ -236,12 +238,12 @@ const styles = StyleSheet.create({
     position: "absolute",
     overflow: "hidden",
   },
-  walletChild: {
+  rosterChild: {
     top: 80,
     width: 36,
     left: 25,
   },
-  walletItem: {
+  rosterItem: {
     top: 26,
     left: 123,
     width: 147,
@@ -260,33 +262,41 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   technology: {
-    top: 154,
-    left: 27,
-    width: 243,
-    fontSize: FontSize.size_xl,
-  },
-  healthcare: {
-    top: 276,
-    left: 27,
-    width: 243,
-    fontSize: FontSize.size_xl,
-  },
-  addOnFantasy500: {
-    top: 398,
+    top: 160,
     left: 25,
   },
-  walletInner: {
+  healthcare: {
+    top: 272,
+    left: 28,
+  },
+  realEstate: {
+    top: 381,
+    left: 26,
+  },
+  rosterInner: {
     left: 25,
   },
   appleInc: {
+    width: 68,
+    fontFamily: FontFamily.interSemiBold,
+    fontWeight: "600",
+    color: Color.colorWhite,
     left: 57,
-    top: 200,
+    fontSize: FontSize.size_3xs,
     position: "absolute",
+    top: 200,
   },
   nasdaqAppl: {
+    height: 9,
+    fontSize: FontSize.size_3xs,
+    textAlign: "left",
     left: 57,
+    position: "absolute",
   },
   image1Icon: {
+    left: 33,
+    height: 23,
+    width: 19,
     top: 200,
     position: "absolute",
   },
@@ -294,102 +304,108 @@ const styles = StyleSheet.create({
     left: 203,
   },
   appleInc1: {
-    left: 235,
+    width: 68,
+    fontFamily: FontFamily.interSemiBold,
+    fontWeight: "600",
+    color: Color.colorWhite,
     top: 200,
-    position: "absolute",
   },
   nasdaqAppl1: {
-    left: 235,
+    width: 85,
+    color: Color.colorLimegreen,
+    fontFamily: FontFamily.interRegular,
+    top: 212,
   },
   image2Icon: {
+    left: 210,
+    width: 20,
+    height: 23,
     top: 200,
     position: "absolute",
   },
-  walletChild1: {
-    left: 25,
+  rosterChild1: {
+    left: 26,
   },
   appleInc2: {
+    left: 58,
     height: 9,
+    fontSize: FontSize.size_3xs,
+    textAlign: "left",
     width: 68,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
-    fontSize: FontSize.size_3xs,
-    textAlign: "left",
     color: Color.colorWhite,
-    left: 57,
   },
   nasdaqAppl2: {
-    left: 57,
+    left: 58,
   },
   image3Icon: {
-    height: 23,
-    width: 19,
-    left: 33,
+    top: 309,
+    position: "absolute",
   },
   rectangleView: {
-    left: 203,
+    left: 204,
   },
   appleInc3: {
-    left: 235,
+    left: 236,
     height: 9,
+    fontSize: FontSize.size_3xs,
+    textAlign: "left",
     width: 68,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
-    fontSize: FontSize.size_3xs,
-    textAlign: "left",
     color: Color.colorWhite,
   },
   nasdaqAppl3: {
-    left: 235,
+    left: 236,
   },
   image4Icon: {
-    width: 20,
-    left: 210,
-    height: 23,
+    top: 309,
+    position: "absolute",
   },
-  walletChild2: {
-    left: 25,
+  rosterChild2: {
+    left: 26,
   },
   appleInc4: {
+    left: 58,
     height: 9,
+    fontSize: FontSize.size_3xs,
+    textAlign: "left",
     width: 68,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
-    fontSize: FontSize.size_3xs,
-    textAlign: "left",
     color: Color.colorWhite,
-    left: 57,
   },
   nasdaqAppl4: {
-    left: 57,
+    left: 58,
   },
   image5Icon: {
+    left: 34,
     height: 23,
     width: 19,
-    left: 33,
   },
-  walletChild3: {
-    left: 203,
+  rosterChild3: {
+    left: 204,
   },
   appleInc5: {
-    left: 235,
+    left: 236,
     height: 9,
+    fontSize: FontSize.size_3xs,
+    textAlign: "left",
     width: 68,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
-    fontSize: FontSize.size_3xs,
-    textAlign: "left",
     color: Color.colorWhite,
   },
   nasdaqAppl5: {
-    left: 235,
+    left: 236,
   },
   image6Icon: {
+    left: 211,
     width: 20,
-    left: 210,
     height: 23,
   },
-  walletChild4: {
+  rosterChild4: {
     top: 786,
     left: 0,
     backgroundColor: Color.colorSeagreen_100,
@@ -435,7 +451,7 @@ const styles = StyleSheet.create({
     bottom: "2.46%",
     left: "80.92%",
   },
-  wallet: {
+  roster: {
     backgroundColor: Color.colorDarkslategray,
     flex: 1,
     width: "100%",

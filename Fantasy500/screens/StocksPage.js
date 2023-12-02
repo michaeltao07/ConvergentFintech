@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Image } from "expo-image";
 import { StyleSheet, Text, View, Pressable } from "react-native";
-import { FontFamily, Color, FontSize, Border } from "../GlobalStyles";
+import { Color, FontFamily, Border, FontSize } from "../GlobalStyles";
 
 const StocksPage = () => {
   return (
@@ -11,15 +11,18 @@ const StocksPage = () => {
         contentFit="cover"
         source={require("../assets/image-2.png")}
       />
-      <Text style={[styles.appleInc, styles.textTypo]}>Apple Inc</Text>
+      <Text style={[styles.appleInc, styles.textLayout]}>Apple Inc</Text>
       <Text style={[styles.text, styles.textTypo]}>{`173.97
 `}</Text>
       <Text style={[styles.nasdaqAppl, styles.todayLayout]}>NASDAQ: APPL</Text>
       <Text style={[styles.today, styles.todayLayout]}>
         +3.20 (1.87%) today
       </Text>
-      <Text style={[styles.marketSummary, styles.usdTypo]}>Market Summary</Text>
-      <Text style={[styles.usd, styles.usdTypo]}>USD</Text>
+      <Text style={[styles.marketSummary, styles.textTypo]}>
+        Market Summary
+      </Text>
+      <Text style={[styles.featured, styles.usdFlexBox]}>Featured</Text>
+      <Text style={[styles.usd, styles.usdFlexBox]}>USD</Text>
       <View style={[styles.stocksPageChild, styles.stocksShadowBox]} />
       <Image
         style={styles.stocksPageItem}
@@ -56,9 +59,9 @@ const StocksPage = () => {
         contentFit="cover"
         source={require("../assets/vector1.png")}
       />
-      <View style={[styles.stocksPageChild1, styles.stocksChildPosition]} />
+      <View style={[styles.stocksPageChild1, styles.stocksChildLayout]} />
       <Text style={[styles.newsArticle1, styles.newsTypo]}>news article 1</Text>
-      <View style={[styles.stocksPageChild2, styles.stocksChildPosition]} />
+      <View style={[styles.stocksPageChild2, styles.stocksChildLayout]} />
       <Text style={[styles.newsArticle2, styles.newsTypo]}>news article 2</Text>
       <Text style={[styles.graphOfStock, styles.newsTypo]}>
         graph of stock value
@@ -66,20 +69,26 @@ const StocksPage = () => {
       <Image
         style={styles.polygonIcon}
         contentFit="cover"
-        source={require("../assets/polygon-1.png")}
+        source={require("../assets/polygon-11.png")}
       />
+      <Text style={[styles.showMoreOn, styles.nasdaqApplTypo]}>
+        show more on web
+      </Text>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  textTypo: {
+  textLayout: {
     height: 34,
     width: 183,
-    fontFamily: FontFamily.interSemiBold,
-    fontWeight: "600",
+  },
+  textTypo: {
+    left: 32,
     textAlign: "left",
     color: Color.colorWhite,
+    fontFamily: FontFamily.interSemiBold,
+    fontWeight: "600",
     position: "absolute",
   },
   todayLayout: {
@@ -88,12 +97,9 @@ const styles = StyleSheet.create({
     textAlign: "left",
     position: "absolute",
   },
-  usdTypo: {
-    fontSize: FontSize.size_xl,
+  usdFlexBox: {
     textAlign: "left",
     color: Color.colorWhite,
-    fontFamily: FontFamily.interSemiBold,
-    fontWeight: "600",
     position: "absolute",
   },
   stocksShadowBox: {
@@ -111,7 +117,6 @@ const styles = StyleSheet.create({
   nasdaqApplTypo: {
     fontFamily: FontFamily.interMedium,
     fontWeight: "500",
-    fontSize: FontSize.size_xl,
   },
   vectorIconLayout: {
     maxHeight: "100%",
@@ -119,9 +124,12 @@ const styles = StyleSheet.create({
     position: "absolute",
     overflow: "hidden",
   },
-  stocksChildPosition: {
-    left: 46,
+  stocksChildLayout: {
+    height: 60,
+    width: 306,
     backgroundColor: Color.colorGainsboro,
+    left: 43,
+    borderRadius: Border.br_5xs,
     position: "absolute",
   },
   newsTypo: {
@@ -142,12 +150,18 @@ const styles = StyleSheet.create({
   appleInc: {
     top: 80,
     fontSize: 25,
+    textAlign: "left",
+    color: Color.colorWhite,
+    position: "absolute",
+    fontFamily: FontFamily.interSemiBold,
+    fontWeight: "600",
     left: 152,
   },
   text: {
     top: 199,
     fontSize: FontSize.size_11xl,
-    left: 32,
+    height: 34,
+    width: 183,
   },
   nasdaqAppl: {
     top: 114,
@@ -167,28 +181,32 @@ const styles = StyleSheet.create({
   marketSummary: {
     top: 167,
     width: 169,
-    left: 32,
+    fontSize: FontSize.size_xl,
+  },
+  featured: {
+    top: 583,
+    left: 153,
+    width: 87,
+    fontSize: FontSize.size_xl,
+    fontFamily: FontFamily.interSemiBold,
+    fontWeight: "600",
+    color: Color.colorWhite,
   },
   usd: {
     top: 209,
     left: 133,
     width: 43,
+    fontSize: FontSize.size_xl,
+    fontFamily: FontFamily.interSemiBold,
+    fontWeight: "600",
+    color: Color.colorWhite,
   },
   stocksPageChild: {
-    top: 288,
+    top: 271,
     left: 28,
+    backgroundColor: Color.colorDarkseagreen,
     width: 337,
     height: 193,
-    backgroundColor: Color.colorGainsboro,
-    shadowOpacity: 1,
-    elevation: 4,
-    shadowRadius: 4,
-    shadowOffset: {
-      width: 0,
-      height: 4,
-    },
-    shadowColor: "rgba(0, 0, 0, 0.25)",
-    borderRadius: Border.br_5xs,
   },
   stocksPageItem: {
     top: 26,
@@ -198,33 +216,23 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   stocksPageInner: {
-    top: 548,
-    left: 68,
+    top: 489,
+    left: 70,
     backgroundColor: Color.colorSeagreen_400,
     borderStyle: "solid",
     borderColor: Color.colorLimegreen,
     borderWidth: 1,
     width: 250,
     height: 58,
-    shadowOpacity: 1,
-    elevation: 4,
-    shadowRadius: 4,
-    shadowOffset: {
-      width: 0,
-      height: 4,
-    },
-    shadowColor: "rgba(0, 0, 0, 0.25)",
-    borderRadius: Border.br_5xs,
   },
   addToRoster: {
-    top: 566,
-    left: 126,
+    top: 507,
+    left: 128,
     width: 134,
     height: 9,
+    fontSize: FontSize.size_xl,
     textAlign: "left",
     color: Color.colorWhite,
-    fontFamily: FontFamily.interMedium,
-    fontWeight: "500",
     position: "absolute",
   },
   rectangleView: {
@@ -276,32 +284,41 @@ const styles = StyleSheet.create({
     left: "80.92%",
   },
   stocksPageChild1: {
-    top: 626,
-    width: 306,
-    height: 84,
+    top: 619,
   },
   newsArticle1: {
-    top: 662,
-    left: 139,
+    top: 634,
+    left: 131,
+    color: Color.colorBlack,
   },
   stocksPageChild2: {
-    top: 723,
-    width: 299,
-    height: 63,
+    top: 686,
   },
   newsArticle2: {
-    top: 747,
-    left: 147,
+    top: 704,
+    left: 131,
+    color: Color.colorBlack,
   },
   graphOfStock: {
-    top: 373,
-    left: 117,
+    top: 356,
+    left: 97,
   },
   polygonIcon: {
     top: 81,
     left: 31,
     width: 22,
     height: 21,
+    position: "absolute",
+  },
+  showMoreOn: {
+    top: 753,
+    left: 151,
+    fontSize: FontSize.size_3xs,
+    textDecoration: "underline",
+    width: 91,
+    height: 11,
+    textAlign: "left",
+    color: Color.colorWhite,
     position: "absolute",
   },
   stocksPage: {

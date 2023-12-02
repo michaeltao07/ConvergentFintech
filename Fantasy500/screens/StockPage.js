@@ -1,14 +1,9 @@
 import * as React from "react";
-import { Text, StyleSheet, Pressable, View, TouchableOpacity } from "react-native";
+import { Text, StyleSheet, Pressable, View } from "react-native";
 import { Image } from "expo-image";
 import { FontFamily, Color, Border, FontSize } from "../GlobalStyles";
-import StocksPage from './StocksPage'
 
-const StockPage = ({navigation}) => {
-  const handleDraftListPress = () => {
-    // Navigate to DraftList page
-    navigation.navigate(StocksPage);
-  };
+const StockPage = () => {
   return (
     <View style={styles.stockpage}>
       <Text style={styles.picks}>PICKS</Text>
@@ -18,38 +13,26 @@ const StockPage = ({navigation}) => {
       <Text style={styles.stockOptionsFor}>
         Stock options for the [technology] industry
       </Text>
-      <Pressable style={[styles.stockpageChild, styles.rectangleShadowBox]} />
+      <Pressable style={styles.stockpageChild} />
       <View style={[styles.stockpageItem, styles.stockpageChildLayout]} />
       <Pressable style={[styles.stockpageInner, styles.stockpageShadowBox]} />
       <Text style={[styles.appleInc, styles.appleTypo]}>Apple Inc</Text>
-      <Text style={[styles.technology, styles.technologyLayout]}>
-        Technology
+      <Text style={styles.technology}>Technology</Text>
+      <Text style={[styles.realEstate, styles.realEstateTypo]}>
+        Real Estate
       </Text>
-      <Text style={[styles.technology, styles.technologyLayout]}>
-        Technology
-      </Text>
-      <Text style={[styles.realEstate, styles.realLayout]}>Real Estate</Text>
-      <Text style={[styles.healthcare, styles.healthcareTypo]}>Healthcare</Text>
+      <Text style={[styles.healthcare, styles.realEstateTypo]}>Healthcare</Text>
       <Text style={[styles.nasdaqAppl, styles.nasdaqTypo3]}>NASDAQ: APPL</Text>
-      <View style={[styles.rectangleView, styles.rectangleViewBg]} />
+      <View style={[styles.rectangleView, styles.rectangleShadowBox]} />
       <Pressable
-        style={[styles.rectanglePressable, styles.stockpageChild3Position]}
+        style={[styles.rectanglePressable, styles.rectangleShadowBox]}
       />
       <Pressable
         style={[styles.stockpageChild1, styles.stockpageChildShadowBox4]}
       />
-      <Text style={[styles.technology2, styles.technology2Typo]}>
-        Technology
-      </Text>
-      <Text style={[styles.technology2, styles.technology2Typo]}>
-        Technology
-      </Text>
-      <Text style={[styles.realEstate1, styles.technology2Typo]}>
-        Real Estate
-      </Text>
-      <Text style={[styles.healthcare1, styles.healthcareTypo]}>
-        Healthcare
-      </Text>
+      <Text style={styles.industry4}>Industry 4</Text>
+      <Text style={[styles.industry5, styles.industryTypo]}>Industry 5</Text>
+      <Text style={[styles.industry6, styles.industryTypo]}>Industry 6</Text>
       <Pressable
         style={[styles.stockpageChild2, styles.stockpageChildShadowBox4]}
       />
@@ -81,22 +64,22 @@ const StockPage = ({navigation}) => {
         contentFit="cover"
         source={require("../assets/image-1.png")}
       />
-        <View style={[styles.stockpageChild6, styles.stockpageChildLayout]} />
-        <Pressable
-          style={[styles.stockpageChild7, styles.stockpageChildShadowBox3]}
-        />
-        <Text style={[styles.appleInc2, styles.appleInc2Position]}>
-          Apple Inc
-        </Text>
-        <Text style={[styles.nasdaqAppl2, styles.nasdaqPosition]}>
-          NASDAQ: APPL
-        </Text>
-        <Image
-          style={[styles.image3Icon, styles.iconLayout3]}
-          contentFit="cover"
-          source={require("../assets/image-1.png")}
-        />
-        <View style={[styles.stockpageChild8, styles.stockpageChildLayout]} />
+      <View style={[styles.stockpageChild6, styles.stockpageChildLayout]} />
+      <Pressable
+        style={[styles.stockpageChild7, styles.stockpageChildShadowBox3]}
+      />
+      <Text style={[styles.appleInc2, styles.appleInc2Position]}>
+        Apple Inc
+      </Text>
+      <Text style={[styles.nasdaqAppl2, styles.nasdaqPosition]}>
+        NASDAQ: APPL
+      </Text>
+      <Image
+        style={[styles.image3Icon, styles.iconLayout3]}
+        contentFit="cover"
+        source={require("../assets/image-1.png")}
+      />
+      <View style={[styles.stockpageChild8, styles.stockpageChildLayout]} />
       <Pressable
         style={[styles.stockpageChild9, styles.stockpageChildShadowBox3]}
       />
@@ -232,24 +215,6 @@ const styles = StyleSheet.create({
     color: Color.colorWhite,
     position: "absolute",
   },
-  rectangleShadowBox: {
-    height: 34,
-    width: 108,
-    borderWidth: 1,
-    borderColor: Color.colorLimegreen,
-    borderStyle: "solid",
-    shadowOpacity: 1,
-    elevation: 4,
-    shadowRadius: 4,
-    shadowOffset: {
-      width: 0,
-      height: 4,
-    },
-    shadowColor: "rgba(0, 0, 0, 0.25)",
-    borderRadius: Border.br_5xs,
-    top: 119,
-    position: "absolute",
-  },
   stockpageChildLayout: {
     height: 67,
     width: 100,
@@ -281,23 +246,12 @@ const styles = StyleSheet.create({
     textAlign: "left",
     color: Color.colorWhite,
   },
-  technologyLayout: {
-    height: 7,
-    width: 90,
-    left: 27,
-  },
-  realLayout: {
-    height: 14,
-    width: 81,
-    left: 158,
-  },
-  healthcareTypo: {
-    width: 79,
-    left: 286,
+  realEstateTypo: {
     height: 14,
     fontFamily: FontFamily.interMedium,
     fontWeight: "500",
     fontSize: FontSize.size_mini,
+    top: 128,
     textAlign: "left",
     color: Color.colorWhite,
     position: "absolute",
@@ -312,16 +266,28 @@ const styles = StyleSheet.create({
     textAlign: "left",
     position: "absolute",
   },
-  rectangleViewBg: {
+  rectangleShadowBox: {
     backgroundColor: Color.colorSeagreen_400,
-    left: 144,
-  },
-  stockpageChild3Position: {
-    left: 271,
-    backgroundColor: Color.colorSeagreen_400,
+    height: 34,
+    width: 108,
+    borderWidth: 1,
+    borderColor: Color.colorLimegreen,
+    borderStyle: "solid",
+    shadowOpacity: 1,
+    elevation: 4,
+    shadowRadius: 4,
+    shadowOffset: {
+      width: 0,
+      height: 4,
+    },
+    shadowColor: "rgba(0, 0, 0, 0.25)",
+    borderRadius: Border.br_5xs,
+    top: 119,
+    position: "absolute",
   },
   stockpageChildShadowBox4: {
     top: 166,
+    backgroundColor: Color.colorSeagreen_400,
     height: 34,
     width: 108,
     borderWidth: 1,
@@ -338,8 +304,10 @@ const styles = StyleSheet.create({
     borderRadius: Border.br_5xs,
     position: "absolute",
   },
-  technology2Typo: {
-    top: 176,
+  industryTypo: {
+    width: 73,
+    top: 174,
+    height: 14,
     fontFamily: FontFamily.interMedium,
     fontWeight: "500",
     fontSize: FontSize.size_mini,
@@ -547,7 +515,23 @@ const styles = StyleSheet.create({
   },
   stockpageChild: {
     backgroundColor: Color.colorSeagreen_300,
+    height: 34,
+    width: 108,
+    borderWidth: 1,
+    borderColor: Color.colorLimegreen,
+    borderStyle: "solid",
+    shadowOpacity: 1,
+    elevation: 4,
+    shadowRadius: 4,
+    shadowOffset: {
+      width: 0,
+      height: 4,
+    },
+    shadowColor: "rgba(0, 0, 0, 0.25)",
+    borderRadius: Border.br_5xs,
+    top: 119,
     left: 16,
+    position: "absolute",
   },
   stockpageItem: {
     top: 278,
@@ -564,89 +548,60 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   technology: {
+    height: 7,
+    width: 90,
     fontFamily: FontFamily.interMedium,
     fontWeight: "500",
     fontSize: FontSize.size_mini,
-    top: 130,
+    left: 27,
+    top: 128,
     textAlign: "left",
     color: Color.colorWhite,
     position: "absolute",
   },
   realEstate: {
-    fontFamily: FontFamily.interMedium,
-    fontWeight: "500",
-    fontSize: FontSize.size_mini,
-    top: 130,
-    textAlign: "left",
-    color: Color.colorWhite,
-    position: "absolute",
+    left: 158,
+    width: 81,
   },
   healthcare: {
-    top: 129,
+    left: 286,
+    width: 79,
   },
   nasdaqAppl: {
     left: 50,
   },
   rectangleView: {
-    height: 34,
-    width: 108,
-    borderWidth: 1,
-    borderColor: Color.colorLimegreen,
-    borderStyle: "solid",
-    shadowOpacity: 1,
-    elevation: 4,
-    shadowRadius: 4,
-    shadowOffset: {
-      width: 0,
-      height: 4,
-    },
-    shadowColor: "rgba(0, 0, 0, 0.25)",
-    borderRadius: Border.br_5xs,
-    top: 119,
-    position: "absolute",
+    left: 144,
   },
   rectanglePressable: {
-    height: 34,
-    width: 108,
-    borderWidth: 1,
-    borderColor: Color.colorLimegreen,
-    borderStyle: "solid",
-    shadowOpacity: 1,
-    elevation: 4,
-    shadowRadius: 4,
-    shadowOffset: {
-      width: 0,
-      height: 4,
-    },
-    shadowColor: "rgba(0, 0, 0, 0.25)",
-    borderRadius: Border.br_5xs,
-    top: 119,
-    position: "absolute",
+    left: 271,
   },
   stockpageChild1: {
-    backgroundColor: Color.colorSeagreen_300,
     left: 16,
   },
-  technology2: {
+  industry4: {
+    top: 174,
     height: 7,
     width: 90,
+    fontFamily: FontFamily.interMedium,
+    fontWeight: "500",
+    fontSize: FontSize.size_mini,
     left: 27,
+    textAlign: "left",
+    color: Color.colorWhite,
+    position: "absolute",
   },
-  realEstate1: {
-    height: 14,
-    width: 81,
-    left: 158,
+  industry5: {
+    left: 162,
   },
-  healthcare1: {
-    top: 175,
+  industry6: {
+    left: 289,
   },
   stockpageChild2: {
-    backgroundColor: Color.colorSeagreen_400,
     left: 144,
   },
   stockpageChild3: {
     left: 271,
-    backgroundColor: Color.colorSeagreen_400,
   },
   ellipseIcon: {
     top: 65,

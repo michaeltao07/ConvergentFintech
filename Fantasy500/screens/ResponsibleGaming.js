@@ -34,7 +34,7 @@ const ResponsibleGaming = () => {
       <Image
         style={styles.responsibleGamingItem}
         contentFit="cover"
-        source={require("../assets/polygon-1.png")}
+        source={require("../assets/polygon-11.png")}
       />
       <View style={styles.responsibleGamingInner} />
       <Image

@@ -31,19 +31,17 @@ const CreateAccount = () => {
         Create Account
       </Text>
       <Pressable style={styles.createAccountInner} />
-      <View style={[styles.rectangleView, styles.rectangleShadowBox]} />
       <TextInput
         style={[styles.emailAddress, styles.nameTypo]}
         placeholder="Email Address"
         placeholderTextColor="#fff"
       />
-      <View style={[styles.createAccountChild1, styles.rectangleShadowBox]} />
+      <View style={[styles.rectangleView, styles.rectangleLayout]} />
+      <View style={[styles.createAccountChild1, styles.rectangleLayout]} />
       <Text style={[styles.password, styles.signUpTypo]}>Password</Text>
       <Text style={[styles.signUp, styles.signUpTypo]}>Sign up</Text>
       <Text style={[styles.password, styles.signUpTypo]}>Password</Text>
-      <TextInput
-        style={[styles.rectangleTextinput, styles.rectangleShadowBox]}
-      />
+      <TextInput style={[styles.rectangleTextinput, styles.rectangleLayout]} />
     </View>
   );
 };
@@ -61,7 +59,7 @@ const styles = StyleSheet.create({
     fontSize: FontSize.size_xl,
     position: "absolute",
   },
-  rectangleShadowBox: {
+  rectangleLayout: {
     height: 45,
     width: 277,
     borderColor: Color.colorLimegreen,
@@ -69,13 +67,10 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderStyle: "solid",
     shadowOpacity: 1,
-    elevation: 4,
-    shadowRadius: 4,
     shadowOffset: {
       width: 0,
       height: 4,
     },
-    shadowColor: "rgba(0, 0, 0, 0.25)",
     borderRadius: Border.br_5xs,
     left: 58,
     position: "absolute",
@@ -130,8 +125,8 @@ const styles = StyleSheet.create({
     fontWeight: "500",
   },
   createAccount1: {
-    top: 339,
-    left: 121,
+    top: 341,
+    left: 119,
     fontWeight: "600",
     fontFamily: FontFamily.interSemiBold,
     width: 152,
@@ -147,19 +142,16 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderStyle: "solid",
     shadowOpacity: 1,
-    elevation: 4,
-    shadowRadius: 4,
     shadowOffset: {
       width: 0,
       height: 4,
     },
-    shadowColor: "rgba(0, 0, 0, 0.25)",
     borderRadius: Border.br_5xs,
     left: 58,
+    elevation: 4,
+    shadowRadius: 4,
+    shadowColor: "rgba(0, 0, 0, 0.25)",
     position: "absolute",
-  },
-  rectangleView: {
-    top: 426,
   },
   emailAddress: {
     top: 515,
@@ -167,8 +159,23 @@ const styles = StyleSheet.create({
     fontFamily: FontFamily.interMedium,
     fontWeight: "500",
   },
-  createAccountChild1: {
+  rectangleView: {
     top: 504,
+    elevation: 4,
+    shadowRadius: 4,
+    shadowColor: "rgba(0, 0, 0, 0.25)",
+    width: 277,
+    borderColor: Color.colorLimegreen,
+    backgroundColor: Color.colorSeagreen_400,
+  },
+  createAccountChild1: {
+    top: 426,
+    elevation: 4,
+    shadowRadius: 4,
+    shadowColor: "rgba(0, 0, 0, 0.25)",
+    width: 277,
+    borderColor: Color.colorLimegreen,
+    backgroundColor: Color.colorSeagreen_400,
   },
   password: {
     top: 593,
@@ -182,6 +189,9 @@ const styles = StyleSheet.create({
   },
   rectangleTextinput: {
     top: 582,
+    shadowColor: "#62c08e",
+    shadowRadius: 1396.08,
+    elevation: 1396.08,
   },
   createAccount: {
     backgroundColor: Color.colorDarkslategray,
