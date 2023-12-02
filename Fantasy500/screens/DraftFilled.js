@@ -3,11 +3,11 @@ import { Text, StyleSheet, View, Pressable, TouchableOpacity } from "react-nativ
 import { Image } from "expo-image";
 import PlayersStocks from "../components/PlayersStocks";
 import { FontSize, FontFamily, Color, Border } from "../GlobalStyles";
-import StockPage from './StockPage'
+import Home from './Home'
 
 const DraftFilled = ({navigation}) => {
   const handlePress = () => {
-    navigation.navigate(StockPage);
+    navigation.navigate(Home);
   };
   
   return (
@@ -25,6 +25,7 @@ const DraftFilled = ({navigation}) => {
       <Text style={[styles.player1, styles.playerTypo2]}>Player 1</Text>
       <Text style={[styles.player7, styles.playerTypo3]}>Player 7</Text>
       <View style={[styles.draftlistInner, styles.draftlistInnerLayout]}>
+      <Pressable onPress={handlePress}>
         <View
           style={[styles.playersStocksWrapper, styles.rectangleViewPosition]}
         >
@@ -36,6 +37,7 @@ const DraftFilled = ({navigation}) => {
             playersStocksLeft={0}
           />
         </View>
+        </Pressable>
       </View>
       <Text style={[styles.player2, styles.playerTypo2]}>Player 2</Text>
       <View style={[styles.frameView, styles.draftlistInnerLayout]}>

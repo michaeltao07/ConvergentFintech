@@ -1,11 +1,11 @@
 import * as React from "react";
-import { Text, StyleSheet, View, Pressable } from "react-native";
+import { Text, StyleSheet, View, ScrollView, Pressable } from "react-native";
 import { Image } from "expo-image";
 import { Color, FontFamily, FontSize, Border } from "../GlobalStyles";
 
 const VersusPage = () => {
   return (
-    <View style={styles.versuspage}>
+    <ScrollView style={styles.versuspage}>
       <Text style={[styles.versus, styles.matchTypo]}>VERSUS</Text>
       <Text style={[styles.versus, styles.matchTypo]}>VERSUS</Text>
       <Image
@@ -180,7 +180,7 @@ const VersusPage = () => {
         contentFit="cover"
         source={require("../assets/polygon-2.png")}
       />
-    </View>
+    </ScrollView>
   );
 };
 

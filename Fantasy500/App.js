@@ -8,6 +8,8 @@ import DraftList from "./screens/DraftList";
 import StockPage from "./screens/StockPage";
 import StocksPage from "./screens/StocksPage";
 import DraftFilled from "./screens/DraftFilled";
+import Profile from "./screens/Profile"
+import VersusPage from "./screens/VersusPage";
 
 
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -56,6 +58,16 @@ const App = () => {
            <Stack.Screen
              name="DraftFilled"
              component={DraftFilled}
+             options={{ headerShown: false }}
+           />
+           <Stack.Screen
+             name="VersusPage"
+             component={VersusPage}
+             options={{ headerShown: false }}
+           />
+           <Stack.Screen
+             name="Profile"
+             component={Profile}
              options={{ headerShown: false }}
            />
           </Stack.Navigator>

@@ -4,10 +4,6 @@ import { StyleSheet, Text, ScrollView, View, Pressable, TouchableOpacity } from 
 import { useNavigation } from "@react-navigation/native";
 import { Color, Border, FontFamily, FontSize } from "../GlobalStyles";
 import DraftList from "./DraftList";
-import Profile from "./Profile";
-import VersusPage from "./VersusPage";
-import Leaderboard from "./Leaderboard";
-import Wallet from "./Wallet"
 
 const Home = ({navigation}) => {
   const handlePress = () => {
@@ -43,23 +39,48 @@ const Home = ({navigation}) => {
         Create New League
       </Text>
       <View style={[styles.homeChild4, styles.homeChildShadowBox]} />
-      <View
-        style={styles.rectanglePressable}
+      <Image
+        style={[styles.ggprofileIcon, styles.ggprofilePosition]}
+        contentFit="cover"
+        source={require("../assets/ggprofile.png")}
       />
-      
+      <Image
+        style={[styles.vectorIcon, styles.iconLayout1]}
+        contentFit="cover"
+        source={require("../assets/vector.png")}
+      />
+      <Image
+        style={[styles.tablervsIcon, styles.tablervsPosition]}
+        contentFit="cover"
+        source={require("../assets/tablervs.png")}
+      />
+      <Image
+        style={[styles.mdihomeOutlineIcon, styles.mdihomePosition]}
+        contentFit="cover"
+        source={require("../assets/mdihomeoutline.png")}
+      />
+      <Image
+        style={[styles.vectorIcon1, styles.vectorPosition]}
+        contentFit="cover"
+        source={require("../assets/vector1.png")}
+      />
+      <Pressable
+        style={styles.rectanglePressable}
+        onPress={() => navigation.navigate("Profile")}
+      />
       <Pressable
         style={styles.ggprofilePosition}
-        onPress={() => navigation.navigate(Profile)}
+        onPress={() => navigation.navigate("Profile")}
       >
         <Image
           style={styles.iconLayout}
           contentFit="cover"
-          source={require("../assets/ggprofile.png")}
+          source={require("../assets/ggprofile1.png")}
         />
       </Pressable>
       <Pressable
         style={styles.vectorPosition1}
-        onPress={() => navigation.navigate(Wallet)}
+        onPress={() => navigation.navigate("Profile")}
       >
         <Image
           style={[styles.icon1, styles.iconLayout]}
@@ -69,7 +90,7 @@ const Home = ({navigation}) => {
       </Pressable>
       <Pressable
         style={styles.tablervsPosition}
-        onPress={() => navigation.navigate(VersusPage)}
+        onPress={() => navigation.navigate("Profile")}
       >
         <Image
           style={styles.iconLayout}
@@ -79,7 +100,7 @@ const Home = ({navigation}) => {
       </Pressable>
       <Pressable
         style={styles.mdihomePosition}
-        onPress={() => navigation.navigate(Home)}
+        onPress={() => navigation.navigate("Profile")}
       >
         <Image
           style={styles.iconLayout}
@@ -89,7 +110,7 @@ const Home = ({navigation}) => {
       </Pressable>
       <Pressable
         style={styles.vectorPosition}
-        onPress={() => navigation.navigate(Leaderboard)}
+        onPress={() => navigation.navigate("Profile")}
       >
         <Image
           style={[styles.icon1, styles.iconLayout]}
@@ -266,7 +287,7 @@ const styles = StyleSheet.create({
     left: "47.07%",
     bottom: "2.11%",
     right: "45.29%",
-    top: "4.37%",
+    top: "94.37%",
     width: "7.63%",
     height: "3.52%",
     position: "absolute",
