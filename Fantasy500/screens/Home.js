@@ -1,14 +1,17 @@
 import * as React from "react";
 import { Image } from "expo-image";
-import { StyleSheet, Text, View, Pressable } from "react-native";
+import { StyleSheet, Text, ScrollView, View, Pressable, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { Color, Border, FontFamily, FontSize } from "../GlobalStyles";
+import DraftList from "./DraftList";
 
-const Home = () => {
-  const navigation = useNavigation();
+const Home = ({navigation}) => {
+  const handlePress = () => {
+    navigation.navigate(DraftList);
+  };
 
   return (
-    <View style={styles.home}>
+    <ScrollView style={styles.home}>
       <Image
         style={styles.homeChild}
         contentFit="cover"
@@ -25,9 +28,13 @@ const Home = () => {
       <View style={[styles.homeChild1, styles.homeChildShadowBox1]} />
       <View style={[styles.homeChild2, styles.homeChildShadowBox1]} />
       <View style={[styles.homeChild3, styles.homeChildShadowBox]} />
-      <Text style={[styles.joinPublicLeague, styles.leagueTypo]}>
-        Join Public League
-      </Text>
+      <TouchableOpacity onPress={handlePress}>
+        <View>
+        <Text style={[styles.joinPublicLeague, styles.leagueTypo]}>
+          Join Public League
+        </Text>
+        </View>
+      </TouchableOpacity>
       <Text style={[styles.createNewLeague, styles.leagueTypo]}>
         Create New League
       </Text>
@@ -111,7 +118,7 @@ const Home = () => {
           source={require("../assets/vector1.png")}
         />
       </Pressable>
-    </View>
+    </ScrollView>
   );
 };
 

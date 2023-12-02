@@ -5,7 +5,7 @@ import PlayersStocks from "../components/PlayersStocks";
 import { FontSize, FontFamily, Color, Border } from "../GlobalStyles";
 import StockPage from './StockPage'
 
-const DraftList = ({navigation}) => {
+const DraftFilled = ({navigation}) => {
   const handlePress = () => {
     navigation.navigate(StockPage);
   };
@@ -29,6 +29,8 @@ const DraftList = ({navigation}) => {
           style={[styles.playersStocksWrapper, styles.rectangleViewPosition]}
         >
           <PlayersStocks
+            player = {0}
+            stockNum = {0}
             playersStocksPosition="absolute"
             playersStocksTop={0}
             playersStocksLeft={0}
@@ -41,6 +43,8 @@ const DraftList = ({navigation}) => {
           style={[styles.playersStocksWrapper, styles.rectangleViewPosition]}
         >
           <PlayersStocks
+            player = {1}
+            stockNum = {1}
             playersStocksPosition="absolute"
             playersStocksTop={0}
             playersStocksLeft={0}
@@ -53,6 +57,8 @@ const DraftList = ({navigation}) => {
           style={[styles.playersStocksWrapper, styles.rectangleViewPosition]}
         >
           <PlayersStocks
+            player = {2}
+            stockNum = {2}
             playersStocksPosition="absolute"
             playersStocksTop={0}
             playersStocksLeft={0}
@@ -64,6 +70,8 @@ const DraftList = ({navigation}) => {
           style={[styles.playersStocksWrapper, styles.rectangleViewPosition]}
         >
           <PlayersStocks
+            player = {3}
+            stockNum = {0}
             playersStocksPosition="absolute"
             playersStocksTop={0}
             playersStocksLeft={0}
@@ -76,6 +84,8 @@ const DraftList = ({navigation}) => {
           style={[styles.playersStocksWrapper, styles.rectangleViewPosition]}
         >
           <PlayersStocks
+            player = {4}
+            stockNum = {2}
             playersStocksPosition="absolute"
             playersStocksTop={0}
             playersStocksLeft={0}
@@ -89,6 +99,8 @@ const DraftList = ({navigation}) => {
           style={[styles.playersStocksWrapper, styles.rectangleViewPosition]}
         >
           <PlayersStocks
+            player = {5}
+            stockNum = {2}
             playersStocksPosition="absolute"
             playersStocksTop={0}
             playersStocksLeft={0}
@@ -101,6 +113,8 @@ const DraftList = ({navigation}) => {
           style={[styles.playersStocksWrapper, styles.rectangleViewPosition]}
         >
           <PlayersStocks
+            player = {6}
+            stockNum = {2}
             playersStocksPosition="absolute"
             playersStocksTop={0}
             playersStocksLeft={0}
@@ -113,6 +127,8 @@ const DraftList = ({navigation}) => {
           style={[styles.playersStocksWrapper, styles.rectangleViewPosition]}
         >
           <PlayersStocks
+            player = {7}
+            stockNum = {2}
             playersStocksPosition="absolute"
             playersStocksTop={0}
             playersStocksLeft={0}
@@ -385,4 +401,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default DraftList;
+export default DraftFilled;

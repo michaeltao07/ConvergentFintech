@@ -1,14 +1,16 @@
 import * as React from "react";
-import { Text, StyleSheet, Pressable, View } from "react-native";
+import { Text, StyleSheet, Pressable, View, TouchableOpacity } from "react-native";
 import { Image } from "expo-image";
 import { FontFamily, Color, Border, FontSize } from "../GlobalStyles";
+import StocksPage from "./StocksPage";
 
-const StockPage = () => {
+const StockPage = ({navigation}) => {
+  const handlePress = () => {
+    navigation.navigate(StocksPage);
+  };
   return (
     <View style={styles.stockpage}>
       <Text style={styles.picks}>PICKS</Text>
-      <Text style={styles.picks}>PICKS</Text>
-      <Text style={[styles.stocks, styles.textTypo]}>Stocks</Text>
       <Text style={[styles.stocks, styles.textTypo]}>Stocks</Text>
       <Text style={styles.stockOptionsFor}>
         Stock options for the [technology] industry
@@ -55,6 +57,7 @@ const StockPage = () => {
         contentFit="cover"
         source={require("../assets/image-1.png")}
       />
+      <TouchableOpacity onPress={handlePress}>
       <View style={[styles.frameView, styles.frameViewPosition]} />
       <Pressable style={[styles.stockpageChild5, styles.stockpageShadowBox]} />
       <Text style={[styles.appleInc1, styles.appleTypo]}>Apple Inc</Text>
@@ -64,6 +67,7 @@ const StockPage = () => {
         contentFit="cover"
         source={require("../assets/image-1.png")}
       />
+      </TouchableOpacity>
       <View style={[styles.stockpageChild6, styles.stockpageChildLayout]} />
       <Pressable
         style={[styles.stockpageChild7, styles.stockpageChildShadowBox3]}

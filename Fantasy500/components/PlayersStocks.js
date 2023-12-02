@@ -1,12 +1,15 @@
 import React, { useMemo } from "react";
-import { StyleSheet, View } from "react-native";
+import { Text, StyleSheet, View } from "react-native";
 import { Color, Border } from "../GlobalStyles";
 
 const getStyleValue = (key, value) => {
   if (value === undefined) return;
   return { [key]: value === "unset" ? undefined : value };
 };
+const stocks = ['AAPL', 'MSFT', 'GOOG', 'TSLA', 'NVDA', 'INTC', 'FB', 'AMD', 'NFLX'];
 const PlayersStocks = ({
+  player,
+  stockNum,
   playersStocksPosition,
   playersStocksTop,
   playersStocksLeft,
@@ -21,30 +24,18 @@ const PlayersStocks = ({
 
   return (
     <View style={[styles.playersStocks, playersStocksStyle]}>
-      <View
-        style={[styles.playersStocksChild, styles.playersChildShadowBox1]}
-      />
+      <View style={[styles.playersStocksChild, styles.playersChildShadowBox1]}>
+        <Text>{stocks[player]}</Text>
+      </View>
       <View style={[styles.playersStocksItem, styles.playersChildShadowBox]} />
       <View style={[styles.playersStocksInner, styles.playersChildShadowBox]} />
       <View style={[styles.rectangleView, styles.playersChildShadowBox1]} />
-      <View
-        style={[styles.playersStocksChild1, styles.playersChildShadowBox1]}
-      />
-      <View
-        style={[styles.playersStocksChild2, styles.playersChildShadowBox1]}
-      />
-      <View
-        style={[styles.playersStocksChild3, styles.playersChildShadowBox]}
-      />
-      <View
-        style={[styles.playersStocksChild4, styles.playersChildShadowBox]}
-      />
-      <View
-        style={[styles.playersStocksChild5, styles.playersChildShadowBox1]}
-      />
-      <View
-        style={[styles.playersStocksChild6, styles.playersChildShadowBox1]}
-      />
+      <View style={[styles.playersStocksChild1, styles.playersChildShadowBox1]} />
+      <View style={[styles.playersStocksChild2, styles.playersChildShadowBox1]} />
+      <View style={[styles.playersStocksChild3, styles.playersChildShadowBox]} />
+      <View style={[styles.playersStocksChild4, styles.playersChildShadowBox]} />
+      <View style={[styles.playersStocksChild5, styles.playersChildShadowBox1]} />
+      <View style={[styles.playersStocksChild6, styles.playersChildShadowBox1]} />
     </View>
   );
 };

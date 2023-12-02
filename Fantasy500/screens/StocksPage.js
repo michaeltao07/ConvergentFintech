@@ -1,9 +1,13 @@
 import * as React from "react";
 import { Image } from "expo-image";
-import { StyleSheet, Text, View, Pressable } from "react-native";
+import { StyleSheet, Text, View, Pressable, TouchableOpacity } from "react-native";
 import { Color, FontFamily, Border, FontSize } from "../GlobalStyles";
+import DraftFilled from './DraftFilled';
 
-const StocksPage = () => {
+const StocksPage = ({navigation}) => {
+  const handlePress = () => {
+    navigation.navigate(DraftFilled);
+  };
   return (
     <View style={styles.stocksPage}>
       <Image
@@ -29,10 +33,12 @@ const StocksPage = () => {
         contentFit="cover"
         source={require("../assets/ellipse-21.png")}
       />
+      <TouchableOpacity onPress={handlePress}>
       <Pressable style={[styles.stocksPageInner, styles.stocksShadowBox]} />
       <Text style={[styles.addToRoster, styles.nasdaqApplTypo]}>
         Add to Roster
       </Text>
+      </TouchableOpacity>
       <View style={styles.rectangleView} />
       <Image
         style={styles.ggprofileIcon}
@@ -69,7 +75,7 @@ const StocksPage = () => {
       <Image
         style={styles.polygonIcon}
         contentFit="cover"
-        source={require("../assets/polygon-11.png")}
+        // source={require("../assets/polygon-11.png")}
       />
       <Text style={[styles.showMoreOn, styles.nasdaqApplTypo]}>
         show more on web
