@@ -15,16 +15,11 @@ const Home = ({navigation}) => {
   };
 
   return (
-    <ScrollView style={styles.home}>
+    <View style={styles.home}>
       <Image
         style={styles.homeChild}
         contentFit="cover"
         source={require("../assets/ellipse-22.png")}
-      />
-      <Image
-        style={styles.homeItem}
-        contentFit="cover"
-        source={require("../assets/ellipse-21.png")}
       />
       <Text style={styles.home1}>HOME</Text>
       <View style={[styles.homeInner, styles.homeChildShadowBox1]} />
@@ -46,7 +41,17 @@ const Home = ({navigation}) => {
       <View
         style={styles.rectanglePressable}
       />
-      
+
+     <Pressable
+        style={styles.mdihomePosition}
+        onPress={() => navigation.navigate(Home)}
+      >
+        <Image
+          style={styles.iconLayout}
+          contentFit="cover"
+          source={require("../assets/mdihomeoutline.png")}
+        />
+      </Pressable> 
       <Pressable
         style={styles.ggprofilePosition}
         onPress={() => navigation.navigate(Profile)}
@@ -78,16 +83,6 @@ const Home = ({navigation}) => {
         />
       </Pressable>
       <Pressable
-        style={styles.mdihomePosition}
-        onPress={() => navigation.navigate(Home)}
-      >
-        <Image
-          style={styles.iconLayout}
-          contentFit="cover"
-          source={require("../assets/mdihomeoutline.png")}
-        />
-      </Pressable>
-      <Pressable
         style={styles.vectorPosition}
         onPress={() => navigation.navigate(Leaderboard)}
       >
@@ -97,7 +92,7 @@ const Home = ({navigation}) => {
           source={require("../assets/vector1.png")}
         />
       </Pressable>
-    </ScrollView>
+    </View>
   );
 };
 
@@ -115,7 +110,7 @@ const styles = StyleSheet.create({
     shadowColor: "rgba(0, 0, 0, 0.25)",
     backgroundColor: Color.colorDarkseagreen,
     borderRadius: Border.br_5xs,
-    left: 28,
+    left: 20,
     position: "absolute",
   },
   homeChildShadowBox: {
@@ -125,7 +120,7 @@ const styles = StyleSheet.create({
     borderColor: Color.colorLimegreen,
     borderStyle: "solid",
     backgroundColor: Color.colorSeagreen_400,
-    top: 704,
+    top: 676,
     shadowOpacity: 1,
     elevation: 4,
     shadowRadius: 4,
@@ -141,7 +136,7 @@ const styles = StyleSheet.create({
     fontFamily: FontFamily.interMedium,
     fontWeight: "500",
     fontSize: FontSize.size_sm,
-    top: 719,
+    top: 690,
     textAlign: "left",
     color: Color.colorWhite,
     position: "absolute",
@@ -149,8 +144,8 @@ const styles = StyleSheet.create({
   ggprofilePosition: {
     height: 30,
     width: 30,
-    left: 119,
-    top: 804,
+    left: 104,
+    top: 758,
     position: "absolute",
   },
   iconLayout1: {
@@ -160,21 +155,21 @@ const styles = StyleSheet.create({
   tablervsPosition: {
     height: 32,
     width: 33,
-    left: 251,
-    top: 803,
+    left: 245,
+    top: 758,
     position: "absolute",
   },
   mdihomePosition: {
     width: 37,
-    left: 48,
-    top: 801,
+    left: 27,
+    top: 755,
     height: 36,
     position: "absolute",
   },
   vectorPosition: {
     width: 30,
-    left: 310,
-    top: 805,
+    left: 317,
+    top: 760,
     height: 27,
     position: "absolute",
   },
@@ -209,10 +204,10 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   homeInner: {
-    top: 190,
+    top: 150,
   },
   rectangleView: {
-    top: 314,
+    top: 275,
     height: 114,
     width: 337,
     shadowOpacity: 1,
@@ -225,14 +220,14 @@ const styles = StyleSheet.create({
     shadowColor: "rgba(0, 0, 0, 0.25)",
     backgroundColor: Color.colorDarkseagreen,
     borderRadius: Border.br_5xs,
-    left: 28,
+    left: 20,
     position: "absolute",
   },
   homeChild1: {
-    top: 439,
+    top: 400,
   },
   homeChild2: {
-    top: 563,
+    top: 525,
   },
   homeChild3: {
     left: 28,
@@ -247,12 +242,14 @@ const styles = StyleSheet.create({
   joinPublicLeague: {
     left: 44,
     width: 126,
-    height: 10,
+    height: 20,
+    top: 690,
   },
   createNewLeague: {
     left: 221,
     width: 132,
-    height: 19,
+    height: 20,
+    top: 690,
   },
   homeChild4: {
     left: 207,
@@ -282,7 +279,7 @@ const styles = StyleSheet.create({
     overflow: "hidden",
   },
   rectanglePressable: {
-    top: 786,
+    top: 746,
     left: 0,
     backgroundColor: Color.colorSeagreen_100,
     width: 393,
@@ -294,12 +291,10 @@ const styles = StyleSheet.create({
     maxWidth: "100%",
   },
   vectorPosition1: {
-    left: "47.07%",
-    bottom: "2.11%",
-    right: "45.29%",
-    top: "94.37%",
-    width: "7.63%",
-    height: "3.52%",
+    width: 30,
+    left: "47%",
+    top: 760,
+    height: 27,
     position: "absolute",
   },
   home: {

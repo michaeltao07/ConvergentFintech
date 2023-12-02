@@ -2,8 +2,12 @@ import * as React from "react";
 import { Text, StyleSheet, View, ScrollView, Pressable } from "react-native";
 import { Image } from "expo-image";
 import { Color, FontFamily, FontSize, Border } from "../GlobalStyles";
+import Profile from "./Profile";
+import Home from "./Home";
+import Leaderboard from "./Leaderboard";
+import Wallet from "./Wallet"
 
-const VersusPage = () => {
+const VersusPage = ({navigation}) => {
   return (
     <ScrollView style={styles.versuspage}>
       <Text style={[styles.versus, styles.matchTypo]}>VERSUS</Text>
@@ -24,32 +28,61 @@ const VersusPage = () => {
         contentFit="cover"
         source={require("../assets/ellipse-21.png")}
       />
-      <View style={styles.rectangleView} />
-      <Image
-        style={styles.ggprofileIcon}
-        contentFit="cover"
-        source={require("../assets/ggprofile.png")}
+      <View
+        style={styles.rectanglePressable}
       />
-      <Image
-        style={[styles.vectorIcon, styles.vectorIconLayout]}
-        contentFit="cover"
-        source={require("../assets/vector.png")}
-      />
-      <Image
-        style={styles.tablervsIcon}
-        contentFit="cover"
-        source={require("../assets/tablervs.png")}
-      />
-      <Image
-        style={[styles.mdihomeOutlineIcon, styles.versuspageChildLayout]}
-        contentFit="cover"
-        source={require("../assets/mdihomeoutline.png")}
-      />
-      <Image
-        style={[styles.vectorIcon1, styles.vectorIconLayout]}
-        contentFit="cover"
-        source={require("../assets/vector1.png")}
-      />
+
+     <Pressable
+        style={styles.mdihomePosition}
+        onPress={() => navigation.navigate(Home)}
+      >
+        <Image
+          style={styles.iconLayout}
+          contentFit="cover"
+          source={require("../assets/mdihomeoutline.png")}
+        />
+      </Pressable> 
+      <Pressable
+        style={styles.ggprofilePosition}
+        onPress={() => navigation.navigate(Profile)}
+      >
+        <Image
+          style={styles.iconLayout}
+          contentFit="cover"
+          source={require("../assets/ggprofile.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={styles.vectorPosition1}
+        onPress={() => navigation.navigate(Wallet)}
+      >
+        <Image
+          style={[styles.icon1, styles.iconLayout]}
+          contentFit="cover"
+          source={require("../assets/vector.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={styles.tablervsPosition}
+        onPress={() => navigation.navigate(VersusPage)}
+      >
+        <Image
+          style={styles.iconLayout}
+          contentFit="cover"
+          source={require("../assets/tablervs.png")}
+        />
+      </Pressable>
+      <Pressable
+        style={styles.vectorPosition}
+        onPress={() => navigation.navigate(Leaderboard)}
+      >
+        <Image
+          style={[styles.icon1, styles.iconLayout]}
+          contentFit="cover"
+          source={require("../assets/vector1.png")}
+        />
+      </Pressable>
+
       <View style={styles.versuspageChild1} />
       <Text style={[styles.match, styles.matchTypo]}>Match</Text>
       <Image
@@ -185,6 +218,86 @@ const VersusPage = () => {
 };
 
 const styles = StyleSheet.create({
+  ggprofilePosition: {
+    height: 30,
+    width: 30,
+    left: 104,
+    top: 758,
+    position: "absolute",
+  },
+  iconLayout1: {
+    maxHeight: "100%",
+    maxWidth: "100%",
+  },
+  tablervsPosition: {
+    height: 32,
+    width: 33,
+    left: 245,
+    top: 758,
+    position: "absolute",
+  },
+  mdihomePosition: {
+    width: 37,
+    left: 27,
+    top: 755,
+    height: 36,
+    position: "absolute",
+  },
+  vectorPosition: {
+    width: 30,
+    left: 317,
+    top: 760,
+    height: 27,
+    position: "absolute",
+  },
+  iconLayout: {
+    height: "100%",
+    overflow: "hidden",
+    width: "100%",
+  },
+ggprofileIcon: {
+    overflow: "hidden",
+  },
+  vectorIcon: {
+    left: "47.07%",
+    bottom: "2.11%",
+    right: "45.29%",
+    top: "4.37%",
+    width: "7.63%",
+    height: "3.52%",
+    position: "absolute",
+    overflow: "hidden",
+  },
+  tablervsIcon: {
+    overflow: "hidden",
+  },
+  mdihomeOutlineIcon: {
+    overflow: "hidden",
+  },
+  vectorIcon1: {
+    maxHeight: "100%",
+    maxWidth: "100%",
+    overflow: "hidden",
+  },
+  rectanglePressable: {
+    top: 746,
+    left: 0,
+    backgroundColor: Color.colorSeagreen_100,
+    width: 393,
+    height: 66,
+    position: "absolute",
+  },
+  icon1: {
+    maxHeight: "100%",
+    maxWidth: "100%",
+  },
+  vectorPosition1: {
+    width: 30,
+    left: "47%",
+    top: 760,
+    height: 27,
+    position: "absolute",
+  },
   matchTypo: {
     textAlign: "left",
     color: Color.colorWhite,
@@ -218,7 +331,7 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   teamTypo: {
-    height: 14,
+    height: 20,
     fontSize: FontSize.size_mini,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
@@ -240,7 +353,7 @@ const styles = StyleSheet.create({
     fontWeight: "500",
     fontSize: FontSize.size_3xs,
     top: 199,
-    height: 8,
+    height: 20,
     textAlign: "left",
     color: Color.colorWhite,
     position: "absolute",
@@ -260,7 +373,7 @@ const styles = StyleSheet.create({
     fontSize: FontSize.size_sm,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
-    textAlign: "left",
+    textAlign: "center",
     color: Color.colorWhite,
     position: "absolute",
   },

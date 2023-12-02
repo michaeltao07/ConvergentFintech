@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import { Text, StyleSheet, View } from "react-native";
+import { Text, StyleSheet, View, ScrollView } from "react-native";
 import { Color, Border } from "../GlobalStyles";
 
 const getStyleValue = (key, value) => {

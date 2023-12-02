@@ -10,7 +10,8 @@ import StocksPage from "./screens/StocksPage";
 import DraftFilled from "./screens/DraftFilled";
 import Profile from "./screens/Profile"
 import VersusPage from "./screens/VersusPage";
-
+import Leaderboard from "./screens/Leaderboard";
+import Wallet from "./screens/Wallet";
 
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { View, Text, Pressable, TouchableOpacity } from "react-native";
@@ -61,15 +62,27 @@ const App = () => {
              options={{ headerShown: false }}
            />
            <Stack.Screen
-             name="VersusPage"
-             component={VersusPage}
-             options={{ headerShown: false }}
-           />
-           <Stack.Screen
              name="Profile"
              component={Profile}
              options={{ headerShown: false }}
            />
+           <Stack.Screen
+             name="Wallet"
+             component={Wallet}
+             options={{ headerShown: false }}
+           />
+           <Stack.Screen
+             name="VersusPage"
+             component={VersusPage}
+             options={{ headerShown: false }}
+           />
+
+           <Stack.Screen
+             name="Leaderboard"
+             component={Leaderboard}
+             options={{ headerShown: false }}
+           />
+
           </Stack.Navigator>
         ) : null}
       </NavigationContainer>
