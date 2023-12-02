@@ -172,12 +172,10 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   vectorPosition: {
-    left: "80.92%",
-    bottom: "2.46%",
-    right: "12.21%",
-    top: "94.48%",
-    width: "6.87%",
-    height: "3.05%",
+    width: 30,
+    left: 310,
+    top: 805,
+    height: 27,
     position: "absolute",
   },
   iconLayout: {

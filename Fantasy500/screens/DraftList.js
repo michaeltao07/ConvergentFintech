@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Text, StyleSheet, View, Pressable, TouchableOpacity } from "react-native";
+import { Text, StyleSheet, View, ScrollView, Pressable, TouchableOpacity } from "react-native";
 import { Image } from "expo-image";
 import PlayersStocks from "../components/PlayersStocks";
 import { FontSize, FontFamily, Color, Border } from "../GlobalStyles";
@@ -11,7 +11,7 @@ const DraftList = ({navigation}) => {
   };
   
   return (
-    <View style={styles.draftlist}>
+    <ScrollView style={styles.draftlist}>
       <Text style={styles.draft}>DRAFT</Text>
       <Image
         style={styles.draftlistChild}
@@ -150,7 +150,7 @@ const DraftList = ({navigation}) => {
         contentFit="cover"
         source={require("../assets/vector1.png")}
       />
-    </View>
+    </ScrollView>
   );
 };
 
