@@ -1,9 +1,14 @@
 import * as React from "react";
 import { Image } from "expo-image";
-import { StyleSheet, Text, View, Pressable } from "react-native";
+import { StyleSheet, Text, View, Pressable, Button, TouchableOpacity } from "react-native";
 import { Color, Border, FontFamily, FontSize } from "../GlobalStyles";
+import DraftList from "./DraftList";
 
-const Home = () => {
+const Home = ({navigation}) => {
+    const handleDraftListPress = () => {
+      // Navigate to DraftList page
+      navigation.navigate(DraftList);
+    };
   return (
     <View style={styles.home}>
       <Image
@@ -22,12 +27,16 @@ const Home = () => {
       <View style={[styles.homeChild1, styles.homeChildShadowBox1]} />
       <View style={[styles.homeChild2, styles.homeChildShadowBox1]} />
       <View style={[styles.homeChild3, styles.homeChildShadowBox]} />
-      <Text style={[styles.joinPublicLeague, styles.leagueTypo]}>
-        Join Public League
-      </Text>
-      <Text style={[styles.createNewLeague, styles.leagueTypo]}>
-        Create New League
-      </Text>
+      <TouchableOpacity onPress={handleDraftListPress}>
+        <View>
+          <Text style={[styles.joinPublicLeague, styles.leagueTypo]}>Join Public League</Text>
+        </View>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={handleDraftListPress}> 
+        <View>
+          <Text style={[styles.createNewLeague, styles.leagueTypo]}>Create New League</Text>
+        </View>
+      </TouchableOpacity>
       <View style={[styles.homeChild4, styles.homeChildShadowBox]} />
       <View style={styles.homeChild5} />
       <Image

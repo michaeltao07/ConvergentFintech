@@ -1,10 +1,15 @@
 import * as React from "react";
-import { Text, StyleSheet, View, Pressable } from "react-native";
+import { Text, StyleSheet, View, Pressable, TouchableOpacity} from "react-native";
 import { Image } from "expo-image";
 import PlayersStocks from "../components/PlayersStocks";
 import { FontSize, FontFamily, Color, Border } from "../GlobalStyles";
+import StockPage from './StockPage';
 
-const DraftList = () => {
+const DraftList = ({navigation}) => {
+  const handleDraftListPress = () => {
+    // Navigate to DraftList page
+    navigation.navigate(StockPage);
+  };
   return (
     <View style={styles.draftlist}>
       <Text style={styles.draft}>DRAFT</Text>
@@ -14,7 +19,11 @@ const DraftList = () => {
         source={require("../assets/ellipse-22.png")}
       />
       <View style={styles.draftlistItem} />
-      <Text style={styles.startDraft}>Start Draft</Text>
+      <TouchableOpacity onPress={handleDraftListPress}>
+        <View>
+          <Text style={styles.startDraft}>Start Draft</Text>
+        </View>
+      </TouchableOpacity>
       <Text style={[styles.player1, styles.playerTypo2]}>Player 1</Text>
       <Text style={[styles.player2, styles.playerTypo]}>Player 2</Text>
       <Text style={[styles.player3, styles.playerTypo1]}>Player 3</Text>

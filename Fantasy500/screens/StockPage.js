@@ -1,9 +1,14 @@
 import * as React from "react";
-import { Text, StyleSheet, Pressable, View } from "react-native";
+import { Text, StyleSheet, Pressable, View, TouchableOpacity } from "react-native";
 import { Image } from "expo-image";
 import { FontFamily, Color, Border, FontSize } from "../GlobalStyles";
+import StocksPage from './StocksPage'
 
-const StockPage = () => {
+const StockPage = ({navigation}) => {
+  const handleDraftListPress = () => {
+    // Navigate to DraftList page
+    navigation.navigate(StocksPage);
+  };
   return (
     <View style={styles.stockpage}>
       <Text style={styles.picks}>PICKS</Text>
@@ -76,22 +81,22 @@ const StockPage = () => {
         contentFit="cover"
         source={require("../assets/image-1.png")}
       />
-      <View style={[styles.stockpageChild6, styles.stockpageChildLayout]} />
-      <Pressable
-        style={[styles.stockpageChild7, styles.stockpageChildShadowBox3]}
-      />
-      <Text style={[styles.appleInc2, styles.appleInc2Position]}>
-        Apple Inc
-      </Text>
-      <Text style={[styles.nasdaqAppl2, styles.nasdaqPosition]}>
-        NASDAQ: APPL
-      </Text>
-      <Image
-        style={[styles.image3Icon, styles.iconLayout3]}
-        contentFit="cover"
-        source={require("../assets/image-1.png")}
-      />
-      <View style={[styles.stockpageChild8, styles.stockpageChildLayout]} />
+        <View style={[styles.stockpageChild6, styles.stockpageChildLayout]} />
+        <Pressable
+          style={[styles.stockpageChild7, styles.stockpageChildShadowBox3]}
+        />
+        <Text style={[styles.appleInc2, styles.appleInc2Position]}>
+          Apple Inc
+        </Text>
+        <Text style={[styles.nasdaqAppl2, styles.nasdaqPosition]}>
+          NASDAQ: APPL
+        </Text>
+        <Image
+          style={[styles.image3Icon, styles.iconLayout3]}
+          contentFit="cover"
+          source={require("../assets/image-1.png")}
+        />
+        <View style={[styles.stockpageChild8, styles.stockpageChildLayout]} />
       <Pressable
         style={[styles.stockpageChild9, styles.stockpageChildShadowBox3]}
       />
