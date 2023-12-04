@@ -87,34 +87,34 @@ const Leaderboard = ({navigation}) => {
         This season’s standings.
       </Text>
       <Image
-        style={[styles.ellipseIcon, styles.leaderboardChildLayout]}
+        style={[styles.roundy, styles.ellipseIcon, styles.leaderboardChildLayout]}
         contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
+        source={require("../assets/ayan.jpg")}
       />
       <Image
         style={[styles.leaderboardChild1, styles.leaderboardChildLayout]}
         contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
+        source={require("../assets/burns.png")}
       />
       <Image
         style={[styles.leaderboardChild2, styles.leaderboardChildLayout]}
         contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
+        source={require("../assets/sriya.png")}
       />
       <Image
         style={[styles.leaderboardChild3, styles.leaderboardChildLayout]}
         contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
+        source={require("../assets/lori.png")}
       />
       <Image
         style={[styles.leaderboardChild4, styles.leaderboardChildLayout]}
         contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
+        source={require("../assets/cuban.jpg")}
       />
       <Image
         style={[styles.leaderboardChild5, styles.leaderboardChildLayout]}
         contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
+        source={require("../assets/jjwatt.jpg")}
       />
       <Text style={[styles.ayanjannu, styles.userTypo]}>ayanjannu</Text>
       <Text style={[styles.nitishapokkula, styles.userTypo]}>
@@ -130,54 +130,20 @@ const Leaderboard = ({navigation}) => {
       <Image
         style={[styles.leaderboardChild6, styles.leaderboardChildLayout]}
         contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
+        source={require("../assets/jacob.jpg")}
       />
       <Image
         style={[styles.leaderboardChild7, styles.leaderboardChildLayout]}
         contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
+        source={require("../assets/bezos.jpg")}
       />
       <Text style={[styles.andrewchoi, styles.userTypo]}>andrewchoi</Text>
       <Image
-        style={[styles.ellipseIcon, styles.leaderboardChildLayout]}
+        style={[styles.user10, styles.leaderboardChildLayout]}
         contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
+        source={require("../assets/ayan.jpg")}
       />
-      <Image
-        style={[styles.leaderboardChild1, styles.leaderboardChildLayout]}
-        contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
-      />
-      <Image
-        style={[styles.leaderboardChild2, styles.leaderboardChildLayout]}
-        contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
-      />
-      <Image
-        style={[styles.leaderboardChild3, styles.leaderboardChildLayout]}
-        contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
-      />
-      <Image
-        style={[styles.leaderboardChild4, styles.leaderboardChildLayout]}
-        contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
-      />
-      <Image
-        style={[styles.leaderboardChild5, styles.leaderboardChildLayout]}
-        contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
-      />
-      <Image
-        style={[styles.leaderboardChild6, styles.leaderboardChildLayout]}
-        contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
-      />
-      <Image
-        style={[styles.leaderboardChild7, styles.leaderboardChildLayout]}
-        contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
-      />
+      
       <Text style={[styles.text, styles.textTypo1]}>1</Text>
       <Text style={[styles.text1, styles.textTypo1]}>3</Text>
       <Text style={[styles.text2, styles.textTypo1]}>2</Text>
@@ -186,39 +152,23 @@ const Leaderboard = ({navigation}) => {
       <Text style={[styles.text5, styles.textTypo1]}>6</Text>
       <Text style={[styles.text6, styles.textTypo1]}>7</Text>
       <Text style={[styles.text7, styles.textTypo1]}>8</Text>
-      <Image
-        style={[styles.leaderboardChild16, styles.leaderboardChildLayout]}
-        contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
-      />
-      <Image
-        style={[styles.leaderboardChild17, styles.leaderboardChildLayout]}
-        contentFit="cover"
-        source={require("../assets/ellipse-40.png")}
-      />
-      <Image
-        style={[styles.leaderboardChild18, styles.leaderboardChildLayout]}
-        contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
-      />
       <Text style={[styles.ayanjannu1, styles.userTypo]}>ayanjannu</Text>
       <Text style={[styles.user10, styles.userTypo]}>user10</Text>
-      <Text style={[styles.user11, styles.userTypo]}>user11</Text>
-      <Text style={[styles.user12, styles.userTypo]}>user12</Text>
       <Image
         style={[styles.leaderboardChild19, styles.leaderboardChildLayout]}
         contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
+        source={require("../assets/musk.jpg")}  // 9
       />
       <Text style={[styles.text8, styles.textTypo1]}>9</Text>
       <Text style={[styles.text9, styles.text9Typo]}>10</Text>
-      <Text style={[styles.text10, styles.textTypo]}>11</Text>
-      <Text style={[styles.text11, styles.textTypo]}>12</Text>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
+  roundy: {
+    borderRadius: 10,
+  },
   ggprofilePosition: {
     height: 30,
     width: 30,
@@ -322,6 +272,7 @@ ggprofileIcon: {
     height: 38,
     width: 38,
     left: 82,
+    borderRadius: 10,
     position: "absolute",
   },
   userTypo: {
@@ -521,7 +472,7 @@ ggprofileIcon: {
     top: 576,
   },
   user10: {
-    top: 623,
+    top: 673,
   },
   user11: {
     top: 670,
@@ -537,7 +488,7 @@ ggprofileIcon: {
     left: 37,
   },
   text9: {
-    top: 624,
+    top: 680,
     width: 28,
     left: 37,
   },
