@@ -3,16 +3,17 @@ import { Image } from "expo-image";
 import { StyleSheet, Text, Pressable, View, ScrollView, TouchableOpacity } from "react-native";
 import { FontSize, Color, FontFamily, Border } from "../GlobalStyles";
 import Home from './Home';
-import Wallet from "./Wallet";
+import Roster from "./Roster";
 import Profile from "./Profile";
 import Leaderboard from "./Leaderboard";
 import VersusPage from "./VersusPage";
 import TradePage from "./TradePage";
+import TradeMac from "./TradeMac";
 
 
-const Roster = ({navigation}) => {
+const AyanRoster = ({navigation}) => {
   const handlePress = () => {
-    navigation.navigate(TradePage);
+    navigation.navigate(TradeMac);
   }
   return (
     <ScrollView style={styles.roster}>
@@ -26,34 +27,34 @@ const Roster = ({navigation}) => {
         contentFit="cover"
         source={require("../assets/fLogo.png")}
       />
-      <Text style={styles.yourDrafts}>YOUR DRAFTS</Text>
+      <Text style={styles.yourDrafts}>AYAN'S DRAFTS</Text>
       <View style={styles.techie}>
       <Text style={[styles.technology, styles.technologyTypo]}>Technology</Text>
-      <TouchableOpacity onPress={handlePress} style={[styles.rosterInner, styles.rosterInnerShadowBox]} />
-      <Text style={[styles.appleInc, styles.appleTypo]}>Apple Inc</Text>
-      <Text style={[styles.nasdaqAppl, styles.nasdaqLayout]}>NASDAQ: APPL</Text>
+      <TouchableOpacity style={[styles.rosterInner, styles.rosterInnerShadowBox]} />
+      <Text style={[styles.appleInc, styles.appleTypo]}>NVIDIA Corp.</Text>
+      <Text style={[styles.nasdaqAppl, styles.nasdaqLayout]}>NASDAQ: NVDA</Text>
       
       <Pressable
         style={[styles.rectanglePressable, styles.rosterInnerShadowBox]}
       />
       <Text style={[styles.appleInc1, styles.appleInc1Position]}>
-        Microsoft Corp.
+        Adobe Inc.
       </Text>
       <Text style={[styles.nasdaqAppl1, styles.appleInc1Position]}>
-        NASDAQ: MSFT
+        NASDAQ: ADBE
       </Text>
       <View style={styles.techie2}>
-      <Pressable style={[styles.rosterInner, styles.rosterInnerShadowBox]} />
-      <Text style={[styles.appleInc, styles.appleTypo]}>Meta Platforms Inc.</Text>
-      <Text style={[styles.nasdaqAppl, styles.nasdaqLayout]}>NASDAQ: META</Text>
+      <TouchableOpacity onPress={handlePress} style={[styles.rosterInner, styles.rosterInnerShadowBox]} />
+      <Text style={[styles.appleInc, styles.appleTypo]}>Alphabet Inc.</Text>
+      <Text style={[styles.nasdaqAppl, styles.nasdaqLayout]}>NASDAQ: GOOGL</Text>
       <Pressable
         style={[styles.rectanglePressable, styles.rosterInnerShadowBox]}
       />
       <Text style={[styles.appleInc1, styles.appleInc1Position]}>
-        Tesla Inc.
+        Amazon.com Inc.
       </Text>
       <Text style={[styles.nasdaqAppl1, styles.appleInc1Position]}>
-        NASDAQ: TSLA
+        NASDAQ: AMZN
       </Text>
       </View>
         </View>
@@ -62,14 +63,14 @@ const Roster = ({navigation}) => {
         <View>
         <Pressable style={[styles.rosterChild1, styles.rosterChild1ShadowBox]} />
       <Text style={[styles.appleInc2, styles.appleIconPosition1]}>
-        Coca-Cola Co
+        PepsiCo, Inc.
       </Text>
-      <Text style={[styles.nasdaqAppl2, styles.nasdaqTypo1]}>NASDAQ: KO</Text>
+      <Text style={[styles.nasdaqAppl2, styles.nasdaqTypo1]}>NASDAQ: PEP</Text>
       <View style={[styles.rectangleView, styles.rosterChild1ShadowBox]} />
       <Text style={[styles.appleInc3, styles.appleIconPosition1]}>
-        McDonalds Corp.
+        Procter & Gamble Co
       </Text>
-      <Text style={[styles.nasdaqAppl3, styles.nasdaqTypo1]}>NASDAQ: MCD</Text>
+      <Text style={[styles.nasdaqAppl3, styles.nasdaqTypo1]}>NASDAQ: PG</Text>
       
         </View>
         </View>
@@ -77,15 +78,15 @@ const Roster = ({navigation}) => {
       <Text style={[styles.realEstate, styles.technologyTypo]}>Healthcare</Text>
       <View style={[styles.rosterChild2, styles.rosterChildShadowBox]} />
       <Text style={[styles.appleInc4, styles.appleIconPosition]}>
-        Johnson & Johnson
+        Merck & Co Inc.
       </Text>
-      <Text style={[styles.nasdaqAppl4, styles.nasdaqTypo]}>NASDAQ: JNJ</Text>
+      <Text style={[styles.nasdaqAppl4, styles.nasdaqTypo]}>NASDAQ: MRK</Text>
      
       <Pressable style={[styles.rosterChild3, styles.rosterChildShadowBox]} />
       <Text style={[styles.appleInc5, styles.appleIconPosition]}>
-        Eli Lilly And Co
+        Pfizer Inc.
       </Text>
-      <Text style={[styles.nasdaqAppl5, styles.nasdaqTypo]}>NASDAQ: LLY</Text>
+      <Text style={[styles.nasdaqAppl5, styles.nasdaqTypo]}>NASDAQ: PFE</Text>
      
       <View style={styles.rosterChild4} />
       </View>
@@ -93,15 +94,15 @@ const Roster = ({navigation}) => {
       <Text style={[styles.realEstate, styles.technologyTypo]}>Finance</Text>
       <View style={[styles.rosterChild2, styles.rosterChildShadowBox]} />
       <Text style={[styles.appleInc4, styles.appleIconPosition]}>
-      Berkshire Hathaway Inc.
+      Mastercard Inc.
       </Text>
-      <Text style={[styles.nasdaqAppl4, styles.nasdaqTypo]}>NASDAQ: BRK</Text>
+      <Text style={[styles.nasdaqAppl4, styles.nasdaqTypo]}>NASDAQ: MA</Text>
      
       <Pressable style={[styles.rosterChild3, styles.rosterChildShadowBox]} />
       <Text style={[styles.appleInc5, styles.appleIconPosition]}>
-        JPMorgan Chase & Co
+        Visa Inc.
       </Text>
-      <Text style={[styles.nasdaqAppl5, styles.nasdaqTypo]}>NASDAQ: JPM</Text>
+      <Text style={[styles.nasdaqAppl5, styles.nasdaqTypo]}>NASDAQ: V</Text>
     
       </View>
       <View style={styles.rectanglePressable1}/>
@@ -395,7 +396,7 @@ ggprofileIcon: {
     top: 78,
     left: 72,
     fontSize: FontSize.size_16xl,
-    width: 256,
+    width: 296,
     textAlign: "left",
     color: Color.colorWhite,
     fontFamily: FontFamily.interBold,
@@ -493,7 +494,7 @@ ggprofileIcon: {
     height: 25,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
-    width: 90,
+    width: 110,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
     color: Color.colorWhite,
@@ -556,4 +557,4 @@ ggprofileIcon: {
   },
 });
 
-export default Roster;
+export default AyanRoster;

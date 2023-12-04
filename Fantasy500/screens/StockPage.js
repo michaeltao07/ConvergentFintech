@@ -9,10 +9,14 @@ import Profile from "./Profile";
 import Leaderboard from "./Leaderboard";
 import VersusPage from "./VersusPage";
 import Roster from "./Roster";
+import AMZNPage from "./AMZNPage";
 
 const StockPage = ({navigation}) => {
   const handlePress = () => {
     navigation.navigate(StocksPage);
+  };
+  const handlePress1 = () => {
+    navigation.navigate(AMZNPage);
   };
   const [boxStyle, setBoxStyle] = useState(styles.technology);
   const print = "technology";
@@ -30,13 +34,13 @@ const StockPage = ({navigation}) => {
       <Pressable style={styles.stockpageChild} />
       <View style={[styles.stockpageItem, styles.stockpageChildLayout]} />
       <Pressable style={[styles.stockpageInner, styles.stockpageShadowBox]} />
-      <Text style={[styles.appleInc, styles.appleTypo]}>Apple Inc</Text>
+      
       <Text style={styles.technology}>Technology</Text>
       <Text style={[styles.realEstate, styles.realEstateTypo]}>
         Real Estate
       </Text>
       <Text style={[styles.healthcare, styles.realEstateTypo]}>Healthcare</Text>
-      <Text style={[styles.nasdaqAppl, styles.nasdaqTypo3]}>NASDAQ: APPL</Text>
+      
       <View style={[styles.rectangleView, styles.rectangleShadowBox]} />
       <Pressable
         style={[styles.rectangleShadowBox, styles.ooba]}
@@ -44,9 +48,9 @@ const StockPage = ({navigation}) => {
       <Pressable
         style={[styles.stockpageChild1, styles.stockpageChildShadowBox4]}
       />
-      <Text style={styles.industry4}>Industry 4</Text>
-      <Text style={[styles.industry5, styles.industryTypo]}>Industry 5</Text>
-      <Text style={[styles.industry6, styles.industryTypo]}>Industry 6</Text>
+      <Text style={styles.industry4}>Consumer</Text>
+      <Text style={[styles.industry5, styles.industryTypo]}>Energy</Text>
+      <Text style={[styles.industry6, styles.industryTypo]}>Industrial</Text>
       <Pressable
         style={[styles.stockpageChild2, styles.stockpageChildShadowBox4]}
       />
@@ -64,20 +68,26 @@ const StockPage = ({navigation}) => {
         source={require("../assets/ellipse-5.png")}
       />
       <Text style={[styles.text, styles.textTypo]}>?</Text>
-      <Image
-        style={[styles.image1Icon, styles.iconLayout3]}
+      <TouchableOpacity onPress={handlePress1}>
+
+      <Text style={[styles.appleInc, styles.appleTypo]}>Amazon.com Inc.</Text>
+      <Text style={[styles.nasdaqAppl, styles.nasdaqTypo3]}>NASDAQ: AMZN</Text>
+          <Image
+        style={[styles.image1Icon]}
         contentFit="cover"
-        source={require("../assets/image-1.png")}
-      />
+        source={require("../assets/Fantasy500/Tech/AMNZnoNum.png")}
+        />
+      </TouchableOpacity>
+      
       <TouchableOpacity onPress={handlePress}>
       <View style={[styles.frameView, styles.frameViewPosition]} />
       <Pressable style={[styles.stockpageChild5, styles.stockpageShadowBox]} />
-      <Text style={[styles.appleInc1, styles.appleTypo]}>Apple Inc</Text>
-      <Text style={[styles.nasdaqAppl1, styles.nasdaqTypo3]}>NASDAQ: APPL</Text>
+      <Text style={[styles.appleInc1, styles.appleTypo]}>Apple Inc.</Text>
+      <Text style={[styles.nasdaqAppl1, styles.nasdaqTypo3]}>NASDAQ: AAPL</Text>
       <Image
-        style={[styles.image2Icon, styles.iconLayout2]}
+        style={[styles.image1Icon1]}
         contentFit="cover"
-        source={require("../assets/image-1.png")}
+        source={require("../assets/Fantasy500/Tech/AAPLnoNum.png")}
       />
       </TouchableOpacity>
       <View style={[styles.stockpageChild6, styles.stockpageChildLayout]} />
@@ -85,108 +95,108 @@ const StockPage = ({navigation}) => {
         style={[styles.stockpageChild7, styles.stockpageChildShadowBox3]}
       />
       <Text style={[styles.appleInc2, styles.appleInc2Position]}>
-        Apple Inc
+        Meta Platforms Inc.
       </Text>
       <Text style={[styles.nasdaqAppl2, styles.nasdaqPosition]}>
-        NASDAQ: APPL
+        NASDAQ: META
       </Text>
       <Image
-        style={[styles.image3Icon, styles.iconLayout3]}
+        style={[styles.image1Icon, styles.down1]}
         contentFit="cover"
-        source={require("../assets/image-1.png")}
+        source={require("../assets/Fantasy500/Tech/METAnoNum.png")}
       />
       <View style={[styles.stockpageChild8, styles.stockpageChildLayout]} />
       <Pressable
         style={[styles.stockpageChild9, styles.stockpageChildShadowBox3]}
       />
       <Text style={[styles.appleInc3, styles.appleInc3Position]}>
-        Apple Inc
+        Alphabet Inc.
       </Text>
       <Text style={[styles.nasdaqAppl3, styles.appleInc3Position]}>
-        NASDAQ: APPL
+        NASDAQ: GOOGL
       </Text>
       <Image
-        style={[styles.image4Icon, styles.iconLayout3]}
+        style={[styles.image1Icon1, styles.down1]}
         contentFit="cover"
-        source={require("../assets/image-1.png")}
+        source={require("../assets/Fantasy500/Tech/GOOGLnoNum.png")}
       />
       <View style={[styles.stockpageChild10, styles.stockpageChildLayout]} />
       <View
         style={[styles.stockpageChild11, styles.stockpageChildShadowBox2]}
       />
       <Text style={[styles.appleInc4, styles.appleIconPosition2]}>
-        Apple Inc
+        Adobe Inc.
       </Text>
-      <Text style={[styles.nasdaqAppl4, styles.nasdaqTypo2]}>NASDAQ: APPL</Text>
+      <Text style={[styles.nasdaqAppl4, styles.nasdaqTypo2]}>NASDAQ: ADBE</Text>
       <Image
-        style={[styles.image5Icon, styles.iconLayout1]}
+        style={[styles.image1Icon, styles.down2]}
         contentFit="cover"
-        source={require("../assets/image-1.png")}
+        source={require("../assets/Fantasy500/Tech/ADBEnoNum.png")}
       />
       <View style={[styles.stockpageChild12, styles.stockpageChildPosition]} />
       <Pressable
         style={[styles.stockpageChild13, styles.stockpageChildShadowBox2]}
       />
       <Text style={[styles.appleInc5, styles.appleIconPosition2]}>
-        Apple Inc
+        NVIDIA Corp.
       </Text>
-      <Text style={[styles.nasdaqAppl5, styles.nasdaqTypo2]}>NASDAQ: APPL</Text>
+      <Text style={[styles.nasdaqAppl5, styles.nasdaqTypo2]}>NASDAQ: NVDA</Text>
       <Image
-        style={[styles.image6Icon, styles.iconLayout]}
+        style={[styles.image1Icon1, styles.down2]}
         contentFit="cover"
-        source={require("../assets/image-1.png")}
+        source={require("../assets/Fantasy500/Tech/NVDAnoNum.png")}
       />
       <View style={[styles.stockpageChild14, styles.stockpageChildLayout]} />
       <Pressable
         style={[styles.stockpageChild15, styles.stockpageChildShadowBox1]}
       />
       <Text style={[styles.appleInc6, styles.appleIconPosition1]}>
-        Apple Inc
+        Microsoft Corp.
       </Text>
-      <Text style={[styles.nasdaqAppl6, styles.nasdaqTypo1]}>NASDAQ: APPL</Text>
+      <Text style={[styles.nasdaqAppl6, styles.nasdaqTypo1]}>NASDAQ: MSFT</Text>
       <Image
-        style={[styles.image7Icon, styles.appleIconPosition1]}
+        style={[styles.image1Icon, styles.down3]}
         contentFit="cover"
-        source={require("../assets/image-1.png")}
+        source={require("../assets/Fantasy500/Tech/MSFTnoNum.png")}
       />
       <View style={[styles.stockpageChild16, styles.frameViewPosition]} />
       <Pressable
         style={[styles.stockpageChild17, styles.stockpageChildShadowBox1]}
       />
       <Text style={[styles.appleInc7, styles.appleIconPosition1]}>
-        Apple Inc
+        Tesla Inc.
       </Text>
-      <Text style={[styles.nasdaqAppl7, styles.nasdaqTypo1]}>NASDAQ: APPL</Text>
+      <Text style={[styles.nasdaqAppl7, styles.nasdaqTypo1]}>NASDAQ: TSLA</Text>
       <Image
-        style={[styles.image8Icon, styles.appleIconPosition1]}
+        style={[styles.image1Icon1, styles.down3]}
         contentFit="cover"
-        source={require("../assets/image-1.png")}
+        source={require("../assets/Fantasy500/Tech/TSLAnoNum.png")}
       />
       <View style={[styles.stockpageChild18, styles.stockpageChildLayout]} />
       <Pressable
         style={[styles.stockpageChild19, styles.stockpageChildShadowBox]}
       />
       <Text style={[styles.appleInc8, styles.appleIconPosition]}>
-        Apple Inc
+        Broadcom Inc.
       </Text>
-      <Text style={[styles.nasdaqAppl8, styles.nasdaqTypo]}>NASDAQ: APPL</Text>
+      <Text style={[styles.nasdaqAppl8, styles.nasdaqTypo]}>NASDAQ: AVGO</Text>
       <Image
-        style={[styles.image9Icon, styles.appleIconPosition]}
+        style={[styles.image1Icon, styles.down4]}
         contentFit="cover"
-        source={require("../assets/image-1.png")}
+        source={require("../assets/Fantasy500/Tech/AAPLnoNum.png")}
       />
       <View style={[styles.stockpageChild20, styles.stockpageChildPosition]} />
       <Pressable
         style={[styles.stockpageChild21, styles.stockpageChildShadowBox]}
       />
       <Text style={[styles.appleInc9, styles.appleIconPosition]}>
-        Apple Inc
+        Oracle Corp.
       </Text>
-      <Text style={[styles.nasdaqAppl9, styles.nasdaqTypo]}>NASDAQ: APPL</Text>
+      <Text style={[styles.nasdaqAppl9, styles.nasdaqTypo]}>NASDAQ: ORCL</Text>
       <Image
-        style={[styles.image10Icon, styles.appleIconPosition]}
+        style={[styles.image1Icon1, styles.down4]}
         contentFit="cover"
-        source={require("../assets/image-1.png")}
+        source={require("../assets/Fantasy500/Tech/METAnoNum.png")}
       />
       <View
         style={styles.rectanglePressable}
@@ -247,6 +257,18 @@ const StockPage = ({navigation}) => {
 };
 
 const styles = StyleSheet.create({
+  down1: {
+    marginTop: 135,
+  },
+  down2: {
+    marginTop: 239,
+  },
+  down3: {
+    marginTop: 343,
+  },
+  down4: {
+    marginTop: 447,
+  },
   ooba: {
     left: 270,
   },
@@ -361,7 +383,7 @@ ggprofileIcon: {
   },
   appleTypo: {
     height: 25,
-    width: 72,
+    width: 90,
     fontSize: FontSize.size_3xs,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
@@ -474,7 +496,7 @@ ggprofileIcon: {
     position: "absolute",
   },
   appleInc2Position: {
-    left: 49,
+    left: 30,
     height: 25,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
@@ -487,7 +509,7 @@ ggprofileIcon: {
     width: 90,
   },
   appleInc3Position: {
-    left: 237,
+    left: 218,
     height: 25,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
@@ -665,7 +687,7 @@ ggprofileIcon: {
     left: 16,
   },
   appleInc: {
-    left: 50,
+    left: 30,
     top: 269,
     position: "absolute",
   },
@@ -690,6 +712,9 @@ ggprofileIcon: {
     width: 79,
   },
   nasdaqAppl: {
+    left: 30,
+  },
+  nasdaqAppl1: {
     left: 50,
   },
   rectangleView: {
@@ -705,13 +730,13 @@ ggprofileIcon: {
     fontFamily: FontFamily.interMedium,
     fontWeight: "500",
     fontSize: FontSize.size_mini,
-    left: 27,
+    left: 33,
     textAlign: "left",
     color: Color.colorWhite,
     position: "absolute",
   },
   industry5: {
-    left: 162,
+    left: 172,
   },
   industry6: {
     left: 289,
@@ -742,10 +767,23 @@ ggprofileIcon: {
     height: 8,
   },
   image1Icon: {
-    left: 24,
-    height: 23,
-    width: 21,
-    top: 269,
+    left: 16,
+    height: 70,
+    marginTop: 30,
+    opacity: 0.5,
+    borderRadius: 10,
+    width: 173,
+    top: 252,
+    position: "absolute",
+  },
+  image1Icon1: {
+    left: 202,
+    height: 70,
+    marginTop: 30,
+    opacity: 0.5,
+    borderRadius: 10,
+    width: 173,
+    top: 252,
     position: "absolute",
   },
   frameView: {
@@ -755,12 +793,12 @@ ggprofileIcon: {
     left: 204,
   },
   appleInc1: {
-    left: 238,
+    left: 218,
     top: 269,
     position: "absolute",
   },
   nasdaqAppl1: {
-    left: 238,
+    left: 218,
   },
   image2Icon: {
     top: 269,
@@ -775,13 +813,13 @@ ggprofileIcon: {
   },
   appleInc2: {
     top: 373,
-    width: 72,
+    width: 100,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
     color: Color.colorWhite,
   },
   nasdaqAppl2: {
-    left: 49,
+    left: 30,
     height: 25,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
@@ -801,7 +839,7 @@ ggprofileIcon: {
   },
   appleInc3: {
     top: 373,
-    width: 72,
+    width: 100,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
     color: Color.colorWhite,
@@ -827,9 +865,9 @@ ggprofileIcon: {
     left: 17,
   },
   appleInc4: {
-    left: 51,
+    left: 30,
     height: 24,
-    width: 72,
+    width: 100,
     fontSize: FontSize.size_3xs,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
@@ -837,7 +875,7 @@ ggprofileIcon: {
     color: Color.colorWhite,
   },
   nasdaqAppl4: {
-    left: 51,
+    left: 30,
   },
   image5Icon: {
     top: 477,
@@ -850,9 +888,9 @@ ggprofileIcon: {
     left: 205,
   },
   appleInc5: {
-    left: 239,
+    left: 218,
     height: 25,
-    width: 72,
+    width: 100,
     fontSize: FontSize.size_3xs,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
@@ -860,7 +898,7 @@ ggprofileIcon: {
     color: Color.colorWhite,
   },
   nasdaqAppl5: {
-    left: 239,
+    left: 218,
   },
   image6Icon: {
     top: 477,
@@ -877,16 +915,16 @@ ggprofileIcon: {
   },
   appleInc6: {
     height: 25,
-    width: 72,
+    width: 100,
     fontSize: FontSize.size_3xs,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
     textAlign: "left",
     color: Color.colorWhite,
-    left: 50,
+    left: 30,
   },
   nasdaqAppl6: {
-    left: 50,
+    left: 30,
   },
   image7Icon: {
     height: 23,
@@ -900,9 +938,9 @@ ggprofileIcon: {
     left: 204,
   },
   appleInc7: {
-    left: 238,
+    left: 218,
     height: 25,
-    width: 72,
+    width: 100,
     fontSize: FontSize.size_3xs,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
@@ -910,7 +948,7 @@ ggprofileIcon: {
     color: Color.colorWhite,
   },
   nasdaqAppl7: {
-    left: 238,
+    left: 218,
   },
   image8Icon: {
     left: 212,
@@ -927,9 +965,9 @@ ggprofileIcon: {
     left: 17,
   },
   appleInc8: {
-    left: 51,
+    left: 30,
     height: 25,
-    width: 72,
+    width: 100,
     fontSize: FontSize.size_3xs,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
@@ -937,7 +975,7 @@ ggprofileIcon: {
     color: Color.colorWhite,
   },
   nasdaqAppl8: {
-    left: 51,
+    left: 30,
   },
   image9Icon: {
     left: 25,
@@ -951,9 +989,9 @@ ggprofileIcon: {
     left: 205,
   },
   appleInc9: {
-    left: 239,
+    left: 218,
     height: 25,
-    width: 72,
+    width: 100,
     fontSize: FontSize.size_3xs,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
@@ -961,7 +999,7 @@ ggprofileIcon: {
     color: Color.colorWhite,
   },
   nasdaqAppl9: {
-    left: 239,
+    left: 218,
   },
   image10Icon: {
     left: 213,

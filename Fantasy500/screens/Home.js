@@ -79,7 +79,7 @@ const Home = ({navigation}) => {
       </Pressable>
       <Pressable
         style={styles.vectorPosition1}
-        // onPress={() => navigation.navigate(Roster)}
+        onPress={() => navigation.navigate(Roster)}
       >
         <Image
           style={[styles.icon1, styles.iconLayout]}

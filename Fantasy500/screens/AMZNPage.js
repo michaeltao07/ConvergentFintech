@@ -10,18 +10,18 @@ import Profile from "./Profile";
 import Leaderboard from "./Leaderboard";
 import VersusPage from "./VersusPage";
 
-const StocksPage = ({navigation}) => {
+const AMZNPage = ({navigation}) => {
   const handlePress = () => {
     navigation.navigate(DraftFilled)
   };
   return (
     <View style={styles.stocksPage}>
-      <Text style={[styles.appleInc, styles.textLayout]}>Apple Inc.</Text>
-      <Text style={[styles.text, styles.textTypo]}>{`173.97
+      <Text style={[styles.appleInc, styles.textLayout]}>Amazon.com Inc.</Text>
+      <Text style={[styles.text, styles.textTypo]}>{`147.03
 `}</Text>
-      <Text style={[styles.nasdaqAppl, styles.todayLayout]}>NASDAQ: AAPL</Text>
+      <Text style={[styles.nasdaqAppl, styles.todayLayout1]}>NASDAQ: AMZN</Text>
       <Text style={[styles.today, styles.todayLayout]}>
-        +3.20 (1.87%) today
+        -2.83 (1.82%) today
       </Text>
       <Text style={[styles.marketSummary, styles.textTypo]}>
         Market Summary
@@ -33,7 +33,7 @@ const StocksPage = ({navigation}) => {
         style={[styles.graphBro]}
         contentFit="cover"
         zIndex={30}
-        source={require("../assets/Fantasy500/Tech/AAPLgraph.png")}
+        source={require("../assets/Fantasy500/Tech/AMZNgraph.png")}
       />
       </View>
       <TouchableOpacity onPress={handlePress}>
@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
   },
   textLayout: {
     height: 34,
-    width: 183,
+    width: 250,
   },
   textTypo: {
     left: 32,
@@ -133,6 +133,12 @@ const styles = StyleSheet.create({
     position: "absolute",
   },
   todayLayout: {
+    height: 26,
+    color: "red",
+    textAlign: "left",
+    position: "absolute",
+  },
+  todayLayout1: {
     height: 26,
     color: Color.colorLimegreen,
     textAlign: "left",
@@ -206,7 +212,7 @@ const styles = StyleSheet.create({
   },
   nasdaqAppl: {
     top: 114,
-    width: 191,
+    width: 250,
     fontFamily: FontFamily.interMedium,
     fontWeight: "500",
     fontSize: FontSize.size_xl,
@@ -403,4 +409,4 @@ ggprofileIcon: {
   },
 });
 
-export default StocksPage;
+export default AMZNPage;

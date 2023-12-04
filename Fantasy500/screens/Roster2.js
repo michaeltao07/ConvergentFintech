@@ -10,7 +10,7 @@ import VersusPage from "./VersusPage";
 import TradePage from "./TradePage";
 
 
-const Roster = ({navigation}) => {
+const Roster2 = ({navigation}) => {
   const handlePress = () => {
     navigation.navigate(TradePage);
   }
@@ -30,8 +30,8 @@ const Roster = ({navigation}) => {
       <View style={styles.techie}>
       <Text style={[styles.technology, styles.technologyTypo]}>Technology</Text>
       <TouchableOpacity onPress={handlePress} style={[styles.rosterInner, styles.rosterInnerShadowBox]} />
-      <Text style={[styles.appleInc, styles.appleTypo]}>Apple Inc</Text>
-      <Text style={[styles.nasdaqAppl, styles.nasdaqLayout]}>NASDAQ: APPL</Text>
+      <Text style={[styles.appleInc, styles.appleTypo]}>Alphabet Inc.</Text>
+      <Text style={[styles.nasdaqAppl, styles.nasdaqLayout]}>NASDAQ: GOOGL</Text>
       
       <Pressable
         style={[styles.rectanglePressable, styles.rosterInnerShadowBox]}
@@ -556,4 +556,4 @@ ggprofileIcon: {
   },
 });
 
-export default Roster;
+export default Roster2;

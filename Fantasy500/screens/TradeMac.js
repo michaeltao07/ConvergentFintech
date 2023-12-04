@@ -3,25 +3,26 @@ import { Image } from "expo-image";
 import { StyleSheet, Text, View, Pressable, TouchableOpacity } from "react-native";
 import { Color, FontFamily, Border, FontSize } from "../GlobalStyles";
 import DraftFilled from './DraftFilled';
-import StockPage from "./StockPage";
+import Roster from "./Roster";
 import Home from './Home';
 import Wallet from "./Wallet";
 import Profile from "./Profile";
 import Leaderboard from "./Leaderboard";
 import VersusPage from "./VersusPage";
+import Roster2 from "./Roster2";
 
-const StocksPage = ({navigation}) => {
+const TradeMac = ({navigation}) => {
   const handlePress = () => {
-    navigation.navigate(DraftFilled)
+    navigation.navigate(Roster2)
   };
   return (
     <View style={styles.stocksPage}>
-      <Text style={[styles.appleInc, styles.textLayout]}>Apple Inc.</Text>
-      <Text style={[styles.text, styles.textTypo]}>{`173.97
+      <Text style={[styles.appleInc, styles.textLayout]}>Alphabet Inc.</Text>
+      <Text style={[styles.text, styles.textTypo]}>{`131.86
 `}</Text>
-      <Text style={[styles.nasdaqAppl, styles.todayLayout]}>NASDAQ: AAPL</Text>
+      <Text style={[styles.nasdaqAppl, styles.todayLayout]}>NASDAQ: GOOGL</Text>
       <Text style={[styles.today, styles.todayLayout]}>
-        +3.20 (1.87%) today
+        +0.67 (0.51%) today
       </Text>
       <Text style={[styles.marketSummary, styles.textTypo]}>
         Market Summary
@@ -39,7 +40,7 @@ const StocksPage = ({navigation}) => {
       <TouchableOpacity onPress={handlePress}>
       <Pressable style={[styles.stocksPageInner, styles.stocksShadowBox]} />
       <Text style={[styles.addToRoster, styles.nasdaqApplTypo]}>
-        Add to Roster
+        Confirm Trade
       </Text>
       </TouchableOpacity>
       <View
@@ -101,7 +102,7 @@ const StocksPage = ({navigation}) => {
       <Text style={[styles.newsArticle1, styles.newsTypo]}>news article 1</Text>
       <View style={[styles.stocksPageChild2, styles.stocksChildLayout]} />
       <Text style={[styles.newsArticle2, styles.newsTypo]}>news article 2</Text>
-      <Pressable onPress={()=>navigation.navigate(StockPage)}>
+      <Pressable onPress={()=>navigation.navigate(Roster)}>
       <Image
         style={styles.polygonIcon}
         contentFit="cover"
@@ -267,10 +268,10 @@ const styles = StyleSheet.create({
     height: 58,
   },
   addToRoster: {
-    top: 507,
-    left: 128,
-    width: 134,
-    height: 25,
+    top: 504,
+    left: 130,
+    width: 154,
+    height: 30,
     fontSize: FontSize.size_xl,
     textAlign: "left",
     color: Color.colorWhite,
@@ -403,4 +404,4 @@ ggprofileIcon: {
   },
 });
 
-export default StocksPage;
+export default TradeMac;

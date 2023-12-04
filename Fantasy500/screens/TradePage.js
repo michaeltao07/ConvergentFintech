@@ -3,16 +3,17 @@ import { Image } from "expo-image";
 import { StyleSheet, Text, View, Pressable, TouchableOpacity } from "react-native";
 import { Color, FontFamily, Border, FontSize } from "../GlobalStyles";
 import DraftFilled from './DraftFilled';
-import StockPage from "./StockPage";
+import Roster from "./Roster";
 import Home from './Home';
 import Wallet from "./Wallet";
 import Profile from "./Profile";
 import Leaderboard from "./Leaderboard";
 import VersusPage from "./VersusPage";
+import Choose from "./Choose";
 
-const StocksPage = ({navigation}) => {
+const TradePage = ({navigation}) => {
   const handlePress = () => {
-    navigation.navigate(DraftFilled)
+    navigation.navigate(Choose)
   };
   return (
     <View style={styles.stocksPage}>
@@ -39,7 +40,7 @@ const StocksPage = ({navigation}) => {
       <TouchableOpacity onPress={handlePress}>
       <Pressable style={[styles.stocksPageInner, styles.stocksShadowBox]} />
       <Text style={[styles.addToRoster, styles.nasdaqApplTypo]}>
-        Add to Roster
+        Trade Stock
       </Text>
       </TouchableOpacity>
       <View
@@ -101,7 +102,7 @@ const StocksPage = ({navigation}) => {
       <Text style={[styles.newsArticle1, styles.newsTypo]}>news article 1</Text>
       <View style={[styles.stocksPageChild2, styles.stocksChildLayout]} />
       <Text style={[styles.newsArticle2, styles.newsTypo]}>news article 2</Text>
-      <Pressable onPress={()=>navigation.navigate(StockPage)}>
+      <Pressable onPress={()=>navigation.navigate(Roster)}>
       <Image
         style={styles.polygonIcon}
         contentFit="cover"
@@ -267,10 +268,10 @@ const styles = StyleSheet.create({
     height: 58,
   },
   addToRoster: {
-    top: 507,
-    left: 128,
+    top: 504,
+    left: 135,
     width: 134,
-    height: 25,
+    height: 30,
     fontSize: FontSize.size_xl,
     textAlign: "left",
     color: Color.colorWhite,
@@ -403,4 +404,4 @@ ggprofileIcon: {
   },
 });
 
-export default StocksPage;
+export default TradePage;

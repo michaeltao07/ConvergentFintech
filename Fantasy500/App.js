@@ -16,6 +16,12 @@ import LaunchPage from "./screens/LaunchPage";
 import ResponsibleGaming from "./screens/ResponsibleGaming";
 import InviteFriends from "./screens/InviteFriends";
 import Roster from "./screens/Roster";
+import AMZNPage from "./screens/AMZNPage";
+import TradePage from "./screens/TradePage";
+import Choose from "./screens/Choose";
+import AyanRoster from "./screens/AyanRoster";
+import TradeMac from "./screens/TradeMac";
+import Roster2 from "./screens/Roster2";
 
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { View, Text, Pressable, TouchableOpacity } from "react-native";
@@ -103,6 +109,36 @@ const App = () => {
            <Stack.Screen
             name="Roster"
             component={Roster}
+            options={{headerShown: false}}
+           />
+           <Stack.Screen
+            name="AMZNPage"
+            component={AMZNPage}
+            options={{headerShown: false}}
+           />
+           <Stack.Screen
+            name="Choose"
+            component={Choose}
+            options={{headerShown: false}}
+           />
+           <Stack.Screen
+            name="TradePage"
+            component={TradePage}
+            options={{headerShown: false}}
+           />
+           <Stack.Screen
+            name="AyanRoster"
+            component={AyanRoster}
+            options={{headerShown: false}}
+           />
+           <Stack.Screen
+            name="TradeMac"
+            component={TradeMac}
+            options={{headerShown: false}}
+           />
+           <Stack.Screen
+            name="Roster2"
+            component={Roster2}
             options={{headerShown: false}}
            />
           </Stack.Navigator>

@@ -12,11 +12,15 @@ const VersusPage = ({navigation}) => {
   return (
     <View style={styles.versuspage}>
       <Text style={[styles.versus, styles.matchTypo]}>VERSUS</Text>
-      <Text style={[styles.versus, styles.matchTypo]}>VERSUS</Text>
       <Image
         style={[styles.versuspageChild, styles.versuspageChildLayout]}
         contentFit="cover"
         source={require("../assets/ellipse-22.png")}
+      />
+      <Image
+        style={[styles.versuspageChild, styles.versuspageChildLayout]}
+        contentFit="cover"
+        source={require("../assets/fLogo.png")}
       />
       <Image
         style={styles.versuspageItem}
@@ -91,86 +95,84 @@ const VersusPage = ({navigation}) => {
         contentFit="cover"
         source={require("../assets/ellipse-22.png")}
       />
-      <Text style={[styles.text1, styles.textTypo]}>53%</Text>
-      <Text style={[styles.text2, styles.textTypo]}>47%</Text>
+      <Text style={[styles.text1, styles.textTypo]}>+13%</Text>
+      <Text style={[styles.text2, styles.textTypo]}>-4%</Text>
       <View style={styles.lineView} />
       <Text style={[styles.teamSriya, styles.teamTypo]}>Team Sriya</Text>
-      <Text style={[styles.win, styles.winTypo]}>win</Text>
-      <Text style={[styles.win1, styles.winTypo]}>win</Text>
       <Text style={[styles.sriyachip, styles.opponentTypo]}>@sriyachip</Text>
-      <Text style={[styles.teamOpp, styles.teamTypo]}>Team Opp</Text>
-      <Text style={[styles.opponent, styles.opponentTypo]}>@opponent</Text>
+      <Text style={[styles.teamOpp, styles.teamTypo]}>Team Ayan</Text>
+      <Text style={[styles.opponent, styles.opponentTypo]}>@ayanjannu</Text>
       <Text style={[styles.yetToPlay, styles.yetTypo]}>Yet to play (9)</Text>
       <Text style={[styles.starters, styles.week10Typo]}>Starters</Text>
-      <Text style={[styles.week10, styles.week10Typo]}> Week 10</Text>
+      <Text style={[styles.week10, styles.week10Typo]}> Week 1</Text>
       <Text style={[styles.yetToPlay1, styles.yetTypo]}>Yet to play (9)</Text>
       <Pressable
         style={[styles.rectanglePressable, styles.versuspageChildShadowBox2]}
       />
-      <Text style={[styles.appleInc, styles.applePosition1]}>Apple Inc</Text>
-      <Text style={[styles.nasdaqAppl, styles.nasdaqLayout]}>NASDAQ: APPL</Text>
+      <Text style={[styles.appleInc, styles.applePosition1]}>Alphabet Inc.</Text>
+      <Text style={[styles.nasdaqAppl, styles.nasdaqLayout]}>NASDAQ: GOOGL</Text>
       <Pressable
         style={[styles.versuspageChild3, styles.versuspageChildShadowBox2]}
       />
-      <Text style={[styles.appleInc1, styles.appleTypo3]}>Apple Inc</Text>
+      <Text style={[styles.appleInc1, styles.appleTypo3]}>JPMorgan Chase & Co</Text>
       <Text style={[styles.nasdaqAppl1, styles.nasdaqPosition3]}>
-        NASDAQ: APPL
+        NASDAQ: JPM
       </Text>
       <Pressable
         style={[styles.versuspageChild4, styles.versuspageChildShadowBox2]}
       />
-      <Text style={[styles.appleInc2, styles.appleTypo2]}>Apple Inc</Text>
+      <Text style={[styles.appleInc2, styles.appleTypo2]}>Tesla Inc.</Text>
       <Text style={[styles.nasdaqAppl2, styles.nasdaqPosition2]}>
-        NASDAQ: APPL
+        NASDAQ: TSLA
       </Text>
       <Pressable
         style={[styles.versuspageChild5, styles.versuspageChildShadowBox2]}
       />
-      <Text style={[styles.appleInc3, styles.appleTypo1]}>Apple Inc</Text>
+      <Text style={[styles.appleInc3, styles.appleTypo1]}>Berkshire Hathaway Inc.</Text>
       <Text style={[styles.nasdaqAppl3, styles.nasdaqPosition1]}>
-        NASDAQ: APPL
+        NASDAQ: BRK
       </Text>
       <Pressable
         style={[styles.versuspageChild6, styles.versuspageChildShadowBox2]}
       />
-      <Text style={[styles.appleInc4, styles.appleTypo]}>Apple Inc</Text>
+      <Text style={[styles.appleInc4, styles.appleTypo]}>McDonald's Inc</Text>
       <Text style={[styles.nasdaqAppl4, styles.nasdaqPosition]}>
-        NASDAQ: APPL
+        NASDAQ: MCD
       </Text>
       <Pressable
         style={[styles.versuspageChild7, styles.versuspageChildShadowBox1]}
       />
-      <Text style={[styles.appleInc5, styles.applePosition]}>Apple Inc</Text>
+      <Text style={[styles.appleInc5, styles.applePosition]}>NVIDIA Corp.</Text>
       <Text style={[styles.nasdaqAppl5, styles.applePosition]}>
-        NASDAQ: APPL
+        NASDAQ: NVDA
       </Text>
       <Pressable
         style={[styles.versuspageChild8, styles.versuspageChildShadowBox1]}
       />
-      <Text style={[styles.appleInc6, styles.applePosition]}>Apple Inc</Text>
+      <Text style={[styles.appleInc6, styles.applePosition]}>Mastercard Inc.</Text>
       <Text style={[styles.nasdaqAppl6, styles.applePosition]}>
-        NASDAQ: APPL
+        NASDAQ: MA
       </Text>
       <Pressable
         style={[styles.versuspageChild9, styles.versuspageChildShadowBox1]}
       />
       <Text style={[styles.appleInc7, styles.applePosition]}>Apple Inc</Text>
       <Text style={[styles.nasdaqAppl7, styles.applePosition]}>
-        NASDAQ: APPL
+        NASDAQ: AAPL
       </Text>
       <Pressable
         style={[styles.versuspageChild10, styles.versuspageChildShadowBox1]}
       />
-      <Text style={[styles.appleInc8, styles.applePosition]}>Apple Inc</Text>
+      <Text style={[styles.appleInc8, styles.applePosition]}>Visa Inc.</Text>
       <Text style={[styles.nasdaqAppl8, styles.applePosition]}>
-        NASDAQ: APPL
+        NASDAQ: V
       </Text>
       <Pressable
         style={[styles.versuspageChild11, styles.versuspageChildShadowBox1]}
       />
-      <Text style={[styles.appleInc9, styles.applePosition]}>Apple Inc</Text>
+      <Text style={[styles.appleInc9, styles.applePosition]}>PepsiCo, Inc.</Text>
       <Text style={[styles.nasdaqAppl9, styles.applePosition]}>
-        NASDAQ: APPL
+        NASDAQ: PEP
       </Text>
       <Pressable
         style={[styles.versuspageChild12, styles.versuspageChildShadowBox2]}
@@ -191,7 +193,7 @@ const VersusPage = ({navigation}) => {
       <View
         style={[styles.versuspageChild15, styles.versuspageChildShadowBox]}
       />
-      <Text style={[styles.h1, styles.tTypo]}>H</Text>
+      <Text style={[styles.h1, styles.tTypo]}>C</Text>
       <View
         style={[styles.versuspageChild16, styles.versuspageChildShadowBox]}
       />
@@ -319,8 +321,8 @@ ggprofileIcon: {
     position: "absolute",
   },
   textTypo: {
-    width: 77,
-    top: 226,
+    width: 150,
+    top: 246,
     textAlign: "left",
     fontFamily: FontFamily.interBold,
     fontWeight: "700",
@@ -443,7 +445,7 @@ ggprofileIcon: {
   },
   appleTypo: {
     top: 658,
-    width: 68,
+    width: 98,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
     color: Color.colorWhite,
@@ -630,7 +632,7 @@ ggprofileIcon: {
     left: 319,
   },
   text1: {
-    left: 77,
+    left: 70,
     color: Color.colorLimegreen,
   },
   text2: {
@@ -668,12 +670,12 @@ ggprofileIcon: {
   },
   teamOpp: {
     top: 181,
-    right: 81,
-    width: 74,
+    right: 45,
+    width: 100,
   },
   opponent: {
-    left: 255,
-    width: 57,
+    left: 250,
+    width: 65,
   },
   yetToPlay: {
     width: 95,
@@ -724,6 +726,7 @@ ggprofileIcon: {
   nasdaqAppl1: {
     height: 25,
     left: 41,
+    marginTop: 10,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
     position: "absolute",
@@ -757,6 +760,7 @@ ggprofileIcon: {
   },
   nasdaqAppl3: {
     height: 25,
+    marginTop: 10,
     left: 41,
     fontSize: FontSize.size_3xs,
     textAlign: "left",
@@ -800,7 +804,7 @@ ggprofileIcon: {
   },
   appleInc6: {
     top: 466,
-    width: 68,
+    width: 90,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
     color: Color.colorWhite,

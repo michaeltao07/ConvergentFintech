@@ -15,6 +15,11 @@ const LaunchPage = ({navigation}) => {
         contentFit="cover"
         source={require("../assets/ellipse-24.png")}
       />
+      <Image
+        style={styles.launchPageChild}
+        contentFit="cover"
+        source={require("../assets/fLogo.png")}
+      />
       <Pressable style={styles.signInTypo} onPress={handlePress} zIndex={1}>
       <Text style={[styles.signIn, styles.signInTypo]}>
         Sign in

@@ -1,25 +1,23 @@
 import * as React from "react";
 import { Image } from "expo-image";
-import { StyleSheet, Text, View, Pressable } from "react-native";
+import { StyleSheet, Text, View, Pressable, TouchableOpacity } from "react-native";
 import { FontSize, Color, FontFamily } from "../GlobalStyles";
 import Profile from "./Profile";
 import VersusPage from "./VersusPage";
 import Home from "./Home";
 import Wallet from "./Wallet";
-import Roster from "./Roster";
+import AyanRoster from "./AyanRoster";
 
-const Leaderboard = ({navigation}) => {
+const Choose = ({navigation}) => {
+    const handlePress = () => {
+        navigation.navigate(AyanRoster)
+    };
   return (
     <View style={styles.leaderboard}>
       <Image
         style={[styles.leaderboardChild, styles.leaderboardChildLayout1]}
         contentFit="cover"
         source={require("../assets/ellipse-22.png")}
-      />
-      <Image
-        style={[styles.leaderboardChild, styles.leaderboardChildLayout1]}
-        contentFit="cover"
-        source={require("../assets/fLogo.png")}
       />
       <Image
         style={styles.leaderboardItem}
@@ -84,7 +82,7 @@ const Leaderboard = ({navigation}) => {
       </Pressable>
 
       <Text style={[styles.thisSeasonsStandings, styles.text9Typo]}>
-        This season’s standings.
+        Choose a player to trade with.
       </Text>
       <Image
         style={[styles.ellipseIcon, styles.leaderboardChildLayout]}
@@ -116,7 +114,9 @@ const Leaderboard = ({navigation}) => {
         contentFit="cover"
         source={require("../assets/ellipse-3.png")}
       />
+      <TouchableOpacity onPress={handlePress}>
       <Text style={[styles.ayanjannu, styles.userTypo]}>ayanjannu</Text>
+      </TouchableOpacity>
       <Text style={[styles.nitishapokkula, styles.userTypo]}>
         nitishapokkula
       </Text>
@@ -424,9 +424,9 @@ ggprofileIcon: {
     left: "80.92%",
   },
   thisSeasonsStandings: {
-    top: 129,
+    top: 139,
     left: 28,
-    width: 243,
+    width: 293,
   },
   ellipseIcon: {
     top: 186,
@@ -556,4 +556,4 @@ ggprofileIcon: {
   },
 });
 
-export default Leaderboard;
+export default Choose;
