@@ -7,12 +7,15 @@ import DraftList from "./DraftList";
 import Profile from "./Profile";
 import VersusPage from "./VersusPage";
 import Leaderboard from "./Leaderboard";
-import Wallet from "./Wallet"
+import Roster2 from "./Roster2"
 import Roster from "./Roster";
 
 const Home = ({navigation}) => {
   const handlePress = () => {
     navigation.navigate(DraftList);
+  };
+  const handlePress1 = () => {
+    navigation.navigate(Roster2);
   };
 
   return (
@@ -23,17 +26,17 @@ const Home = ({navigation}) => {
         source={require("../assets/ellipse-22.png")}
       />
       <Text style={styles.home1}>HOME</Text>
-      <TouchableOpacity onPress={()=>{handlePress()}}>
+      <TouchableOpacity onPress={()=>{handlePress1()}}>
       <View style={[styles.homeInner, styles.homeChildShadowBox1]}>
         <Text style={styles.leagueNames}>Sriya's League</Text>
       </View>
       </TouchableOpacity>
-      <TouchableOpacity onPress={()=>{handlePress()}}>
+      <TouchableOpacity onPress={()=>{handlePress1()}}>
       <View style={styles.rectangleView}>
       <Text style={styles.leagueNames}>Office League</Text>
       </View>
       </TouchableOpacity>
-      <TouchableOpacity onPress={()=>{handlePress()}}>
+      <TouchableOpacity onPress={()=>{handlePress1()}}>
       <View style={[styles.homeChild1, styles.homeChildShadowBox1]}>
       <Text style={styles.leagueNames}>LeagueOfLosers</Text>
       </View>

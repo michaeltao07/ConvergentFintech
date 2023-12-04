@@ -86,7 +86,7 @@ const DraftList = ({navigation}) => {
 
       </View>
       <ScrollView horizontal vertical showsVerticalScrollIndicator="false" showsHorizontalScrollIndicator="false" style={styles.daScroll}>
-      <Text style={[styles.player1, styles.playerTypo2]}>Player 1</Text>
+      <Text style={[styles.player1, styles.playerTypo2]}>You</Text>
       <View style={[styles.draftlistInner, styles.draftlistInnerLayout]}>
         <View
           style={[styles.playersStocksWrapper, styles.rectangleViewPosition]}

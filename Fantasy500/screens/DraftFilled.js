@@ -82,7 +82,7 @@ const DraftFilled = ({navigation}) => {
 
       </View>
       <ScrollView top={-35} horizontal vertical showsVerticalScrollIndicator="false" showsHorizontalScrollIndicator="false" style={styles.daScroll}>
-      <Text style={[styles.player1, styles.playerTypo2]}>Player 1</Text>
+      <Text style={[styles.player1, styles.playerTypo2]}>You</Text>
       <Text style={[styles.player7, styles.playerTypo3]}>Player 7</Text>
       <View style={[styles.draftlistInner, styles.draftlistInnerLayout]}>
         <View
