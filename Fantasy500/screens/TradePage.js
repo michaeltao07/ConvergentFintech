@@ -398,8 +398,9 @@ ggprofileIcon: {
   stocksPage: {
     backgroundColor: Color.colorDarkslategray,
     flex: 1,
-    width: "100%",
+    width: "110%",
     height: 852,
+    left: -10,
     overflow: "hidden",
   },
 });

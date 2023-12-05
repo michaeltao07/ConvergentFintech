@@ -24,6 +24,11 @@ const DraftList = ({navigation}) => {
         contentFit="cover"
         source={require("../assets/ellipse-22.png")}
       />
+      <Image
+        style={styles.draftlistChild}
+        contentFit="cover"
+        source={require("../assets/fLogo.png")}
+      />
       <View style={styles.draftlistItem} />
       <TouchableOpacity onPress={handlePress}>
       <Text style={styles.startDraft}>Start Draft</Text>

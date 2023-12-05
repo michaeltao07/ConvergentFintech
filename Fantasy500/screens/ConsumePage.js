@@ -2,37 +2,28 @@ import React, {useState} from "react";
 import { Text, StyleSheet, Pressable, View, TouchableOpacity } from "react-native";
 import { Image } from "expo-image";
 import { FontFamily, Color, Border, FontSize } from "../GlobalStyles";
-import StocksPage from "./StocksPage";
+import StockPage from "./StockPage";
 import Home from './Home';
-import ConsumePage from "./ConsumePage";
 import Profile from "./Profile";
 import Leaderboard from "./Leaderboard";
 import VersusPage from "./VersusPage";
 import Roster from "./Roster";
-import AMZNPage from "./AMZNPage";
 
-const StockPage = ({navigation}) => {
+const ConsumePage = ({navigation}) => {
   const handlePress = () => {
-    navigation.navigate(StocksPage);
-  };
-  const handlePress1 = () => {
-    navigation.navigate(AMZNPage);
-  };
-  const handlePress2 = () => {
-    navigation.navigate(ConsumePage);
+    navigation.navigate(StockPage);
   };
   return (
     <View style={styles.stockpage}>
       <Text style={styles.picks}>PICKS</Text>
       <Text style={[styles.stocks, styles.textTypo]}>Stocks</Text>
       <Text style={styles.stockOptionsFor}>
-        Stock options for the technology industry
+        Stock options for the consumer industry
       </Text>
-      <Pressable style={styles.stockpageChild} />
+      <Text style={styles.technology}>Technology</Text>
+      <TouchableOpacity onPress={handlePress} style={styles.stockpageChild} />
       <View style={[styles.stockpageItem, styles.stockpageChildLayout]} />
       <Pressable style={[styles.stockpageInner, styles.stockpageShadowBox]} />
-      
-      <Text style={styles.technology}>Technology</Text>
       <Text style={[styles.realEstate, styles.realEstateTypo]}>
         Real Estate
       </Text>
@@ -42,10 +33,10 @@ const StockPage = ({navigation}) => {
       <Pressable
         style={[styles.rectangleShadowBox, styles.ooba]}
       />
-      <Text style={styles.industry4}>Consumer</Text>
-      <TouchableOpacity onPress={handlePress2}
-        style={[styles.stockpageChild1, styles.stockpageChildShadowBox4]}
+      <Pressable
+        style={[styles.stockpageChild1, styles.stockpageChildShadowBox456]}
       />
+      <Text style={styles.industry4}>Consumer</Text>
       <Text style={[styles.industry5, styles.industryTypo]}>Energy</Text>
       <Text style={[styles.industry6, styles.industryTypo]}>Industrial</Text>
       <Pressable
@@ -70,26 +61,22 @@ const StockPage = ({navigation}) => {
         source={require("../assets/ellipse-5.png")}
       />
       <Text style={[styles.text, styles.textTypo]}>?</Text>
-      <TouchableOpacity onPress={handlePress1}>
-
-      <Text style={[styles.appleInc, styles.appleTypo]}>Amazon.com Inc.</Text>
-      <Text style={[styles.nasdaqAppl, styles.nasdaqTypo3]}>NASDAQ: AMZN</Text>
+      <Text style={[styles.appleInc, styles.appleTypo]}>McDonald's Corp.</Text>
+      <Text style={[styles.nasdaqAppl, styles.nasdaqTypo3]}>NASDAQ: MCD</Text>
           <Image
         style={[styles.image1Icon]}
         contentFit="cover"
-        source={require("../assets/Fantasy500/Tech/AMNZnoNum.png")}
+        source={require("../assets/Fantasy500/Consumption/MCDnoNum.png")}
         />
-      </TouchableOpacity>
-      
       <TouchableOpacity onPress={handlePress}>
       <View style={[styles.frameView, styles.frameViewPosition]} />
       <Pressable style={[styles.stockpageChild5, styles.stockpageShadowBox]} />
-      <Text style={[styles.appleInc1, styles.appleTypo]}>Apple Inc.</Text>
-      <Text style={[styles.nasdaqAppl1, styles.nasdaqTypo3]}>NASDAQ: AAPL</Text>
+      <Text style={[styles.appleInc1, styles.appleTypo]}>PepsiCo Inc.</Text>
+      <Text style={[styles.nasdaqAppl1, styles.nasdaqTypo3]}>NASDAQ: PEP</Text>
       <Image
         style={[styles.image1Icon1]}
         contentFit="cover"
-        source={require("../assets/Fantasy500/Tech/AAPLnoNum.png")}
+        source={require("../assets/Fantasy500/Consumption/PEPnoNum.png")}
       />
       </TouchableOpacity>
       <View style={[styles.stockpageChild6, styles.stockpageChildLayout]} />
@@ -97,108 +84,108 @@ const StockPage = ({navigation}) => {
         style={[styles.stockpageChild7, styles.stockpageChildShadowBox3]}
       />
       <Text style={[styles.appleInc2, styles.appleInc2Position]}>
-        Meta Platforms Inc.
+        Coca-Cola Co
       </Text>
       <Text style={[styles.nasdaqAppl2, styles.nasdaqPosition]}>
-        NASDAQ: META
+        NASDAQ: KO
       </Text>
       <Image
         style={[styles.image1Icon, styles.down1]}
         contentFit="cover"
-        source={require("../assets/Fantasy500/Tech/METAnoNum.png")}
+        source={require("../assets/Fantasy500/Consumption/KOnoNum.png")}
       />
       <View style={[styles.stockpageChild8, styles.stockpageChildLayout]} />
       <Pressable
         style={[styles.stockpageChild9, styles.stockpageChildShadowBox3]}
       />
       <Text style={[styles.appleInc3, styles.appleInc3Position]}>
-        Alphabet Inc.
+        Procter & Gamble Co
       </Text>
       <Text style={[styles.nasdaqAppl3, styles.appleInc3Position]}>
-        NASDAQ: GOOGL
+        NASDAQ: PG
       </Text>
       <Image
         style={[styles.image1Icon1, styles.down1]}
         contentFit="cover"
-        source={require("../assets/Fantasy500/Tech/GOOGLnoNum.png")}
+        source={require("../assets/Fantasy500/Consumption/PGnoNum.png")}
       />
       <View style={[styles.stockpageChild10, styles.stockpageChildLayout]} />
       <View
         style={[styles.stockpageChild11, styles.stockpageChildShadowBox2]}
       />
       <Text style={[styles.appleInc4, styles.appleIconPosition2]}>
-        Adobe Inc.
+        Carnival Corp.
       </Text>
-      <Text style={[styles.nasdaqAppl4, styles.nasdaqTypo2]}>NASDAQ: ADBE</Text>
+      <Text style={[styles.nasdaqAppl4, styles.nasdaqTypo2]}>NASDAQ: CCL</Text>
       <Image
         style={[styles.image1Icon, styles.down2]}
         contentFit="cover"
-        source={require("../assets/Fantasy500/Tech/ADBEnoNum.png")}
+        source={require("../assets/Fantasy500/Healthcare/UNDnoNum.png")}
       />
       <View style={[styles.stockpageChild12, styles.stockpageChildPosition]} />
       <Pressable
         style={[styles.stockpageChild13, styles.stockpageChildShadowBox2]}
       />
       <Text style={[styles.appleInc5, styles.appleIconPosition2]}>
-        NVIDIA Corp.
+        Royal Caribbean Group
       </Text>
-      <Text style={[styles.nasdaqAppl5, styles.nasdaqTypo2]}>NASDAQ: NVDA</Text>
+      <Text style={[styles.nasdaqAppl5, styles.nasdaqTypo2]}>NASDAQ: RCL</Text>
       <Image
         style={[styles.image1Icon1, styles.down2]}
         contentFit="cover"
-        source={require("../assets/Fantasy500/Tech/NVDAnoNum.png")}
+        source={require("../assets/Fantasy500/Finance/VnoNum.png")}
       />
       <View style={[styles.stockpageChild14, styles.stockpageChildLayout]} />
       <Pressable
         style={[styles.stockpageChild15, styles.stockpageChildShadowBox1]}
       />
       <Text style={[styles.appleInc6, styles.appleIconPosition1]}>
-        Microsoft Corp.
+        Walmart Inc.
       </Text>
-      <Text style={[styles.nasdaqAppl6, styles.nasdaqTypo1]}>NASDAQ: MSFT</Text>
+      <Text style={[styles.nasdaqAppl6, styles.nasdaqTypo1]}>NASDAQ: WMT</Text>
       <Image
         style={[styles.image1Icon, styles.down3]}
         contentFit="cover"
-        source={require("../assets/Fantasy500/Tech/MSFTnoNum.png")}
+        source={require("../assets/Fantasy500/Healthcare/JNJnoNum.png")}
       />
       <View style={[styles.stockpageChild16, styles.frameViewPosition]} />
       <Pressable
         style={[styles.stockpageChild17, styles.stockpageChildShadowBox1]}
       />
       <Text style={[styles.appleInc7, styles.appleIconPosition1]}>
-        Tesla Inc.
+        Monster Beverage Corp.
       </Text>
-      <Text style={[styles.nasdaqAppl7, styles.nasdaqTypo1]}>NASDAQ: TSLA</Text>
+      <Text style={[styles.nasdaqAppl7, styles.nasdaqTypo1]}>NASDAQ: MNST</Text>
       <Image
         style={[styles.image1Icon1, styles.down3]}
         contentFit="cover"
-        source={require("../assets/Fantasy500/Tech/TSLAnoNum.png")}
+        source={require("../assets/Fantasy500/Healthcare/LLYnoNum.png")}
       />
       <View style={[styles.stockpageChild18, styles.stockpageChildLayout]} />
       <Pressable
         style={[styles.stockpageChild19, styles.stockpageChildShadowBox]}
       />
       <Text style={[styles.appleInc8, styles.appleIconPosition]}>
-        Broadcom Inc.
+        General Mills Inc.
       </Text>
-      <Text style={[styles.nasdaqAppl8, styles.nasdaqTypo]}>NASDAQ: AVGO</Text>
+      <Text style={[styles.nasdaqAppl8, styles.nasdaqTypo]}>NASDAQ: GIS</Text>
       <Image
         style={[styles.image1Icon, styles.down4]}
         contentFit="cover"
-        source={require("../assets/Fantasy500/Tech/AAPLnoNum.png")}
+        source={require("../assets/Fantasy500/Finance/BRKnoNum.png")}
       />
       <View style={[styles.stockpageChild20, styles.stockpageChildPosition]} />
       <Pressable
         style={[styles.stockpageChild21, styles.stockpageChildShadowBox]}
       />
       <Text style={[styles.appleInc9, styles.appleIconPosition]}>
-        Oracle Corp.
+        Clorox Co
       </Text>
-      <Text style={[styles.nasdaqAppl9, styles.nasdaqTypo]}>NASDAQ: ORCL</Text>
+      <Text style={[styles.nasdaqAppl9, styles.nasdaqTypo]}>NASDAQ: CLX</Text>
       <Image
         style={[styles.image1Icon1, styles.down4]}
         contentFit="cover"
-        source={require("../assets/Fantasy500/Tech/METAnoNum.png")}
+        source={require("../assets/Fantasy500/Healthcare/MRKnoNum.png")}
       />
       <View
         style={styles.rectanglePressable}
@@ -431,6 +418,25 @@ ggprofileIcon: {
     top: 119,
     position: "absolute",
   },
+  stockpageChildShadowBox456: {
+    top: 166,
+    backgroundColor: Color.colorSeagreen_300,
+    height: 34,
+    width: 108,
+    borderWidth: 1,
+    borderColor: Color.colorLimegreen,
+    borderStyle: "solid",
+    shadowOpacity: 1,
+    elevation: 4,
+    shadowRadius: 4,
+    shadowOffset: {
+      width: 0,
+      height: 4,
+    },
+    shadowColor: "rgba(0, 0, 0, 0.25)",
+    borderRadius: Border.br_5xs,
+    position: "absolute",
+  },
   stockpageChildShadowBox4: {
     top: 166,
     backgroundColor: Color.colorSeagreen_400,
@@ -660,7 +666,6 @@ ggprofileIcon: {
     position: "absolute",
   },
   stockpageChild: {
-    backgroundColor: Color.colorSeagreen_300,
     height: 34,
     width: 108,
     borderWidth: 1,
@@ -841,7 +846,7 @@ ggprofileIcon: {
   },
   appleInc3: {
     top: 373,
-    width: 100,
+    // width: 100,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
     color: Color.colorWhite,
@@ -892,7 +897,7 @@ ggprofileIcon: {
   appleInc5: {
     left: 218,
     height: 25,
-    width: 100,
+    // width: 100,
     fontSize: FontSize.size_3xs,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
@@ -942,7 +947,7 @@ ggprofileIcon: {
   appleInc7: {
     left: 218,
     height: 25,
-    width: 100,
+    // width: 100,
     fontSize: FontSize.size_3xs,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
@@ -1033,4 +1038,4 @@ ggprofileIcon: {
   },
 });
 
-export default StockPage;
+export default ConsumePage;

@@ -86,86 +86,112 @@ const Leaderboard = ({navigation}) => {
       <Text style={[styles.thisSeasonsStandings, styles.text9Typo]}>
         This season’s standings.
       </Text>
+      <View style={styles.flexer}>
+      <View>
+      <Text style={[styles.textTypo1]}>1</Text>
       <Image
-        style={[styles.roundy, styles.ellipseIcon, styles.leaderboardChildLayout]}
+        style={[styles.leaderboardChildLayout]}
         contentFit="cover"
         source={require("../assets/ayan.jpg")}
       />
+      <Text style={[styles.userTypo]}>ayanjannu</Text>
+      </View>
+      <View>
+      <Text style={[styles.textTypo1]}>2</Text>
+      <Text style={[styles.userTypo]}>ursulaburns</Text>
       <Image
-        style={[styles.leaderboardChild1, styles.leaderboardChildLayout]}
+        style={[styles.leaderboardChildLayout]}
         contentFit="cover"
         source={require("../assets/burns.png")}
       />
+      </View>
+      <View>
+      <Text style={[styles.textTypo1]}>3</Text>
+      <Text style={[styles.userTypo]}>sriyachippalthurty</Text>
       <Image
-        style={[styles.leaderboardChild2, styles.leaderboardChildLayout]}
+        style={[styles.leaderboardChildLayout]}
         contentFit="cover"
         source={require("../assets/sriya.png")}
       />
+      </View>
+      <View>
+      <Text style={[styles.textTypo1]}>4</Text>
+      <Text style={[styles.userTypo]}>barbaracorcoran</Text>
       <Image
-        style={[styles.leaderboardChild3, styles.leaderboardChildLayout]}
+        style={[styles.leaderboardChildLayout]}
         contentFit="cover"
         source={require("../assets/lori.png")}
       />
+      </View>
+      <View>
+      <Text style={[styles.textTypo1]}>5</Text>
+      <Text style={[styles.userTypo]}>markcuban</Text>
       <Image
-        style={[styles.leaderboardChild4, styles.leaderboardChildLayout]}
+        style={[styles.leaderboardChildLayout]}
         contentFit="cover"
         source={require("../assets/cuban.jpg")}
       />
+      </View>
+      <View>
+      <Text style={[styles.textTypo1]}>6</Text>
+      <Text style={[styles.userTypo]}>davidrobertson</Text>
       <Image
-        style={[styles.leaderboardChild5, styles.leaderboardChildLayout]}
+        style={[styles.leaderboardChildLayout]}
         contentFit="cover"
-        source={require("../assets/jjwatt.jpg")}
+        source={require("../assets/david.png")}
       />
-      <Text style={[styles.ayanjannu, styles.userTypo]}>ayanjannu</Text>
-      <Text style={[styles.nitishapokkula, styles.userTypo]}>
-        nitishapokkula
-      </Text>
-      <Text style={[styles.mahikadawar, styles.userTypo]}>mahikadawar</Text>
-      <Text style={[styles.jayanthpandit, styles.userTypo]}>jayanthpandit</Text>
-      <Text style={[styles.michaeltao, styles.userTypo]}>michaeltao</Text>
-      <Text style={[styles.anokhishah, styles.userTypo]}>anokhishah</Text>
-      <Text style={[styles.jacobencarnado, styles.userTypo]}>
-        jacobencarnado
-      </Text>
-      <Image
-        style={[styles.leaderboardChild6, styles.leaderboardChildLayout]}
-        contentFit="cover"
-        source={require("../assets/jacob.jpg")}
-      />
-      <Image
-        style={[styles.leaderboardChild7, styles.leaderboardChildLayout]}
-        contentFit="cover"
-        source={require("../assets/bezos.jpg")}
-      />
-      <Text style={[styles.andrewchoi, styles.userTypo]}>andrewchoi</Text>
-      <Image
-        style={[styles.user10, styles.leaderboardChildLayout]}
-        contentFit="cover"
-        source={require("../assets/ayan.jpg")}
-      />
+      </View>
+      <View>
+        <Text style={[styles.textTypo1]}>7</Text>
+        <Text style={[styles.userTypo]}>jacobencarnado</Text>
+        <Image
+          style={[styles.leaderboardChildLayout]}
+          contentFit="cover"
+          source={require("../assets/jacob.jpg")}
+        />
+      </View>
+      <View>
+        <Text style={[styles.textTypo1]}>8</Text>
+        <Text style={[styles.userTypo]}>jeffbezos</Text>
+        <Image
+          style={[styles.leaderboardChildLayout]}
+          contentFit="cover"
+          source={require("../assets/bezos.jpg")}
+        />
+      </View>
+      <View>
+      <Text style={styles.textTypo1}>9</Text>
+      <Text style={[styles.userTypo]}>elonmusk</Text>
+        <Image
+          style={[styles.leaderboardChildLayout]}
+          contentFit="cover"
+          source={require("../assets/musk.jpg")}  // 9
+        />
+      </View>
+      <View>
+          <Text style={[styles.userTypo]}>meenaharris</Text>
+          <Text style={[styles.text9Typo1]}>10</Text><Image
+          style={[styles.leaderboardChildLayout]}
+          contentFit="cover"
+          source={require("../assets/meenaharris.png")}
+        />
+      </View>
+      </View>
       
-      <Text style={[styles.text, styles.textTypo1]}>1</Text>
-      <Text style={[styles.text1, styles.textTypo1]}>3</Text>
-      <Text style={[styles.text2, styles.textTypo1]}>2</Text>
-      <Text style={[styles.text3, styles.textTypo1]}>4</Text>
-      <Text style={[styles.text4, styles.textTypo1]}>5</Text>
-      <Text style={[styles.text5, styles.textTypo1]}>6</Text>
-      <Text style={[styles.text6, styles.textTypo1]}>7</Text>
-      <Text style={[styles.text7, styles.textTypo1]}>8</Text>
-      <Text style={[styles.ayanjannu1, styles.userTypo]}>ayanjannu</Text>
-      <Text style={[styles.user10, styles.userTypo]}>user10</Text>
-      <Image
-        style={[styles.leaderboardChild19, styles.leaderboardChildLayout]}
-        contentFit="cover"
-        source={require("../assets/musk.jpg")}  // 9
-      />
-      <Text style={[styles.text8, styles.textTypo1]}>9</Text>
-      <Text style={[styles.text9, styles.text9Typo]}>10</Text>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
+  flexer: {
+    flex: 1,
+    left: 30,
+    top: 170,
+    bottom: 100,
+    justifyContent: 'space-between',
+    flexDirection: 'column',
+    paddingBottom: 300,
+  },
   roundy: {
     borderRadius: 10,
   },
@@ -174,6 +200,7 @@ const styles = StyleSheet.create({
     width: 30,
     left: 104,
     top: 758,
+    zIndex: 2,
     position: "absolute",
   },
   iconLayout1: {
@@ -185,6 +212,7 @@ const styles = StyleSheet.create({
     width: 33,
     left: 245,
     top: 758,
+    zIndex: 2,
     position: "absolute",
   },
   mdihomePosition: {
@@ -192,6 +220,7 @@ const styles = StyleSheet.create({
     left: 27,
     top: 755,
     height: 36,
+    zIndex: 2,
     position: "absolute",
   },
   vectorPosition: {
@@ -199,6 +228,7 @@ const styles = StyleSheet.create({
     left: 317,
     top: 760,
     height: 27,
+    zIndex: 2,
     position: "absolute",
   },
   iconLayout: {
@@ -247,6 +277,7 @@ ggprofileIcon: {
     left: "47%",
     top: 760,
     height: 27,
+    zIndex: 2,
     position: "absolute",
   },
 
@@ -268,26 +299,37 @@ ggprofileIcon: {
     fontWeight: "700",
     position: "absolute",
   },
+  text9Typo1: {
+    fontSize: FontSize.size_xl,
+    textAlign: "left",
+    color: Color.colorWhite,
+    fontFamily: FontFamily.interBold,
+    fontWeight: "700",
+    position: "absolute",
+    marginTop: 10,
+  },
   leaderboardChildLayout: {
-    height: 38,
-    width: 38,
-    left: 82,
-    borderRadius: 10,
+    height: 50,
+    width: 50,
+    left: 38,
+    borderRadius: 100,
     position: "absolute",
   },
   userTypo: {
     height: 20,
+    marginTop: 12,
     width: 354,
     fontFamily: FontFamily.interMedium,
     fontWeight: "500",
     fontSize: FontSize.size_lg,
-    left: 131,
+    left: 105,
     textAlign: "left",
     color: Color.colorWhite,
     position: "absolute",
   },
   textTypo1: {
     width: 14,
+    marginTop:10,
     fontSize: FontSize.size_xl,
     textAlign: "left",
     color: Color.colorWhite,
@@ -428,7 +470,7 @@ ggprofileIcon: {
     top: 526,
   },
   text: {
-    top: 196,
+    top: 192,
     left: 37,
   },
   text1: {
@@ -469,10 +511,7 @@ ggprofileIcon: {
     top: 713,
   },
   ayanjannu1: {
-    top: 576,
-  },
-  user10: {
-    top: 673,
+    top: 615,
   },
   user11: {
     top: 670,
@@ -481,10 +520,10 @@ ggprofileIcon: {
     top: 719,
   },
   leaderboardChild19: {
-    top: 565,
+    top: 615,
   },
   text8: {
-    top: 572,
+    top: 626,
     left: 37,
   },
   text9: {

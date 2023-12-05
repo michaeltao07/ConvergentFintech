@@ -5,7 +5,7 @@ import { Color, FontFamily, Border, FontSize } from "../GlobalStyles";
 import DraftFilled from './DraftFilled';
 import StockPage from "./StockPage";
 import Home from './Home';
-import Wallet from "./Wallet";
+import Roster from "./Roster";
 import Profile from "./Profile";
 import Leaderboard from "./Leaderboard";
 import VersusPage from "./VersusPage";
@@ -68,7 +68,7 @@ const AMZNPage = ({navigation}) => {
       </Pressable>
       <Pressable
         style={styles.vectorPosition1}
-        onPress={() => navigation.navigate(Wallet)}
+        onPress={() => navigation.navigate(Roster)}
       >
         <Image
           style={[styles.icon1, styles.iconLayout]}
@@ -403,9 +403,10 @@ ggprofileIcon: {
   stocksPage: {
     backgroundColor: Color.colorDarkslategray,
     flex: 1,
-    width: "100%",
+    width: "110%",
     height: 852,
     overflow: "hidden",
+    left: -10,
   },
 });
 

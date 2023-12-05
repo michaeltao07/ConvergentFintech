@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     shadowColor: "rgba(0, 0, 0, 0.25)",
     backgroundColor: Color.colorSeagreen_400,
     borderRadius: Border.br_5xs,
-    left: 63,
+    left: 53,
     position: "absolute",
   },
   fantasy500FlexBox: {
@@ -71,14 +71,14 @@ const styles = StyleSheet.create({
   },
   launchPageChild: {
     top: 150,
-    left: 95,
+    left: "23%",
     width: 201,
     height: 201,
     position: "absolute",
   },
   signIn: {
     top: 547,
-    left: 168,
+    left: 158,
     color: "white",
   },
   launchPageItem: {
@@ -86,12 +86,12 @@ const styles = StyleSheet.create({
   },
   createAccount: {
     top: 626,
-    left: 131,
+    left: 118,
     color: "white",
   },
   forgotPassword: {
     top: 758,
-    left: 128,
+    left: 123,
     fontSize: FontSize.size_mini,
     textDecoration: "underline",
     width: 132,
@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
   },
   fantasy500: {
     top: 372,
-    left: 98,
+    left: "23%",
     fontSize: FontSize.size_16xl,
     fontWeight: "700",
     fontFamily: FontFamily.interBold,

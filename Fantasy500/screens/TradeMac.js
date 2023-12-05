@@ -69,7 +69,7 @@ const TradeMac = ({navigation}) => {
       </Pressable>
       <Pressable
         style={styles.vectorPosition1}
-        onPress={() => navigation.navigate(Wallet)}
+        onPress={() => navigation.navigate(Roster)}
       >
         <Image
           style={[styles.icon1, styles.iconLayout]}
@@ -398,9 +398,10 @@ ggprofileIcon: {
   stocksPage: {
     backgroundColor: Color.colorDarkslategray,
     flex: 1,
-    width: "100%",
+    width: "110%",
     height: 852,
     overflow: "hidden",
+    left: -10,
   },
 });
 

@@ -25,6 +25,11 @@ const Home = ({navigation}) => {
         contentFit="cover"
         source={require("../assets/ellipse-22.png")}
       />
+      <Image
+        style={styles.homeChild}
+        contentFit="cover"
+        source={require("../assets/fLogo.png")}
+      />
       <Text style={styles.home1}>HOME</Text>
       <TouchableOpacity onPress={()=>{handlePress1()}}>
       <View style={[styles.homeInner, styles.homeChildShadowBox1]}>
@@ -38,7 +43,7 @@ const Home = ({navigation}) => {
       </TouchableOpacity>
       <TouchableOpacity onPress={()=>{handlePress1()}}>
       <View style={[styles.homeChild1, styles.homeChildShadowBox1]}>
-      <Text style={styles.leagueNames}>LeagueOfLosers</Text>
+      <Text style={styles.leagueNames45}>LeagueOfLosers</Text>
       </View>
       </TouchableOpacity>
       <TouchableOpacity> 
@@ -117,10 +122,20 @@ const Home = ({navigation}) => {
 const styles = StyleSheet.create({
   leagueNames: {
     color: "white",
-    top: 35,
-    left: 40,
+    top: 38,
+    left: 56,
     width: 337,
-    fontSize: FontSize.size_16xl,
+    fontSize: 30,
+    color: Color.colorWhite,
+    fontFamily: FontFamily.interBold,
+    fontWeight: "700",
+  },
+  leagueNames45: {
+    color: "white",
+    top: 38,
+    left: 46,
+    width: 337,
+    fontSize: 30,
     color: Color.colorWhite,
     fontFamily: FontFamily.interBold,
     fontWeight: "700",
@@ -256,6 +271,7 @@ const styles = StyleSheet.create({
   },
   homeChild2: {
     top: 525,
+    opacity: 0.2,
   },
   homeChild3: {
     left: 28,

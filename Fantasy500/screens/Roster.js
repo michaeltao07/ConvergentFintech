@@ -67,7 +67,7 @@ const Roster = ({navigation}) => {
       <Text style={[styles.nasdaqAppl2, styles.nasdaqTypo1]}>NASDAQ: KO</Text>
       <View style={[styles.rectangleView, styles.rosterChild1ShadowBox]} />
       <Text style={[styles.appleInc3, styles.appleIconPosition1]}>
-        McDonalds Corp.
+        McDonald's Corp.
       </Text>
       <Text style={[styles.nasdaqAppl3, styles.nasdaqTypo1]}>NASDAQ: MCD</Text>
       
@@ -293,19 +293,19 @@ ggprofileIcon: {
   },
   appleTypo: {
     height: 25,
-    fontSize: FontSize.size_3xs,
+    fontSize: 13,
     textAlign: "left",
   },
   nasdaqLayout: {
-    width: 85,
+    // width: 85,
     color: Color.colorLimegreen,
     fontFamily: FontFamily.interRegular,
-    top: 212,
+    top: 217,
   },
   appleInc1Position: {
-    left: 215,
+    left: 211,
     height: 25,
-    fontSize: FontSize.size_3xs,
+    fontSize: 13,
     textAlign: "left",
     position: "absolute",
   },
@@ -330,12 +330,12 @@ ggprofileIcon: {
     position: "absolute",
   },
   nasdaqTypo1: {
-    top: 321,
-    width: 85,
+    top: 326,
+    // width: 85,
     color: Color.colorLimegreen,
     fontFamily: FontFamily.interRegular,
     height: 25,
-    fontSize: FontSize.size_3xs,
+    fontSize: 13,
     textAlign: "left",
     position: "absolute",
   },
@@ -370,12 +370,12 @@ ggprofileIcon: {
     position: "absolute",
   },
   nasdaqTypo: {
-    top: 430,
-    width: 85,
+    top: 435,
+    width: 140,
     color: Color.colorLimegreen,
     fontFamily: FontFamily.interRegular,
-    height: 25,
-    fontSize: FontSize.size_3xs,
+    height: 40,
+    fontSize: 12,
     textAlign: "left",
     position: "absolute",
   },
@@ -418,20 +418,20 @@ ggprofileIcon: {
     left: 25,
   },
   appleInc: {
-    width: 100,
+    // width: 150,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
     color: Color.colorWhite,
-    left: 37,
-    fontSize: FontSize.size_3xs,
+    left: 33,
+    fontSize: 13,
     position: "absolute",
     top: 200,
   },
   nasdaqAppl: {
     height: 25,
-    fontSize: FontSize.size_3xs,
+    fontSize: 13,
     textAlign: "left",
-    left: 37,
+    left: 33,
     position: "absolute",
   },
   image1Icon: {
@@ -446,17 +446,17 @@ ggprofileIcon: {
     left: 203,
   },
   appleInc1: {
-    width: 90,
+    // width: 90,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
     color: Color.colorWhite,
     top: 200,
   },
   nasdaqAppl1: {
-    width: 85,
+    // width: 85,
     color: Color.colorLimegreen,
     fontFamily: FontFamily.interRegular,
-    top: 212,
+    top: 217,
   },
   image2Icon: {
     left: 210,
@@ -469,17 +469,17 @@ ggprofileIcon: {
     left: 26,
   },
   appleInc2: {
-    left: 38,
+    left: 34,
     height: 25,
-    fontSize: FontSize.size_3xs,
+    fontSize: 13,
     textAlign: "left",
-    width: 100,
+    // width: 100,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
     color: Color.colorWhite,
   },
   nasdaqAppl2: {
-    left: 38,
+    left: 34,
   },
   image3Icon: {
     top: 309,
@@ -489,17 +489,17 @@ ggprofileIcon: {
     left: 204,
   },
   appleInc3: {
-    left: 216,
+    left: 212,
     height: 25,
-    fontSize: FontSize.size_3xs,
+    fontSize: 13,
     textAlign: "left",
-    width: 90,
+    // width: 90,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
     color: Color.colorWhite,
   },
   nasdaqAppl3: {
-    left: 216,
+    left: 212,
   },
   image4Icon: {
     top: 309,
@@ -509,17 +509,17 @@ ggprofileIcon: {
     left: 26,
   },
   appleInc4: {
-    left: 38,
+    left: 34,
     height: 25,
-    fontSize: FontSize.size_3xs,
+    fontSize: 13,
     textAlign: "left",
-    width: 120,
+    // width: 120,
     fontFamily: FontFamily.interSemiBold,
     fontWeight: "600",
     color: Color.colorWhite,
   },
   nasdaqAppl4: {
-    left: 38,
+    left: 34,
   },
   image5Icon: {
     left: 34,
@@ -530,9 +530,9 @@ ggprofileIcon: {
     left: 204,
   },
   appleInc5: {
-    left: 216,
+    left: 212,
     height: 25,
-    fontSize: FontSize.size_3xs,
+    fontSize: 13,
     textAlign: "left",
     width: 120,
     fontFamily: FontFamily.interSemiBold,
@@ -540,7 +540,7 @@ ggprofileIcon: {
     color: Color.colorWhite,
   },
   nasdaqAppl5: {
-    left: 216,
+    left: 212,
   },
   image6Icon: {
     left: 211,

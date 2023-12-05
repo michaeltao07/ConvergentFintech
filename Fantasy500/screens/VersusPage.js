@@ -88,12 +88,12 @@ const VersusPage = ({navigation}) => {
       <Image
         style={[styles.ellipseIcon, styles.ellipseIconPosition]}
         contentFit="cover"
-        source={require("../assets/ellipse-22.png")}
+        source={require("../assets/sriya.png")}
       />
       <Image
         style={[styles.versuspageChild2, styles.ellipseIconPosition]}
         contentFit="cover"
-        source={require("../assets/ellipse-22.png")}
+        source={require("../assets/ayan.jpg")}
       />
       <Text style={[styles.text1, styles.textTypo]}>+13%</Text>
       <Text style={[styles.text2, styles.textTypo]}>-4%</Text>
@@ -318,15 +318,16 @@ ggprofileIcon: {
     top: 177,
     height: 36,
     width: 36,
+    borderRadius: 100,
     position: "absolute",
   },
   textTypo: {
     width: 150,
-    top: 246,
+    top: 230,
     textAlign: "left",
     fontFamily: FontFamily.interBold,
     fontWeight: "700",
-    fontSize: FontSize.size_16xl,
+    fontSize: 50,
     position: "absolute",
   },
   teamTypo: {
@@ -632,11 +633,11 @@ ggprofileIcon: {
     left: 319,
   },
   text1: {
-    left: 70,
+    left: 45,
     color: Color.colorLimegreen,
   },
   text2: {
-    left: 245,
+    left: 235,
     color: Color.colorSalmon,
   },
   lineView: {

@@ -20,6 +20,11 @@ const Profile = ({navigation}) => {
         contentFit="cover"
         source={require("../assets/ellipse-23.png")}
       />
+      <Image
+        style={styles.profileChild}
+        contentFit="cover"
+        source={require("../assets/sriya.png")}
+      />
       <Text style={styles.sriyachip}>sriyachip</Text>
       <Text style={styles.balance000}>Balance: $0.00</Text>
       <Image
@@ -202,6 +207,7 @@ ggprofileIcon: {
     left: 104,
     width: 186,
     height: 186,
+    borderRadius: 100,
     position: "absolute",
   },
   sriyachip: {

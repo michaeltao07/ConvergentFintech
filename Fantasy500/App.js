@@ -22,6 +22,7 @@ import Choose from "./screens/Choose";
 import AyanRoster from "./screens/AyanRoster";
 import TradeMac from "./screens/TradeMac";
 import Roster2 from "./screens/Roster2";
+import ConsumePage from "./screens/ConsumePage";
 
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { View, Text, Pressable, TouchableOpacity } from "react-native";
@@ -139,6 +140,11 @@ const App = () => {
            <Stack.Screen
             name="Roster2"
             component={Roster2}
+            options={{headerShown: false}}
+           />
+           <Stack.Screen
+            name="ConsumePage"
+            component={ConsumePage}
             options={{headerShown: false}}
            />
           </Stack.Navigator>

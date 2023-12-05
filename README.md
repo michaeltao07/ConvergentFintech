@@ -27,4 +27,4 @@ Nitisha Pokkula
 Jacob Encarnado
 
 Design:
-Sriya Chippalthurthy
+Sriya Chippalthurty

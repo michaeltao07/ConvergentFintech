@@ -20,39 +20,9 @@ const InviteFriends = ({navigation}) => {
       <Text style={[styles.friendsOnFantasy500, styles.fantasyTypo]}>
         Friends on Fantasy500
       </Text>
-      <Image
-        style={[styles.inviteFriendsItem, styles.inviteChildLayout]}
-        contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
-      />
-      <Image
-        style={[styles.inviteFriendsInner, styles.inviteChildLayout]}
-        contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
-      />
-      <Image
-        style={[styles.ellipseIcon, styles.inviteChildLayout]}
-        contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
-      />
-      <Image
-        style={[styles.inviteFriendsChild1, styles.inviteChildLayout]}
-        contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
-      />
-      <Image
-        style={[styles.inviteFriendsChild2, styles.inviteChildLayout]}
-        contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
-      />
-      <Image
-        style={[styles.inviteFriendsChild3, styles.inviteChildLayout]}
-        contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
-      />
       <Text style={[styles.anokhishah, styles.ayanjannuTypo]}>anokhishah</Text>
       <Text style={[styles.ayanjannu, styles.ayanjannuTypo]}>ayanjannu</Text>
-      <Text style={[styles.andrewchoi, styles.ayanjannuTypo]}>andrewchoi</Text>
+      <Text style={[styles.andrewchoi, styles.ayanjannuTypo]}>michaeltao</Text>
       <Text style={[styles.davidrobertson, styles.ayanjannuTypo]}>
         davidrobertson
       </Text>
@@ -65,66 +35,50 @@ const InviteFriends = ({navigation}) => {
       <Text style={[styles.mahikadawar, styles.ayanjannuTypo]}>
         mahikadawar
       </Text>
-      <Image
-        style={[styles.inviteFriendsChild4, styles.inviteChildLayout]}
-        contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
-      />
-      <Image
-        style={[styles.inviteFriendsChild5, styles.inviteChildLayout]}
-        contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
-      />
       <Text style={[styles.nitishapokkula, styles.ayanjannuTypo]}>
         nitishapokkula
       </Text>
-      <TextInput
-        style={[styles.https1, styles.httpsTypo]}
-        placeholder="https:"
-        placeholderTextColor="#fff"
-      />
+     
       <View style={styles.rectangleViewShadowBox} />
       <Image
         style={[styles.inviteFriendsItem, styles.inviteChildLayout]}
         contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
+        source={require("../assets/anokh1.png")}
       />
       <Image
         style={[styles.inviteFriendsInner, styles.inviteChildLayout]}
         contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
+        source={require("../assets/ayan.jpg")}
       />
       <Image
         style={[styles.ellipseIcon, styles.inviteChildLayout]}
         contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
+        source={require("../assets/michae1.png")}
       />
       <Image
         style={[styles.inviteFriendsChild1, styles.inviteChildLayout]}
         contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
+        source={require("../assets/david.png")}
       />
       <Image
         style={[styles.inviteFriendsChild2, styles.inviteChildLayout]}
         contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
+        source={require("../assets/jacob.jpg")}
       />
       <Image
         style={[styles.inviteFriendsChild3, styles.inviteChildLayout]}
         contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
+        source={require("../assets/jayanth.png")}
       />
-      <Text style={[styles.anokhishah, styles.ayanjannuTypo]}>anokhishah</Text>
-      <Text style={[styles.ayanjannu, styles.ayanjannuTypo]}>ayanjannu</Text>
       <Image
         style={[styles.inviteFriendsChild4, styles.inviteChildLayout]}
         contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
+        source={require("../assets/mahik1.png")}
       />
       <Image
         style={[styles.inviteFriendsChild5, styles.inviteChildLayout]}
         contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
+        source={require("../assets/nitish1.png")}
       />
       <Pressable onPress={()=>navigation.navigate(Profile)}>
       <Image
@@ -196,27 +150,9 @@ const InviteFriends = ({navigation}) => {
       <Image
         style={[styles.inviteFriendsChild16, styles.inviteChildLayout]}
         contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
+        source={require("../assets/jjwatt.jpg")}
       />
-      <Image
-        style={[styles.inviteFriendsChild17, styles.inviteChildLayout]}
-        contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
-      />
-      <Text style={[styles.anokhishah2, styles.ayanjannuTypo]}>anokhishah</Text>
-      <Text style={[styles.ayanjannu2, styles.ayanjannuTypo]}>ayanjannu</Text>
-      <Image
-        style={[styles.inviteFriendsChild16, styles.inviteChildLayout]}
-        contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
-      />
-      <Image
-        style={[styles.inviteFriendsChild17, styles.inviteChildLayout]}
-        contentFit="cover"
-        source={require("../assets/ellipse-3.png")}
-      />
-      <Text style={[styles.anokhishah2, styles.ayanjannuTypo]}>anokhishah</Text>
-      <Text style={[styles.ayanjannu2, styles.ayanjannuTypo]}>ayanjannu</Text>
+      <Text style={[styles.anokhishah2, styles.ayanjannuTypo]}>jjwatt</Text>
     </View>
   );
 };
@@ -331,6 +267,7 @@ ggprofileIcon: {
     height: 38,
     width: 38,
     left: 20,
+    borderRadius: 100,
     position: "absolute",
   },
   ayanjannuTypo: {
@@ -372,7 +309,7 @@ ggprofileIcon: {
   },
   https: {
     width: 58,
-    left: 49,
+    left: 30,
     top: 177,
     fontFamily: FontFamily.interMedium,
     fontWeight: "500",
@@ -396,7 +333,7 @@ ggprofileIcon: {
     shadowColor: "rgba(0, 0, 0, 0.25)",
     backgroundColor: Color.colorSeagreen_400,
     borderRadius: Border.br_5xs,
-    left: 18,
+    left: 8,
     top: 165,
     position: "absolute",
   },
@@ -474,7 +411,7 @@ ggprofileIcon: {
   },
   copyAndShare: {
     top: 212,
-    left: 154,
+    left: 134,
     fontSize: FontSize.size_3xs,
     textDecoration: "underline",
     width: 95,
