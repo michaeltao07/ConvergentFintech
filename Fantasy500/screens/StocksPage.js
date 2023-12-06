@@ -41,6 +41,18 @@ const StocksPage = ({navigation}) => {
         Add to Roster
       </Text>
       </TouchableOpacity>
+
+      <View style={[styles.stocksPageChild1, styles.stocksChildLayout]} />
+      <Text style={[styles.newsArticle1, styles.newsTypo]}>news article 1</Text>
+      <View style={[styles.stocksPageChild2, styles.stocksChildLayout]} />
+      <Text style={[styles.newsArticle2, styles.newsTypo]}>news article 2</Text>
+      <Pressable onPress={()=>navigation.navigate(StockPage)}>
+      <Image
+        style={styles.polygonIcon}
+        contentFit="cover"
+        source={require("../assets/polygon-11.png")}
+      />
+      </Pressable>
       <View
         style={styles.rectanglePressable}
       />
@@ -94,18 +106,6 @@ const StocksPage = ({navigation}) => {
           contentFit="cover"
           source={require("../assets/vector1.png")}
         />
-      </Pressable>
-
-      <View style={[styles.stocksPageChild1, styles.stocksChildLayout]} />
-      <Text style={[styles.newsArticle1, styles.newsTypo]}>news article 1</Text>
-      <View style={[styles.stocksPageChild2, styles.stocksChildLayout]} />
-      <Text style={[styles.newsArticle2, styles.newsTypo]}>news article 2</Text>
-      <Pressable onPress={()=>navigation.navigate(StockPage)}>
-      <Image
-        style={styles.polygonIcon}
-        contentFit="cover"
-        source={require("../assets/polygon-11.png")}
-      />
       </Pressable>
     </View>
   );
@@ -305,6 +305,7 @@ const styles = StyleSheet.create({
     left: 317,
     top: 760,
     height: 27,
+    // paddingRight:100,
     position: "absolute",
   },
   iconLayout: {
@@ -350,7 +351,7 @@ ggprofileIcon: {
   },
   vectorPosition1: {
     width: 30,
-    left: "47%",
+    left: "44%",
     top: 760,
     height: 27,
     position: "absolute",
@@ -386,7 +387,7 @@ ggprofileIcon: {
     top: 753,
     left: 151,
     fontSize: FontSize.size_3xs,
-    textDecoration: "underline",
+    // textDecoration: "underline",
     width: 91,
     height: 11,
     textAlign: "left",

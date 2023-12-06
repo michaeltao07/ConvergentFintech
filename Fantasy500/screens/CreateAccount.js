@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
     top: 713,
     left: 115,
     fontSize: FontSize.size_3xs,
-    textDecoration: "underline",
+    // textDecoration: "underline",
     width: 163,
     height: 11,
     textAlign: "left",

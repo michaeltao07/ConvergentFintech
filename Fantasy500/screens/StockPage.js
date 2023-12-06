@@ -349,7 +349,7 @@ ggprofileIcon: {
   },
   vectorPosition1: {
     width: 30,
-    left: "47%",
+    left: "44%",
     top: 760,
     height: 27,
     position: "absolute",

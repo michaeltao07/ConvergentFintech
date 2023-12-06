@@ -20,6 +20,11 @@ const LaunchPage = ({navigation}) => {
         contentFit="cover"
         source={require("../assets/fLogo.png")}
       />
+      <Image
+        style={[styles.fantasy500]}
+        contentFit="cover"
+        source={require("../assets/fSlogo.png")}
+      />
       <Pressable style={styles.signInTypo} onPress={handlePress} zIndex={1}>
       <Text style={[styles.signIn, styles.signInTypo]}>
         Sign in
@@ -31,9 +36,6 @@ const LaunchPage = ({navigation}) => {
         Forgot password?
       </Text>
       <Text style={[styles.launchPageInner, styles.launchShadowBox]} />
-      <Text style={[styles.fantasy500, styles.fantasy500FlexBox]}>
-        Fantasy500
-      </Text>
     </View>
   );
 };
@@ -93,7 +95,7 @@ const styles = StyleSheet.create({
     top: 758,
     left: 123,
     fontSize: FontSize.size_mini,
-    textDecoration: "underline",
+    // textDecoration: "underline",
     width: 132,
     height: 24,
     fontFamily: FontFamily.interMedium,
@@ -104,12 +106,16 @@ const styles = StyleSheet.create({
     top: 609,
   },
   fantasy500: {
-    top: 372,
-    left: "23%",
-    fontSize: FontSize.size_16xl,
-    fontWeight: "700",
-    fontFamily: FontFamily.interBold,
-    width: 208,
+    top: 350,
+    zIndex: 2,
+    height: 100,
+    tintColor: "white",
+    // width: 50,
+    // left: "23%",
+    // fontSize: FontSize.size_16xl,
+    // fontWeight: "700",
+    // fontFamily: FontFamily.interBold,
+    // width: 208,
   },
   ellipseIcon: {
     top: 25,

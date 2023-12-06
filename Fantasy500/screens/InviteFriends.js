@@ -413,7 +413,7 @@ ggprofileIcon: {
     top: 212,
     left: 134,
     fontSize: FontSize.size_3xs,
-    textDecoration: "underline",
+    // textDecoration: "underline",
     width: 95,
     height: 11,
     textAlign: "left",

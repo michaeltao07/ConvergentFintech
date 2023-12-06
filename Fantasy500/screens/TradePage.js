@@ -352,7 +352,7 @@ ggprofileIcon: {
   },
   vectorPosition1: {
     width: 30,
-    left: "47%",
+    left: "44%",
     top: 760,
     height: 27,
     position: "absolute",
@@ -388,7 +388,7 @@ ggprofileIcon: {
     top: 753,
     left: 151,
     fontSize: FontSize.size_3xs,
-    textDecoration: "underline",
+    // textDecoration: "underline",
     width: 91,
     height: 11,
     textAlign: "left",

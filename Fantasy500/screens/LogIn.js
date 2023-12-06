@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
   dontHaveAn: {
     top: 623,
     fontSize: FontSize.size_3xs,
-    textDecoration: "underline",
+    // textDecoration: "underline",
     width: 172,
     height: 11,
     textAlign: "left",
